@@ -432,17 +432,18 @@ footer{background:#040408;border-top:1px solid var(--border);padding:80px 0 40px
 <div class="orb o2"></div>
 <div class="orb o3"></div>
 
-<!-- MOBILE MENU (Cities link removed) -->
+<!-- MOBILE MENU -->
 <div class="mob-menu" id="mob" role="dialog" aria-label="Mobile navigation">
   <button class="mob-close" onclick="closeMob()" aria-label="Close menu"><i class="fas fa-times"></i></button>
   <a href="#features" onclick="closeMob()">Why RidesLo</a>
   <a href="#fleet" onclick="closeMob()">Fleet</a>
   <a href="#how" onclick="closeMob()">How it Works</a>
   <a href="#download" onclick="closeMob()">Download</a>
+  <a href="contact.html" onclick="closeMob()">Contact</a>
   <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="by" style="margin-top:8px;font-size:.95rem"><i class="fab fa-google-play"></i> Get the App</a>
 </div>
 
-<!-- NAV (Cities link removed) -->
+<!-- NAV -->
 <nav id="nav" role="navigation" aria-label="Main navigation">
   <div class="ni">
     <a href="/" class="logo" aria-label="RidesLo home"><div class="lb"><i class="fas fa-bolt" aria-hidden="true"></i></div>RidesLo</a>
@@ -451,6 +452,7 @@ footer{background:#040408;border-top:1px solid var(--border);padding:80px 0 40px
       <a href="#fleet">Fleet</a>
       <a href="#how">How it Works</a>
       <a href="#download">Download</a>
+      <a href="contact.html">Contact</a>
     </div>
     <div style="display:flex;align-items:center;gap:11px">
       <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="ncta">Get the App</a>
@@ -459,13 +461,13 @@ footer{background:#040408;border-top:1px solid var(--border);padding:80px 0 40px
   </div>
 </nav>
 
-<!-- HERO (unchanged) -->
+<!-- HERO -->
 <header class="hero" role="banner">
   <div class="hero-bg-grid" aria-hidden="true"></div>
   <div class="cont">
     <div class="hg">
       <div class="hleft">
-        <div class="htag" aria-label="Limited time offer"><div class="htd" aria-hidden="true"></div><span>Limited Time · 30% OFF First Ride</span></div>
+        <div class="htag" aria-label="Limited time offer"><div class="htd" aria-hidden="true"></div><span>Regular Offer</span></div>
         <h1>
           <span class="h1line"><span>Ride Smart,</span></span>
           <span class="h1line"><span><em>Ride Fast.</em></span></span>
@@ -723,7 +725,7 @@ footer{background:#040408;border-top:1px solid var(--border);padding:80px 0 40px
 <hr class="divider">
 
 <!-- OFFER -->
-<section class="offer-section" id="offer">
+<!-- <section class="offer-section" id="offer">
   <div class="sec-inner">
     <div class="oi rev">
       <span class="ey">Exclusive Offer</span>
@@ -738,7 +740,7 @@ footer{background:#040408;border-top:1px solid var(--border);padding:80px 0 40px
       <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="by" style="font-size:1rem;padding:16px 40px">Claim Offer Now <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- DOWNLOAD -->
 <section id="download" style="padding-top:0">
@@ -805,7 +807,7 @@ footer{background:#040408;border-top:1px solid var(--border);padding:80px 0 40px
       <div class="fcol">
         <h4>Contact</h4>
         <ul>
-          <li><a href="#">Support Center</a></li>
+          <li><a href="contact.html">Support Center</a></li>
           <li><a href="#">Report an Issue</a></li>
           <li><a href="#">Press Enquiries</a></li>
           <li><a href="#">Partner with Us</a></li>
@@ -842,27 +844,27 @@ const cu=new IntersectionObserver(es=>es.forEach(e=>{
 document.querySelectorAll('.stn[data-t]').forEach(el=>cu.observe(el));
 
 /* ════ COUNTDOWN TIMER ════ */
-let csecs=23*3600+59*60+47;
-function updateClock(){
-  const h=Math.floor(csecs/3600),m=Math.floor(csecs%3600/60),s=csecs%60;
-  document.getElementById('ch').textContent=String(h).padStart(2,'0');
-  document.getElementById('cm').textContent=String(m).padStart(2,'0');
-  document.getElementById('cs').textContent=String(s).padStart(2,'0');
-  if(csecs>0)csecs--;
-}
-updateClock();
-setInterval(updateClock,1000);
+// let csecs=23*3600+59*60+47;
+// function updateClock(){
+//   const h=Math.floor(csecs/3600),m=Math.floor(csecs%3600/60),s=csecs%60;
+//   document.getElementById('ch').textContent=String(h).padStart(2,'0');
+//   document.getElementById('cm').textContent=String(m).padStart(2,'0');
+//   document.getElementById('cs').textContent=String(s).padStart(2,'0');
+//   if(csecs>0)csecs--;
+// }
+// updateClock();
+// setInterval(updateClock,1000);
 
 /* ════ OFFER CODE COPY ════ */
-document.getElementById('offerCode').addEventListener('click',function(){
-  navigator.clipboard?.writeText('RIDESLO30').then(()=>{
-    const orig=this.textContent;
-    this.textContent='✓ Copied!';
-    setTimeout(()=>this.textContent=orig,2000);
-  });
-  this.style.cursor='pointer';
-});
-document.getElementById('offerCode').title='Click to copy';
+// document.getElementById('offerCode').addEventListener('click',function(){
+//   navigator.clipboard?.writeText('RIDESLO30').then(()=>{
+//     const orig=this.textContent;
+//     this.textContent='✓ Copied!';
+//     setTimeout(()=>this.textContent=orig,2000);
+//   });
+//   this.style.cursor='pointer';
+// });
+// document.getElementById('offerCode').title='Click to copy';
 
 /* ════════════════════════
    PHONE APP LOGIC (preserved)
