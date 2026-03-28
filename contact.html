@@ -1,512 +1,1292 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
-<title>RidesLo — Contact & Office | Ride Smart. Ride Fast.</title>
-<meta name="description" content="Get in touch with RidesLo. Call or WhatsApp us at +91 73000 42588, visit our Jaipur headquarters, and find the fastest support for rides, partnerships, and driver queries.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://rideslo.in/contact.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <title>RidesLo — Contact & Office | Ride Smart. Ride Fast.</title>
+  <meta name="description"
+    content="Get in touch with RidesLo. Call or WhatsApp us at +91 73000 42588, visit our Jaipur headquarters, and find the fastest support for rides, partnerships, and driver queries.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rideslo.in/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --y:#F9B42B;--y2:#FFD166;--y3:#E69A1A;--y4:#ffeaa0;
-  --bg:#06060E;--bg2:#0A0A14;--bg3:#0E0E1A;
-  --card:#101020;--border:rgba(255,255,255,.07);--border-y:rgba(249,180,43,.3);
-  --text:#F0F0FF;--muted:#7a7a95;
-}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
-a{text-decoration:none;color:inherit}
-::selection{background:rgba(249,180,43,.25);color:#fff}
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
 
-/* NOISE TEXTURE */
-body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5}
+    :root {
+      --y: #F9B42B;
+      --y2: #FFD166;
+      --y3: #E69A1A;
+      --y4: #ffeaa0;
+      --bg: #06060E;
+      --bg2: #0A0A14;
+      --bg3: #0E0E1A;
+      --card: #101020;
+      --border: rgba(255, 255, 255, .07);
+      --border-y: rgba(249, 180, 43, .3);
+      --text: #F0F0FF;
+      --muted: #7a7a95;
+    }
 
-/* ORBS */
-.orb{position:fixed;border-radius:50%;filter:blur(100px);pointer-events:none;z-index:0}
-.o1{width:700px;height:700px;background:radial-gradient(circle,rgba(249,180,43,.09),transparent 70%);top:-200px;right:-150px;animation:orbFloat 18s ease-in-out infinite}
-.o2{width:500px;height:500px;background:radial-gradient(circle,rgba(230,154,26,.07),transparent 70%);bottom:200px;left:-150px;animation:orbFloat2 14s ease-in-out infinite}
-.o3{width:400px;height:400px;background:radial-gradient(circle,rgba(255,180,50,.05),transparent 70%);top:50%;left:50%;margin:-200px;animation:orbFloat3 20s ease-in-out infinite}
-@keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(50px,60px) scale(1.12)}}
-@keyframes orbFloat2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-60px,-40px) scale(1.08)}}
-@keyframes orbFloat3{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-50px)}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
-@keyframes glowPulse{0%,100%{opacity:.6}50%{opacity:1}}
-@keyframes pulse{0%,100%{box-shadow:0 0 20px rgba(249,180,43,.4)}50%{box-shadow:0 0 40px rgba(249,180,43,.85)}}
-@keyframes scaleIn{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+    html {
+      scroll-behavior: smooth
+    }
 
-/* NAVIGATION */
-nav{position:fixed;top:0;left:0;right:0;z-index:300;padding:22px 0;transition:all .4s cubic-bezier(.4,0,.2,1)}
-nav.s{background:rgba(6,6,14,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);padding:14px 0}
-.ni{max-width:1400px;margin:0 auto;padding:0 48px;display:flex;justify-content:space-between;align-items:center;gap:16px}
-.logo{display:flex;align-items:center;gap:11px;font-family:'Syne',sans-serif;font-weight:800;font-size:1.7rem;color:#fff;letter-spacing:-1.5px}
-.lb{width:38px;height:38px;background:var(--y);border-radius:11px;display:flex;align-items:center;justify-content:center;color:#06060E;font-size:17px;flex-shrink:0;animation:pulse 2.5s ease-in-out infinite;transition:transform .2s}
-.logo:hover .lb{transform:rotate(-8deg) scale(1.1)}
-.nl{display:flex;gap:32px}
-.nl a{color:#999;font-weight:500;font-size:.93rem;transition:color .2s;position:relative}
-.nl a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--y);transition:width .25s}
-.nl a:hover{color:var(--y)}
-.nl a:hover::after{width:100%}
-.nl a.active{color:var(--y)}
-.nl a.active::after{width:100%}
-.ncta{background:var(--y);color:#06060E;padding:11px 24px;border-radius:50px;font-weight:700;font-size:.88rem;transition:all .3s;white-space:nowrap;position:relative;overflow:hidden}
-.ncta::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.2),transparent);opacity:0;transition:opacity .3s}
-.ncta:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(249,180,43,.4)}
-.ncta:hover::before{opacity:1}
-.burger{display:none;background:none;border:1px solid var(--border);color:#999;width:40px;height:40px;border-radius:11px;align-items:center;justify-content:center;cursor:pointer;font-size:16px;flex-shrink:0}
-.burger:hover{border-color:var(--border-y);color:var(--y)}
-.mob-menu{display:none;position:fixed;inset:0;background:rgba(6,6,14,.98);z-index:290;flex-direction:column;align-items:center;justify-content:center;gap:36px}
-.mob-menu.open{display:flex}
-.mob-menu a{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:#fff;transition:color .2s}
-.mob-menu a:hover{color:var(--y)}
-.mob-close{position:absolute;top:26px;right:32px;background:none;border:none;color:#666;font-size:26px;cursor:pointer}
-.mob-close:hover{color:var(--y)}
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      line-height: 1.6
+    }
 
-/* HERO SECTION (contact) */
-.hero{min-height:40vh;display:flex;align-items:center;padding:130px 0 60px;position:relative;overflow:hidden}
-.hero-bg-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(249,180,43,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(249,180,43,.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 40%,transparent 100%);pointer-events:none;z-index:0}
-.cont{max-width:1400px;margin:0 auto;padding:0 48px;position:relative;z-index:1}
-.hero-content{text-align:center;animation:fadeUp .7s both}
-.hero-content h1{font-family:'Syne',sans-serif;font-size:3.8rem;font-weight:800;letter-spacing:-2px;margin-bottom:18px;color:#fff}
-.hero-content h1 span{color:var(--y)}
-.hero-content p{color:var(--muted);font-size:1.1rem;max-width:620px;margin:0 auto;line-height:1.7}
+    a {
+      text-decoration: none;
+      color: inherit
+    }
 
-/* contact main layout */
-.contact-section{padding:40px 0 100px}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px}
-.info-card{background:var(--card);border:1px solid var(--border);border-radius:32px;padding:40px 32px;transition:all .35s;height:fit-content}
-.info-card:hover{border-color:var(--border-y);transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.4)}
-.contact-method{display:flex;align-items:center;gap:20px;margin-bottom:32px;flex-wrap:wrap}
-.contact-icon{width:58px;height:58px;background:rgba(249,180,43,.1);border-radius:28px;display:flex;align-items:center;justify-content:center;font-size:26px;color:var(--y);border:1px solid rgba(249,180,43,.2)}
-.contact-detail h3{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;margin-bottom:6px}
-.contact-detail p{color:var(--muted);font-size:.9rem;margin-bottom:12px}
-.contact-buttons{display:flex;gap:14px;flex-wrap:wrap}
-.btn-contact{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border:1px solid var(--border);padding:8px 18px;border-radius:40px;font-weight:600;font-size:.85rem;transition:all .25s}
-.btn-contact i{font-size:13px}
-.btn-contact:hover{background:rgba(249,180,43,.12);border-color:var(--border-y);color:var(--y);transform:translateY(-2px)}
-.btn-primary{background:var(--y);color:#06060E;border:none;box-shadow:0 4px 12px rgba(249,180,43,.2)}
-.btn-primary:hover{background:var(--y3);color:#06060E;transform:translateY(-2px);box-shadow:0 10px 22px rgba(249,180,43,.3)}
-.location-block{margin-top:20px;border-top:1px solid var(--border);padding-top:28px}
-.location-block h3{font-family:'Syne',sans-serif;font-size:1.2rem;margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.address-detail{color:var(--muted);line-height:1.7;margin-bottom:20px;font-size:.9rem}
-.address-detail i{margin-right:8px;color:var(--y);width:20px}
-.map-container{border-radius:28px;overflow:hidden;border:1px solid var(--border);height:340px;margin-top:20px;transition:all .3s}
-.map-container iframe{width:100%;height:100%;border:0;filter:brightness(0.96) contrast(1.05)}
-.directions-link{margin-top:16px;display:inline-flex;align-items:center;gap:10px;background:rgba(249,180,43,.06);padding:10px 20px;border-radius:40px;font-size:.85rem;font-weight:500;transition:all .25s}
-.directions-link:hover{background:rgba(249,180,43,.18);color:var(--y);gap:13px}
-.office-hours{background:rgba(255,255,255,.02);border-radius:20px;padding:20px;margin-top:28px;border:1px dashed rgba(249,180,43,.2)}
-.office-hours h4{font-size:1rem;margin-bottom:10px;color:var(--y)}
-.office-hours ul{list-style:none;display:flex;flex-direction:column;gap:6px}
-.office-hours li{color:#aaa;font-size:.85rem;display:flex;justify-content:space-between;flex-wrap:wrap}
-/* form card */
-.form-card{background:var(--card);border:1px solid var(--border);border-radius:32px;padding:40px 32px;transition:all .35s}
-.form-card:hover{border-color:var(--border-y)}
-.form-card h3{font-family:'Syne',sans-serif;font-size:1.4rem;margin-bottom:8px}
-.form-card p{color:var(--muted);margin-bottom:28px;font-size:.9rem}
-.input-group{margin-bottom:20px}
-.input-group input,.input-group textarea{width:100%;background:rgba(10,10,20,.8);border:1px solid var(--border);border-radius:18px;padding:14px 18px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:.9rem;transition:all .25s}
-.input-group input:focus,.input-group textarea:focus{outline:none;border-color:var(--y);box-shadow:0 0 0 2px rgba(249,180,43,.2)}
-.input-group textarea{resize:vertical;min-height:100px}
-.submit-btn{background:linear-gradient(135deg,var(--y),var(--y3));border:none;padding:14px 28px;border-radius:50px;font-weight:800;font-size:.9rem;color:#06060E;cursor:pointer;width:100%;transition:all .3s;font-family:'DM Sans',sans-serif;display:flex;align-items:center;justify-content:center;gap:8px}
-.submit-btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(249,180,43,.3)}
-.submit-btn:disabled{opacity:0.6;cursor:not-allowed}
+    ::selection {
+      background: rgba(249, 180, 43, .25);
+      color: #fff
+    }
 
-/* MARQUEE */
-.marquee-wrap{background:var(--y);padding:14px 0;overflow:hidden;position:relative;z-index:2}
-.marquee-inner{display:flex;width:max-content;animation:marquee 30s linear infinite}
-.marquee-item{display:flex;align-items:center;gap:10px;padding:0 36px;font-family:'Syne',sans-serif;font-weight:700;font-size:.88rem;color:#06060E;white-space:nowrap}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    /* NOISE TEXTURE */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: .5
+    }
 
-/* FOOTER */
-footer{background:#040408;border-top:1px solid var(--border);padding:80px 0 40px;margin-top:20px}
-.ff-grid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:48px;margin-bottom:60px}
-.fb p{color:var(--muted);font-size:.87rem;line-height:1.8;margin-top:14px;max-width:280px}
-.fcol h4{font-family:'Syne',sans-serif;font-weight:700;color:#fff;margin-bottom:18px;font-size:.9rem}
-.fcol ul{list-style:none}
-.fcol ul li{margin-bottom:11px}
-.fcol ul li a{color:var(--muted);font-size:.87rem;transition:color .2s}
-.fcol ul li a:hover{color:var(--y)}
-.fbot{border-top:1px solid var(--border);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
-.fbot p{color:#2a2a40;font-size:.8rem}
-.socials{display:flex;gap:11px}
-.socials a{width:36px;height:36px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:#363650;font-size:13px;transition:all .25s}
-.socials a:hover{border-color:var(--border-y);color:var(--y);transform:translateY(-2px)}
-.rev{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
-.rev.vi{opacity:1;transform:translateY(0)}
-.divider{border:none;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+    /* ORBS */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(100px);
+      pointer-events: none;
+      z-index: 0
+    }
 
-@media(max-width:1024px){
-  .contact-grid{grid-template-columns:1fr;gap:36px}
-  .hero-content h1{font-size:2.8rem}
-}
-@media(max-width:880px){
-  .ni{padding:0 24px}
-  .nl{display:none}
-  .burger{display:flex}
-  .cont{padding:0 24px}
-  .hero{padding:110px 0 40px}
-  .ff-grid{grid-template-columns:1fr 1fr;gap:32px}
-  .contact-method{flex-direction:column;align-items:flex-start}
-}
-@media(max-width:520px){
-  .hero-content h1{font-size:2rem}
-  .ff-grid{grid-template-columns:1fr}
-  .info-card,.form-card{padding:28px 20px}
-}
-</style>
+    .o1 {
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(249, 180, 43, .09), transparent 70%);
+      top: -200px;
+      right: -150px;
+      animation: orbFloat 18s ease-in-out infinite
+    }
+
+    .o2 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(230, 154, 26, .07), transparent 70%);
+      bottom: 200px;
+      left: -150px;
+      animation: orbFloat2 14s ease-in-out infinite
+    }
+
+    .o3 {
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(255, 180, 50, .05), transparent 70%);
+      top: 50%;
+      left: 50%;
+      margin: -200px;
+      animation: orbFloat3 20s ease-in-out infinite
+    }
+
+    @keyframes orbFloat {
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1)
+      }
+
+      50% {
+        transform: translate(50px, 60px) scale(1.12)
+      }
+    }
+
+    @keyframes orbFloat2 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1)
+      }
+
+      50% {
+        transform: translate(-60px, -40px) scale(1.08)
+      }
+    }
+
+    @keyframes orbFloat3 {
+
+      0%,
+      100% {
+        transform: translate(0, 0)
+      }
+
+      50% {
+        transform: translate(30px, -50px)
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(28px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes glowPulse {
+
+      0%,
+      100% {
+        opacity: .6
+      }
+
+      50% {
+        opacity: 1
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 20px rgba(249, 180, 43, .4)
+      }
+
+      50% {
+        box-shadow: 0 0 40px rgba(249, 180, 43, .85)
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(.92)
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1)
+      }
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 300;
+      padding: 22px 0;
+      transition: all .4s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    nav.s {
+      background: rgba(6, 6, 14, .92);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 0
+    }
+
+    .ni {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.7rem;
+      color: #fff;
+      letter-spacing: -1.5px
+    }
+
+    .lb {
+      width: 38px;
+      height: 38px;
+      background: var(--y);
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #06060E;
+      font-size: 17px;
+      flex-shrink: 0;
+      animation: pulse 2.5s ease-in-out infinite;
+      transition: transform .2s;
+      background-image: url("./img.jpeg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .logo:hover .lb {
+      transform: rotate(-8deg) scale(1.1)
+    }
+
+    .nl {
+      display: flex;
+      gap: 32px
+    }
+
+    .nl a {
+      color: #999;
+      font-weight: 500;
+      font-size: .93rem;
+      transition: color .2s;
+      position: relative
+    }
+
+    .nl a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: var(--y);
+      transition: width .25s
+    }
+
+    .nl a:hover {
+      color: var(--y)
+    }
+
+    .nl a:hover::after {
+      width: 100%
+    }
+
+    .nl a.active {
+      color: var(--y)
+    }
+
+    .nl a.active::after {
+      width: 100%
+    }
+
+    .ncta {
+      background: var(--y);
+      color: #06060E;
+      padding: 11px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: .88rem;
+      transition: all .3s;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden
+    }
+
+    .ncta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255, 255, 255, .2), transparent);
+      opacity: 0;
+      transition: opacity .3s
+    }
+
+    .ncta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(249, 180, 43, .4)
+    }
+
+    .ncta:hover::before {
+      opacity: 1
+    }
+
+    .burger {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      color: #999;
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      flex-shrink: 0
+    }
+
+    .burger:hover {
+      border-color: var(--border-y);
+      color: var(--y)
+    }
+
+    .mob-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(6, 6, 14, .98);
+      z-index: 290;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 36px
+    }
+
+    .mob-menu.open {
+      display: flex
+    }
+
+    .mob-menu a {
+      font-family: 'Syne', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      transition: color .2s
+    }
+
+    .mob-menu a:hover {
+      color: var(--y)
+    }
+
+    .mob-close {
+      position: absolute;
+      top: 26px;
+      right: 32px;
+      background: none;
+      border: none;
+      color: #666;
+      font-size: 26px;
+      cursor: pointer
+    }
+
+    .mob-close:hover {
+      color: var(--y)
+    }
+
+    /* HERO SECTION (contact) */
+    .hero {
+      min-height: 40vh;
+      display: flex;
+      align-items: center;
+      padding: 130px 0 60px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .hero-bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(249, 180, 43, .04) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 180, 43, .04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+      pointer-events: none;
+      z-index: 0
+    }
+
+    .cont {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 48px;
+      position: relative;
+      z-index: 1
+    }
+
+    .hero-content {
+      text-align: center;
+      animation: fadeUp .7s both
+    }
+
+    .hero-content h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: 3.8rem;
+      font-weight: 800;
+      letter-spacing: -2px;
+      margin-bottom: 18px;
+      color: #fff
+    }
+
+    .hero-content h1 span {
+      color: var(--y)
+    }
+
+    .hero-content p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.7
+    }
+
+    /* contact main layout */
+    .contact-section {
+      padding: 40px 0 100px
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      margin-top: 40px
+    }
+
+    .info-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      padding: 40px 32px;
+      transition: all .35s;
+      height: fit-content
+    }
+
+    .info-card:hover {
+      border-color: var(--border-y);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, .4)
+    }
+
+    .contact-method {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 32px;
+      flex-wrap: wrap
+    }
+
+    .contact-icon {
+      width: 58px;
+      height: 58px;
+      background: rgba(249, 180, 43, .1);
+      border-radius: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      color: var(--y);
+      border: 1px solid rgba(249, 180, 43, .2)
+    }
+
+    .contact-detail h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 6px
+    }
+
+    .contact-detail p {
+      color: var(--muted);
+      font-size: .9rem;
+      margin-bottom: 12px
+    }
+
+    .contact-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap
+    }
+
+    .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid var(--border);
+      padding: 8px 18px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: .85rem;
+      transition: all .25s
+    }
+
+    .btn-contact i {
+      font-size: 13px
+    }
+
+    .btn-contact:hover {
+      background: rgba(249, 180, 43, .12);
+      border-color: var(--border-y);
+      color: var(--y);
+      transform: translateY(-2px)
+    }
+
+    .btn-primary {
+      background: var(--y);
+      color: #06060E;
+      border: none;
+      box-shadow: 0 4px 12px rgba(249, 180, 43, .2)
+    }
+
+    .btn-primary:hover {
+      background: var(--y3);
+      color: #06060E;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(249, 180, 43, .3)
+    }
+
+    .location-block {
+      margin-top: 20px;
+      border-top: 1px solid var(--border);
+      padding-top: 28px
+    }
+
+    .location-block h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .address-detail {
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-size: .9rem
+    }
+
+    .address-detail i {
+      margin-right: 8px;
+      color: var(--y);
+      width: 20px
+    }
+
+    .map-container {
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      height: 340px;
+      margin-top: 20px;
+      transition: all .3s
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: brightness(0.96) contrast(1.05)
+    }
+
+    .directions-link {
+      margin-top: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(249, 180, 43, .06);
+      padding: 10px 20px;
+      border-radius: 40px;
+      font-size: .85rem;
+      font-weight: 500;
+      transition: all .25s
+    }
+
+    .directions-link:hover {
+      background: rgba(249, 180, 43, .18);
+      color: var(--y);
+      gap: 13px
+    }
+
+    .office-hours {
+      background: rgba(255, 255, 255, .02);
+      border-radius: 20px;
+      padding: 20px;
+      margin-top: 28px;
+      border: 1px dashed rgba(249, 180, 43, .2)
+    }
+
+    .office-hours h4 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: var(--y)
+    }
+
+    .office-hours ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px
+    }
+
+    .office-hours li {
+      color: #aaa;
+      font-size: .85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap
+    }
+
+    /* form card */
+    .form-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      padding: 40px 32px;
+      transition: all .35s
+    }
+
+    .form-card:hover {
+      border-color: var(--border-y)
+    }
+
+    .form-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: 8px
+    }
+
+    .form-card p {
+      color: var(--muted);
+      margin-bottom: 28px;
+      font-size: .9rem
+    }
+
+    .input-group {
+      margin-bottom: 20px
+    }
+
+    .input-group input,
+    .input-group textarea {
+      width: 100%;
+      background: rgba(10, 10, 20, .8);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px 18px;
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: .9rem;
+      transition: all .25s
+    }
+
+    .input-group input:focus,
+    .input-group textarea:focus {
+      outline: none;
+      border-color: var(--y);
+      box-shadow: 0 0 0 2px rgba(249, 180, 43, .2)
+    }
+
+    .input-group textarea {
+      resize: vertical;
+      min-height: 100px
+    }
+
+    .submit-btn {
+      background: linear-gradient(135deg, var(--y), var(--y3));
+      border: none;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: .9rem;
+      color: #06060E;
+      cursor: pointer;
+      width: 100%;
+      transition: all .3s;
+      font-family: 'DM Sans', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(249, 180, 43, .3)
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed
+    }
+
+    /* MARQUEE */
+    .marquee-wrap {
+      background: var(--y);
+      padding: 14px 0;
+      overflow: hidden;
+      position: relative;
+      z-index: 2
+    }
+
+    .marquee-inner {
+      display: flex;
+      width: max-content;
+      animation: marquee 30s linear infinite
+    }
+
+    .marquee-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 36px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: .88rem;
+      color: #06060E;
+      white-space: nowrap
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0)
+      }
+
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    /* FOOTER */
+    footer {
+      background: #040408;
+      border-top: 1px solid var(--border);
+      padding: 80px 0 40px;
+      margin-top: 20px
+    }
+
+    .ff-grid {
+      display: grid;
+      grid-template-columns: 2.2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 60px
+    }
+
+    .fb p {
+      color: var(--muted);
+      font-size: .87rem;
+      line-height: 1.8;
+      margin-top: 14px;
+      max-width: 280px
+    }
+
+    .fcol h4 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 18px;
+      font-size: .9rem
+    }
+
+    .fcol ul {
+      list-style: none
+    }
+
+    .fcol ul li {
+      margin-bottom: 11px
+    }
+
+    .fcol ul li a {
+      color: var(--muted);
+      font-size: .87rem;
+      transition: color .2s
+    }
+
+    .fcol ul li a:hover {
+      color: var(--y)
+    }
+
+    .fbot {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px
+    }
+
+    .fbot p {
+      color: #2a2a40;
+      font-size: .8rem
+    }
+
+    .socials {
+      display: flex;
+      gap: 11px
+    }
+
+    .socials a {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #363650;
+      font-size: 13px;
+      transition: all .25s
+    }
+
+    .socials a:hover {
+      border-color: var(--border-y);
+      color: var(--y);
+      transform: translateY(-2px)
+    }
+
+    .rev {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .65s ease, transform .65s ease
+    }
+
+    .rev.vi {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    .divider {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent)
+    }
+
+    @media(max-width:1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 36px
+      }
+
+      .hero-content h1 {
+        font-size: 2.8rem
+      }
+    }
+
+    @media(max-width:880px) {
+      .ni {
+        padding: 0 24px
+      }
+
+      .nl {
+        display: none
+      }
+
+      .burger {
+        display: flex
+      }
+
+      .cont {
+        padding: 0 24px
+      }
+
+      .hero {
+        padding: 110px 0 40px
+      }
+
+      .ff-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px
+      }
+
+      .contact-method {
+        flex-direction: column;
+        align-items: flex-start
+      }
+    }
+
+    @media(max-width:520px) {
+      .hero-content h1 {
+        font-size: 2rem
+      }
+
+      .ff-grid {
+        grid-template-columns: 1fr
+      }
+
+      .info-card,
+      .form-card {
+        padding: 28px 20px
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="orb o1"></div>
-<div class="orb o2"></div>
-<div class="orb o3"></div>
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="orb o3"></div>
 
-<!-- MOBILE MENU -->
-<div class="mob-menu" id="mob">
-  <button class="mob-close" onclick="closeMob()"><i class="fas fa-times"></i></button>
-  <a href="index.html" onclick="closeMob()">Home</a>
-  <a href="index.html#features" onclick="closeMob()">Why RidesLo</a>
-  <a href="index.html#fleet" onclick="closeMob()">Fleet</a>
-  <a href="index.html#how" onclick="closeMob()">How it Works</a>
-  <a href="index.html#download" onclick="closeMob()">Download</a>
-  <a href="contact.html" onclick="closeMob()" style="color:var(--y)">Contact</a>
-  <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="by" style="margin-top:8px;background:var(--y);color:#06060E;padding:12px 24px;border-radius:50px"><i class="fab fa-google-play"></i> Get the App</a>
-</div>
+  <!-- MOBILE MENU -->
+  <div class="mob-menu" id="mob">
+    <button class="mob-close" onclick="closeMob()"><i class="fas fa-times"></i></button>
+    <a href="index.html" onclick="closeMob()">Home</a>
+    <a href="index.html#features" onclick="closeMob()">Why RidesLo</a>
+    <a href="index.html#fleet" onclick="closeMob()">Fleet</a>
+    <a href="index.html#how" onclick="closeMob()">How it Works</a>
+    <a href="index.html#download" onclick="closeMob()">Download</a>
+    <a href="contact.html" onclick="closeMob()" style="color:var(--y)">Contact</a>
+    <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="by"
+      style="margin-top:8px;background:var(--y);color:#06060E;padding:12px 24px;border-radius:50px"><i
+        class="fab fa-google-play"></i> Get App</a>
+  </div>
 
-<!-- NAVIGATION -->
-<nav id="nav">
-  <div class="ni">
-    <a href="index.html" class="logo"><div class="lb"><i class="fas fa-bolt"></i></div>RidesLo</a>
-    <div class="nl">
-      <a href="index.html">Home</a>
-      <a href="index.html#features">Why RidesLo</a>
-      <a href="index.html#fleet">Fleet</a>
-      <a href="index.html#how">How it Works</a>
-      <a href="index.html#download">Download</a>
-      <a href="contact.html" class="active">Contact</a>
+  <!-- NAVIGATION -->
+  <nav id="nav">
+    <div class="ni">
+      <a href="index.html" class="logo">
+        <div class="lb"></div>RidesLo
+      </a>
+      <div class="nl">
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Why RidesLo</a>
+        <a href="index.html#fleet">Fleet</a>
+        <a href="index.html#how">How it Works</a>
+        <a href="index.html#download">Download</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:11px">
+        <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="ncta">Get the
+          App</a>
+        <button class="burger" onclick="openMob()"><i class="fas fa-bars"></i></button>
+      </div>
     </div>
-    <div style="display:flex;align-items:center;gap:11px">
-      <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="ncta">Get the App</a>
-      <button class="burger" onclick="openMob()"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- HERO (Contact) -->
+  <header class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="cont">
+      <div class="hero-content">
+        <span class="ey" style="display:inline-block;margin-bottom:14px;">Connect with us</span>
+        <h1>We're here to <span>help</span> <br>24/7</h1>
+        <p>Have questions about rides, partnerships, or driver onboarding? Reach out to our support team. We respond
+          within hours, not days.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-inner">
+      <div class="marquee-item"><i class="fas fa-phone-alt"></i> Instant Support +91 73000 42588</div>
+      <div class="marquee-item"><i class="fab fa-whatsapp"></i> WhatsApp available 9AM–9PM</div>
+      <div class="marquee-item"><i class="fas fa-map-marker-alt"></i> Jaipur HQ | 50+ cities</div>
+      <div class="marquee-item"><i class="fas fa-headset"></i> 24/7 Ride Assistance</div>
+      <div class="marquee-item"><i class="fas fa-phone-alt"></i> Instant Support +91 73000 42588</div>
+      <div class="marquee-item"><i class="fab fa-whatsapp"></i> WhatsApp available 9AM–9PM</div>
+      <div class="marquee-item"><i class="fas fa-map-marker-alt"></i> Jaipur HQ | 50+ cities</div>
+      <div class="marquee-item"><i class="fas fa-headset"></i> 24/7 Ride Assistance</div>
     </div>
   </div>
-</nav>
 
-<!-- HERO (Contact) -->
-<header class="hero">
-  <div class="hero-bg-grid"></div>
-  <div class="cont">
-    <div class="hero-content">
-      <span class="ey" style="display:inline-block;margin-bottom:14px;">Connect with us</span>
-      <h1>We're here to <span>help</span> <br>24/7</h1>
-      <p>Have questions about rides, partnerships, or driver onboarding? Reach out to our support team. We respond within hours, not days.</p>
-    </div>
-  </div>
-</header>
-
-<!-- MARQUEE -->
-<div class="marquee-wrap">
-  <div class="marquee-inner">
-    <div class="marquee-item"><i class="fas fa-phone-alt"></i> Instant Support +91 73000 42588</div>
-    <div class="marquee-item"><i class="fab fa-whatsapp"></i> WhatsApp available 9AM–9PM</div>
-    <div class="marquee-item"><i class="fas fa-map-marker-alt"></i> Jaipur HQ | 50+ cities</div>
-    <div class="marquee-item"><i class="fas fa-headset"></i> 24/7 Ride Assistance</div>
-    <div class="marquee-item"><i class="fas fa-phone-alt"></i> Instant Support +91 73000 42588</div>
-    <div class="marquee-item"><i class="fab fa-whatsapp"></i> WhatsApp available 9AM–9PM</div>
-    <div class="marquee-item"><i class="fas fa-map-marker-alt"></i> Jaipur HQ | 50+ cities</div>
-    <div class="marquee-item"><i class="fas fa-headset"></i> 24/7 Ride Assistance</div>
-  </div>
-</div>
-
-<!-- MAIN CONTACT SECTION -->
-<section class="contact-section">
-  <div class="cont">
-    <div class="contact-grid">
-      <!-- LEFT COLUMN: CONTACT INFO + MAP -->
-      <div class="info-card rev">
-        <div class="contact-method">
-          <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-          <div class="contact-detail">
-            <h3>Call us</h3>
-            <p>Quick response for ride issues, driver support & business enquiries</p>
-            <div class="contact-buttons">
-              <a href="tel:+917300042588" class="btn-contact"><i class="fas fa-phone"></i> +91 73000 42588</a>
-              <a href="https://wa.me/917300042588?text=Hello%20RidesLo%20support%2C%20I%20need%20assistance" target="_blank" class="btn-contact btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
+  <!-- MAIN CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="cont">
+      <div class="contact-grid">
+        <!-- LEFT COLUMN: CONTACT INFO + MAP -->
+        <div class="info-card rev">
+          <div class="contact-method">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-detail">
+              <h3>Call us</h3>
+              <p>Quick response for ride issues, driver support & business enquiries</p>
+              <div class="contact-buttons">
+                <a href="tel:+917300042588" class="btn-contact"><i class="fas fa-phone"></i> +91 73000 42588</a>
+                <a href="https://wa.me/917300042588?text=Hello%20RidesLo%20support%2C%20I%20need%20assistance"
+                  target="_blank" class="btn-contact btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="contact-method">
-          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-          <div class="contact-detail">
-            <h3>Email support</h3>
-            <p>For official correspondence, partnership & escalation</p>
-            <div class="contact-buttons">
-              <a href="mailto:support@rideslo.in" class="btn-contact"><i class="fas fa-envelope"></i> support@rideslo.in</a>
-              <a href="mailto:partners@rideslo.in" class="btn-contact"><i class="fas fa-handshake"></i> partners@rideslo.in</a>
+          <div class="contact-method">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-detail">
+              <h3>Email support</h3>
+              <p>For official correspondence, partnership & escalation</p>
+              <div class="contact-buttons">
+                <a href="mailto:support@rideslo.in" class="btn-contact"><i class="fas fa-envelope"></i>
+                  support@rideslo.in</a>
+                <a href="mailto:partners@rideslo.in" class="btn-contact"><i class="fas fa-handshake"></i>
+                  partners@rideslo.in</a>
+              </div>
             </div>
+          </div>
+
+          <div class="location-block">
+            <h3><i class="fas fa-building" style="color:var(--y)"></i> Registered Office</h3>
+            <div class="address-detail">
+              <p><i class="fas fa-map-pin"></i> RidesLo Technologies Pvt. Ltd.<br>
+                <i class="fas fa-location-dot"></i> 3rd Floor, Gopalpura Business Hub,<br>
+                &nbsp;&nbsp;Gopalpura Bypass, Jaipur - 302018, Rajasthan, India<br>
+                <i class="fas fa-globe"></i> Latitude: 27.5998891° N, 75.1535335° E
+              </p>
+            </div>
+            <div class="map-container">
+              <iframe src="https://maps.google.com/maps?q=27.5998891,75.1535335&z=17&output=embed" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="RidesLo Jaipur office location map">
+              </iframe>
+            </div>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=27.5998891,75.1535335" target="_blank"
+              class="directions-link" rel="noopener">
+              <i class="fas fa-directions"></i> Get Directions (Google Maps)
+            </a>
+          </div>
+
+          <div class="office-hours">
+            <h4><i class="far fa-clock"></i> Support Hours</h4>
+            <ul>
+              <li><span>📞 Call & WhatsApp:</span><span>Mon–Sat, 9:00 AM – 9:00 PM</span></li>
+              <li><span>🚖 Ride Support:</span><span>24/7 (emergency & live rides)</span></li>
+              <li><span>🏢 Office Visit:</span><span>Mon–Fri, 10:00 AM – 6:00 PM (prior appointment)</span></li>
+            </ul>
           </div>
         </div>
 
-        <div class="location-block">
-          <h3><i class="fas fa-building" style="color:var(--y)"></i> Registered Office</h3>
-          <div class="address-detail">
-            <p><i class="fas fa-map-pin"></i> RidesLo Technologies Pvt. Ltd.<br>
-            <i class="fas fa-location-dot"></i> 3rd Floor, Gopalpura Business Hub,<br>
-            &nbsp;&nbsp;Gopalpura Bypass, Jaipur - 302018, Rajasthan, India<br>
-            <i class="fas fa-globe"></i> Latitude: 27.5998891° N, 75.1535335° E</p>
-          </div>
-          <div class="map-container">
-            <iframe 
-              src="https://maps.google.com/maps?q=27.5998891,75.1535335&z=17&output=embed" 
-              allowfullscreen="" 
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="RidesLo Jaipur office location map">
-            </iframe>
-          </div>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=27.5998891,75.1535335" target="_blank" class="directions-link" rel="noopener">
-            <i class="fas fa-directions"></i> Get Directions (Google Maps)
+        <!-- RIGHT COLUMN: CONTACT FORM (Discord webhook) -->
+        <div class="form-card rev" style="transition-delay:.1s">
+          <h3>Send a message ✨</h3>
+          <p>Our team will get back to you within 24 hours. For urgent ride issues, please call or WhatsApp directly.
+          </p>
+          <form id="contactForm" action="#" method="post">
+            <div class="input-group">
+              <input type="text" id="name" placeholder="Full name *" required>
+            </div>
+            <div class="input-group">
+              <input type="tel" id="phone" placeholder="Phone number * (required)" required>
+            </div>
+            <div class="input-group">
+              <input type="email" id="email" placeholder="Email (optional)">
+            </div>
+            <div class="input-group">
+              <textarea id="message"
+                placeholder="How can we help you? (Ride issue, driver partnership, business, etc.) *"
+                required></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn"><i class="fas fa-paper-plane"></i> Send
+              Message</button>
+            <p style="font-size: 0.7rem; margin-top: 12px; text-align: center; color: #4a4a6a;">We respect your privacy.
+              Your data stays secure.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- FOOTER (consistent with main site) -->
+  <footer>
+    <div class="cont">
+      <div class="ff-grid">
+        <div class="fb">
+          <a href="index.html" class="logo" style="font-size:1.4rem">
+            <div class="lb" style="width:30px;height:30px;font-size:13px"><i class="fas fa-bolt"></i></div>RidesLo
           </a>
+          <p>Faster, cheaper, trusted local rides across 50+ Indian cities. Ride Smart. Ride Fast.</p>
+          <div class="socials" style="margin-top:18px">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
-
-        <div class="office-hours">
-          <h4><i class="far fa-clock"></i> Support Hours</h4>
+        <div class="fcol">
+          <h4>Explore</h4>
           <ul>
-            <li><span>📞 Call & WhatsApp:</span><span>Mon–Sat, 9:00 AM – 9:00 PM</span></li>
-            <li><span>🚖 Ride Support:</span><span>24/7 (emergency & live rides)</span></li>
-            <li><span>🏢 Office Visit:</span><span>Mon–Fri, 10:00 AM – 6:00 PM (prior appointment)</span></li>
+            <li><a href="index.html#features">Why RidesLo</a></li>
+            <li><a href="index.html#fleet">Our Fleet</a></li>
+            <li><a href="index.html#how">How it Works</a></li>
+            <li><a href="#">All Cities</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Driver Agreement</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+917300042588"><i class="fas fa-phone-alt"></i> +91 73000 42588</a></li>
+            <li><a href="https://wa.me/917300042588" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp
+                Support</a></li>
+            <li><a href="mailto:support@rideslo.in">support@rideslo.in</a></li>
+            <li><a href="contact.html">Office Location</a></li>
+            <li><a href="#">Partner with Us</a></li>
           </ul>
         </div>
       </div>
-
-      <!-- RIGHT COLUMN: CONTACT FORM (Discord webhook) -->
-      <div class="form-card rev" style="transition-delay:.1s">
-        <h3>Send a message ✨</h3>
-        <p>Our team will get back to you within 24 hours. For urgent ride issues, please call or WhatsApp directly.</p>
-        <form id="contactForm" action="#" method="post">
-          <div class="input-group">
-            <input type="text" id="name" placeholder="Full name *" required>
-          </div>
-          <div class="input-group">
-            <input type="tel" id="phone" placeholder="Phone number * (required)" required>
-          </div>
-          <div class="input-group">
-            <input type="email" id="email" placeholder="Email (optional)">
-          </div>
-          <div class="input-group">
-            <textarea id="message" placeholder="How can we help you? (Ride issue, driver partnership, business, etc.) *" required></textarea>
-          </div>
-          <button type="submit" class="submit-btn" id="submitBtn"><i class="fas fa-paper-plane"></i> Send Message</button>
-          <p style="font-size: 0.7rem; margin-top: 12px; text-align: center; color: #4a4a6a;">We respect your privacy. Your data stays secure.</p>
-        </form>
+      <div class="fbot">
+        <p>© 2026 RidesLo Technologies Pvt. Ltd. · CIN: U72900RJ2024PTC001234 · 50+ cities and growing.</p>
+        <p style="color:#222">Made in Jaipur, India</p>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<hr class="divider">
+  <script>
+    // NAV SCROLL
+    window.addEventListener('scroll', () => document.getElementById('nav').classList.toggle('s', scrollY > 40));
+    function openMob() { document.getElementById('mob').classList.add('open'); document.body.style.overflow = 'hidden' }
+    function closeMob() { document.getElementById('mob').classList.remove('open'); document.body.style.overflow = '' }
 
-<!-- FOOTER (consistent with main site) -->
-<footer>
-  <div class="cont">
-    <div class="ff-grid">
-      <div class="fb">
-        <a href="index.html" class="logo" style="font-size:1.4rem"><div class="lb" style="width:30px;height:30px;font-size:13px"><i class="fas fa-bolt"></i></div>RidesLo</a>
-        <p>Faster, cheaper, trusted local rides across 50+ Indian cities. Ride Smart. Ride Fast.</p>
-        <div class="socials" style="margin-top:18px">
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-      <div class="fcol">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html#features">Why RidesLo</a></li>
-          <li><a href="index.html#fleet">Our Fleet</a></li>
-          <li><a href="index.html#how">How it Works</a></li>
-          <li><a href="#">All Cities</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-      </div>
-      <div class="fcol">
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Driver Agreement</a></li>
-          <li><a href="#">Cookie Policy</a></li>
-        </ul>
-      </div>
-      <div class="fcol">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+917300042588"><i class="fas fa-phone-alt"></i> +91 73000 42588</a></li>
-          <li><a href="https://wa.me/917300042588" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Support</a></li>
-          <li><a href="mailto:support@rideslo.in">support@rideslo.in</a></li>
-          <li><a href="contact.html">Office Location</a></li>
-          <li><a href="#">Partner with Us</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="fbot">
-      <p>© 2026 RidesLo Technologies Pvt. Ltd. · CIN: U72900RJ2024PTC001234 · 50+ cities and growing.</p>
-      <p style="color:#222">Made in Jaipur, India</p>
-    </div>
-  </div>
-</footer>
+    // SCROLL REVEAL
+    const ro = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('vi'); ro.unobserve(e.target) }
+    }), { threshold: .1 });
+    document.querySelectorAll('.rev').forEach(el => ro.observe(el));
 
-<script>
-  // NAV SCROLL
-  window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>40));
-  function openMob(){document.getElementById('mob').classList.add('open');document.body.style.overflow='hidden'}
-  function closeMob(){document.getElementById('mob').classList.remove('open');document.body.style.overflow=''}
+    // DISCORD WEBHOOK SUBMISSION (phone required, email optional)
+    const webhookURL = "https://discord.com/api/webhooks/1487367265740394628/NrcRRPW6mUfg19s_3DiuFZl0p2U00JOXZzpkvE1D69SDQGkttbR4PgY1sGLoEvvI9x46";
+    const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
 
-  // SCROLL REVEAL
-  const ro=new IntersectionObserver(es=>es.forEach(e=>{
-    if(e.isIntersecting){e.target.classList.add('vi');ro.unobserve(e.target)}
-  }),{threshold:.1});
-  document.querySelectorAll('.rev').forEach(el=>ro.observe(el));
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
 
-  // DISCORD WEBHOOK SUBMISSION (phone required, email optional)
-  const webhookURL = "https://discord.com/api/webhooks/1487367265740394628/NrcRRPW6mUfg19s_3DiuFZl0p2U00JOXZzpkvE1D69SDQGkttbR4PgY1sGLoEvvI9x46";
-  const form = document.getElementById('contactForm');
-  const submitBtn = document.getElementById('submitBtn');
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
 
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
-
-    const name = document.getElementById('name').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    if (!name || !phone || !message) {
-      alert('Please fill in all required fields: Name, Phone number, and Message.');
-      return;
-    }
-
-    // Basic phone validation (Indian numbers)
-    const phoneRegex = /^[6-9]\d{9}$/;
-    if (!phoneRegex.test(phone.replace(/\D/g, ''))) {
-      alert('Please enter a valid 10-digit Indian mobile number.');
-      return;
-    }
-
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Sending...';
-
-    // Build Discord embed
-    const embed = {
-      title: "📬 New Contact Form Submission",
-      color: 0xF9B42B,
-      fields: [
-        { name: "👤 Name", value: name, inline: true },
-        { name: "📞 Phone", value: phone, inline: true },
-        { name: "✉️ Email", value: email || "(not provided)", inline: false },
-        { name: "💬 Message", value: message.substring(0, 1024), inline: false }
-      ],
-      timestamp: new Date().toISOString(),
-      footer: { text: "RidesLo Contact Form" }
-    };
-
-    const payload = { embeds: [embed] };
-
-    try {
-      const response = await fetch(webhookURL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-
-      if (response.ok) {
-        alert(`✅ Thanks ${name}! Your message has been sent to RidesLo support. We'll reach out within 24h. For urgent ride issues, call +91 73000 42588.`);
-        form.reset();
-      } else {
-        console.error('Webhook error:', response.status, await response.text());
-        alert('Message could not be sent. Please try again or contact us directly by phone.');
+      if (!name || !phone || !message) {
+        alert('Please fill in all required fields: Name, Phone number, and Message.');
+        return;
       }
-    } catch (error) {
-      console.error('Fetch error:', error);
-      alert('Network error. Please check your connection or contact us by phone.');
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-    }
-  });
 
-  // floating background grid canvas (subtle effect)
-  const bgCanvas = document.createElement('canvas');
-  bgCanvas.id = 'bgCanvas';
-  bgCanvas.style.position = 'fixed';
-  bgCanvas.style.top = '0';
-  bgCanvas.style.left = '0';
-  bgCanvas.style.width = '100%';
-  bgCanvas.style.height = '100%';
-  bgCanvas.style.pointerEvents = 'none';
-  bgCanvas.style.zIndex = '0';
-  bgCanvas.style.opacity = '0.35';
-  document.body.insertBefore(bgCanvas, document.body.firstChild);
-  let width, height, bgOffset=0, particles=[];
-  function resizeCanvas(){
-    width = window.innerWidth; height = window.innerHeight;
-    bgCanvas.width = width; bgCanvas.height = height;
-  }
-  function drawGrid(){
-    const ctx = bgCanvas.getContext('2d');
-    if(!ctx) return;
-    ctx.clearRect(0,0,width,height);
-    ctx.fillStyle = '#03030A';
-    ctx.fillRect(0,0,width,height);
-    ctx.strokeStyle = 'rgba(100, 100, 130, 0.35)';
-    ctx.lineWidth = 0.5;
-    const step = 62;
-    for(let x = (bgOffset % step) - step; x < width + step; x += step){
-      ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,height); ctx.stroke();
+      // Basic phone validation (Indian numbers)
+      const phoneRegex = /^[6-9]\d{9}$/;
+      if (!phoneRegex.test(phone.replace(/\D/g, ''))) {
+        alert('Please enter a valid 10-digit Indian mobile number.');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Sending...';
+
+      // Build Discord embed
+      const embed = {
+        title: "📬 New Contact Form Submission",
+        color: 0xF9B42B,
+        fields: [
+          { name: "👤 Name", value: name, inline: true },
+          { name: "📞 Phone", value: phone, inline: true },
+          { name: "✉️ Email", value: email || "(not provided)", inline: false },
+          { name: "💬 Message", value: message.substring(0, 1024), inline: false }
+        ],
+        timestamp: new Date().toISOString(),
+        footer: { text: "RidesLo Contact Form" }
+      };
+
+      const payload = { embeds: [embed] };
+
+      try {
+        const response = await fetch(webhookURL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+          alert(`✅ Thanks ${name}! Your message has been sent to RidesLo support. We'll reach out within 24h. For urgent ride issues, call +91 73000 42588.`);
+          form.reset();
+        } else {
+          console.error('Webhook error:', response.status, await response.text());
+          alert('Message could not be sent. Please try again or contact us directly by phone.');
+        }
+      } catch (error) {
+        console.error('Fetch error:', error);
+        alert('Network error. Please check your connection or contact us by phone.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      }
+    });
+
+    // floating background grid canvas (subtle effect)
+    const bgCanvas = document.createElement('canvas');
+    bgCanvas.id = 'bgCanvas';
+    bgCanvas.style.position = 'fixed';
+    bgCanvas.style.top = '0';
+    bgCanvas.style.left = '0';
+    bgCanvas.style.width = '100%';
+    bgCanvas.style.height = '100%';
+    bgCanvas.style.pointerEvents = 'none';
+    bgCanvas.style.zIndex = '0';
+    bgCanvas.style.opacity = '0.35';
+    document.body.insertBefore(bgCanvas, document.body.firstChild);
+    let width, height, bgOffset = 0, particles = [];
+    function resizeCanvas() {
+      width = window.innerWidth; height = window.innerHeight;
+      bgCanvas.width = width; bgCanvas.height = height;
     }
-    for(let y = (bgOffset % step) - step; y < height + step; y += step){
-      ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(width,y); ctx.stroke();
+    function drawGrid() {
+      const ctx = bgCanvas.getContext('2d');
+      if (!ctx) return;
+      ctx.clearRect(0, 0, width, height);
+      ctx.fillStyle = '#03030A';
+      ctx.fillRect(0, 0, width, height);
+      ctx.strokeStyle = 'rgba(100, 100, 130, 0.35)';
+      ctx.lineWidth = 0.5;
+      const step = 62;
+      for (let x = (bgOffset % step) - step; x < width + step; x += step) {
+        ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, height); ctx.stroke();
+      }
+      for (let y = (bgOffset % step) - step; y < height + step; y += step) {
+        ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(width, y); ctx.stroke();
+      }
+      ctx.strokeStyle = 'rgba(249,180,43,.12)';
+      for (let i = -height; i < width + height; i += 110) {
+        ctx.beginPath(); ctx.moveTo(i, 0); ctx.lineTo(i + height, height); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(i, height); ctx.lineTo(i + height, 0); ctx.stroke();
+      }
+      for (let p of particles) {
+        p.x += p.sx; p.y += p.sy;
+        if (p.x < 0) p.x = 1; if (p.x > 1) p.x = 0;
+        if (p.y < 0) p.y = 1; if (p.y > 1) p.y = 0;
+        const xPos = p.x * width, yPos = p.y * height;
+        ctx.fillStyle = `rgba(249, 180, 43, ${p.alpha * 0.45})`;
+        ctx.beginPath(); ctx.arc(xPos, yPos, p.size, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = `rgba(255,200,80,0.12)`;
+        ctx.beginPath(); ctx.arc(xPos, yPos, p.size * 1.5, 0, Math.PI * 2); ctx.fill();
+      }
+      bgOffset = (bgOffset + 0.22) % step;
+      requestAnimationFrame(drawGrid);
     }
-    ctx.strokeStyle = 'rgba(249,180,43,.12)';
-    for(let i = -height; i < width+height; i+= 110){
-      ctx.beginPath(); ctx.moveTo(i,0); ctx.lineTo(i+height,height); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(i,height); ctx.lineTo(i+height,0); ctx.stroke();
+    function initBackground() {
+      resizeCanvas();
+      for (let i = 0; i < 80; i++) {
+        particles.push({
+          x: Math.random(), y: Math.random(),
+          sx: (Math.random() - 0.5) * 0.0006, sy: (Math.random() - 0.5) * 0.0004 + 0.0002,
+          size: 1 + Math.random() * 1.4, alpha: 0.2 + Math.random() * 0.3
+        });
+      }
+      drawGrid();
     }
-    for(let p of particles){
-      p.x += p.sx; p.y += p.sy;
-      if(p.x<0) p.x=1; if(p.x>1) p.x=0;
-      if(p.y<0) p.y=1; if(p.y>1) p.y=0;
-      const xPos = p.x*width, yPos = p.y*height;
-      ctx.fillStyle = `rgba(249, 180, 43, ${p.alpha * 0.45})`;
-      ctx.beginPath(); ctx.arc(xPos, yPos, p.size, 0, Math.PI*2); ctx.fill();
-      ctx.fillStyle = `rgba(255,200,80,0.12)`;
-      ctx.beginPath(); ctx.arc(xPos, yPos, p.size*1.5, 0, Math.PI*2); ctx.fill();
-    }
-    bgOffset = (bgOffset + 0.22) % step;
-    requestAnimationFrame(drawGrid);
-  }
-  function initBackground(){
-    resizeCanvas();
-    for(let i=0;i<80;i++){
-      particles.push({
-        x: Math.random(), y: Math.random(),
-        sx: (Math.random()-0.5)*0.0006, sy: (Math.random()-0.5)*0.0004 + 0.0002,
-        size: 1+Math.random()*1.4, alpha: 0.2+Math.random()*0.3
-      });
-    }
-    drawGrid();
-  }
-  window.addEventListener('resize', ()=>{
-    resizeCanvas();
-    width=window.innerWidth; height=window.innerHeight;
-  });
-  initBackground();
-</script>
+    window.addEventListener('resize', () => {
+      resizeCanvas();
+      width = window.innerWidth; height = window.innerHeight;
+    });
+    initBackground();
+  </script>
 </body>
+
+
 </html>

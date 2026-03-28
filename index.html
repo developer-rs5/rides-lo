@@ -1,555 +1,2831 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
-<title>RidesLo — Ride Smart. Ride Fast. | Affordable Bike, Auto & Cab Rides in 50+ Indian Cities</title>
-<meta name="description" content="RidesLo offers the fastest, most affordable bike taxi, auto rickshaw and cab rides across 50+ Indian cities. Verified drivers, zero surge pricing, under 5-min pickup. Download now & get 30% OFF your first ride.">
-<meta name="keywords" content="ride hailing India, bike taxi, auto rickshaw booking, cab booking, RidesLo, cheap rides India, Jaipur rides, ola uber alternative">
-<meta name="robots" content="index, follow">
-<meta name="author" content="RidesLo Technologies Pvt. Ltd.">
-<meta property="og:title" content="RidesLo — Ride Smart. Ride Fast.">
-<meta property="og:description" content="Fastest pickups. Lowest fares. Verified local drivers across 50+ Indian cities.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://rideslo.in">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="RidesLo — Ride Smart. Ride Fast.">
-<meta name="twitter:description" content="Affordable bike, auto & cab rides across 50+ Indian cities. Get 30% OFF your first ride!">
-<link rel="canonical" href="https://rideslo.in">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<script type="application/ld+json">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <title>RidesLo — Ride Smart. Ride Fast. | Affordable Bike, Auto & Cab Rides in Indian Cities</title>
+  <meta name="description"
+    content="RidesLo offers the fastest, most affordable bike taxi, auto rickshaw and cab rides across Indian cities. Verified drivers, zero surge pricing, under 5-min pickup. Download now & get 30% OFF your first ride.">
+  <meta name="keywords"
+    content="ride hailing India, bike taxi, auto rickshaw booking, cab booking, RidesLo, cheap rides India, Jaipur rides, ola uber alternative">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="RidesLo Technologies Pvt. Ltd.">
+  <meta property="og:title" content="RidesLo — Ride Smart. Ride Fast.">
+  <meta property="og:description" content="Fastest pickups. Lowest fares. Verified local drivers across Indian cities.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rideslo.in">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RidesLo — Ride Smart. Ride Fast.">
+  <meta name="twitter:description"
+    content="Affordable bike, auto & cab rides across Indian cities. Get offers your first ride!">
+  <link rel="canonical" href="https://rideslo.in">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "RidesLo",
   "url": "https://rideslo.in",
-  "description": "Affordable bike taxi, auto rickshaw and cab booking across 50+ Indian cities",
+  "description": "Affordable bike taxi, auto rickshaw and cab booking across Indian cities",
   "foundingDate": "2024",
   "areaServed": "India",
   "sameAs": ["https://twitter.com/rideslo","https://instagram.com/rideslo"]
 }
 </script>
 
-<style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --y:#F9B42B;--y2:#FFD166;--y3:#E69A1A;--y4:#ffeaa0;
-  --bg:#06060E;--bg2:#0A0A14;--bg3:#0E0E1A;
-  --card:#101020;--border:rgba(255,255,255,.07);--border-y:rgba(249,180,43,.3);
-  --text:#F0F0FF;--muted:#7a7a95;--phone-w:320px;
-}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
-a{text-decoration:none;color:inherit}
-::selection{background:rgba(249,180,43,.25);color:#fff}
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
 
-/* ══ NOISE TEXTURE ══ */
-body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5}
+    :root {
+      --y: #F9B42B;
+      --y2: #FFD166;
+      --y3: #E69A1A;
+      --y4: #ffeaa0;
+      --bg: #06060E;
+      --bg2: #0A0A14;
+      --bg3: #0E0E1A;
+      --card: #101020;
+      --border: rgba(255, 255, 255, .07);
+      --border-y: rgba(249, 180, 43, .3);
+      --text: #F0F0FF;
+      --muted: #7a7a95;
+      --phone-w: 320px;
+    }
 
-/* ══ KEYFRAMES ══ */
-@keyframes fadeUp{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes scaleIn{from{opacity:0;transform:scale(.88)}to{opacity:1;transform:scale(1)}}
-@keyframes slideRight{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:translateX(0)}}
-@keyframes slideLeft{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
-@keyframes orbFloat{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(50px,60px) scale(1.12)}}
-@keyframes orbFloat2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-60px,-40px) scale(1.08)}}
-@keyframes orbFloat3{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-50px)}}
-@keyframes pulse{0%,100%{box-shadow:0 0 20px rgba(249,180,43,.4)}50%{box-shadow:0 0 40px rgba(249,180,43,.85)}}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-@keyframes shimmer{from{background-position:-400px 0}to{background-position:400px 0}}
-@keyframes roadMove{from{stroke-dashoffset:400}to{stroke-dashoffset:0}}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@keyframes counterPop{0%{transform:scale(.8);opacity:0}70%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
-@keyframes cardIn{from{opacity:0;transform:translateY(30px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
-@keyframes glowPulse{0%,100%{opacity:.6}50%{opacity:1}}
-@keyframes floatBadge1{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-14px) rotate(2deg)}}
-@keyframes floatBadge2{0%,100%{transform:translateY(0) rotate(1deg)}50%{transform:translateY(12px) rotate(-2deg)}}
-@keyframes floatBadge3{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
-@keyframes ripple{to{transform:scale(3);opacity:0}}
-@keyframes lineGrow{from{width:0}to{width:55%}}
-@keyframes dotPing{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.4);opacity:.5}}
-@keyframes heroGrad{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
-@keyframes textReveal{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0% 0 0)}}
-@keyframes checkmark{0%{stroke-dashoffset:50}100%{stroke-dashoffset:0}}
-@keyframes stepLine{from{scaleX:0}to{scaleX:1}}
+    html {
+      scroll-behavior: smooth
+    }
 
-/* ══ ORBS ══ */
-.orb{position:fixed;border-radius:50%;filter:blur(100px);pointer-events:none;z-index:0}
-.o1{width:700px;height:700px;background:radial-gradient(circle,rgba(249,180,43,.09),transparent 70%);top:-200px;right:-150px;animation:orbFloat 18s ease-in-out infinite}
-.o2{width:500px;height:500px;background:radial-gradient(circle,rgba(230,154,26,.07),transparent 70%);bottom:200px;left:-150px;animation:orbFloat2 14s ease-in-out infinite}
-.o3{width:400px;height:400px;background:radial-gradient(circle,rgba(255,180,50,.05),transparent 70%);top:50%;left:50%;margin:-200px;animation:orbFloat3 20s ease-in-out infinite}
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      line-height: 1.6
+    }
 
-/* ══ NAV ══ */
-nav{position:fixed;top:0;left:0;right:0;z-index:300;padding:22px 0;transition:all .4s cubic-bezier(.4,0,.2,1)}
-nav.s{background:rgba(6,6,14,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);padding:14px 0}
-.ni{max-width:1400px;margin:0 auto;padding:0 48px;display:flex;justify-content:space-between;align-items:center;gap:16px}
-.logo{display:flex;align-items:center;gap:11px;font-family:'Syne',sans-serif;font-weight:800;font-size:1.7rem;color:#fff;letter-spacing:-1.5px}
-.lb{width:38px;height:38px;background:var(--y);border-radius:11px;display:flex;align-items:center;justify-content:center;color:#06060E;font-size:17px;flex-shrink:0;animation:pulse 2.5s ease-in-out infinite;transition:transform .2s}
-.logo:hover .lb{transform:rotate(-8deg) scale(1.1)}
-.nl{display:flex;gap:32px}
-.nl a{color:#999;font-weight:500;font-size:.93rem;transition:color .2s;position:relative}
-.nl a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--y);transition:width .25s}
-.nl a:hover{color:var(--y)}
-.nl a:hover::after{width:100%}
-.ncta{background:var(--y);color:#06060E;padding:11px 24px;border-radius:50px;font-weight:700;font-size:.88rem;transition:all .3s;white-space:nowrap;position:relative;overflow:hidden}
-.ncta::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.2),transparent);opacity:0;transition:opacity .3s}
-.ncta:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(249,180,43,.4)}
-.ncta:hover::before{opacity:1}
-.burger{display:none;background:none;border:1px solid var(--border);color:#999;width:40px;height:40px;border-radius:11px;align-items:center;justify-content:center;cursor:pointer;font-size:16px;flex-shrink:0;transition:all .2s}
-.burger:hover{border-color:var(--border-y);color:var(--y)}
-.mob-menu{display:none;position:fixed;inset:0;background:rgba(6,6,14,.98);z-index:290;flex-direction:column;align-items:center;justify-content:center;gap:36px}
-.mob-menu.open{display:flex}
-.mob-menu a{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:#fff;transition:color .2s}
-.mob-menu a:hover{color:var(--y)}
-.mob-close{position:absolute;top:26px;right:32px;background:none;border:none;color:#666;font-size:26px;cursor:pointer;transition:color .2s}
-.mob-close:hover{color:var(--y)}
+    a {
+      text-decoration: none;
+      color: inherit
+    }
 
-/* ══ HERO ══ */
-.hero{min-height:100vh;display:flex;align-items:center;padding:130px 0 100px;position:relative;overflow:hidden}
-.hero-bg-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(249,180,43,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(249,180,43,.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 40%,transparent 100%);pointer-events:none;z-index:0}
-.cont{max-width:1400px;margin:0 auto;padding:0 48px;position:relative;z-index:1}
-.hg{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    ::selection {
+      background: rgba(249, 180, 43, .25);
+      color: #fff
+    }
 
-/* Hero left */
-.hleft{animation:slideRight .8s .1s both}
-.htag{display:inline-flex;align-items:center;gap:9px;background:rgba(249,180,43,.08);border:1px solid var(--border-y);padding:7px 18px 7px 10px;border-radius:50px;margin-bottom:30px}
-.htd{width:7px;height:7px;background:var(--y);border-radius:50%;animation:dotPing 1.6s infinite}
-.htag span{color:var(--y);font-size:.79rem;font-weight:700;letter-spacing:.5px}
-h1{font-family:'Syne',sans-serif;font-size:4.6rem;line-height:1.08;font-weight:800;letter-spacing:-2.5px;margin-bottom:24px;color:#fff}
-.h1line{display:block;overflow:hidden}
-.h1line span{display:block;animation:fadeUp .6s both}
-.h1line:nth-child(1) span{animation-delay:.2s}
-.h1line:nth-child(2) span{animation-delay:.35s}
-.h1line:nth-child(3) span{animation-delay:.5s}
-h1 em{color:var(--y);font-style:normal;position:relative;display:inline-block}
-h1 em::after{content:'';position:absolute;bottom:-2px;left:0;height:3px;background:linear-gradient(90deg,var(--y),transparent);border-radius:2px;animation:lineGrow .6s .7s both}
-.hsub{font-size:1.07rem;color:var(--muted);line-height:1.8;max-width:480px;margin-bottom:38px;animation:fadeUp .6s .55s both}
-.hbts{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px;animation:fadeUp .6s .65s both}
-.by{background:var(--y);color:#06060E;padding:15px 32px;border-radius:50px;font-weight:700;font-size:.97rem;display:inline-flex;align-items:center;gap:10px;transition:all .3s;border:none;cursor:pointer;position:relative;overflow:hidden}
-.by::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.25),transparent);opacity:0;transition:opacity .3s}
-.by:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(249,180,43,.38)}
-.by:hover::after{opacity:1}
-.bg{background:transparent;color:var(--text);padding:14px 26px;border:1px solid var(--border);border-radius:50px;font-weight:600;display:inline-flex;align-items:center;gap:10px;transition:all .3s;cursor:pointer;font-size:.97rem}
-.bg:hover{border-color:var(--border-y);color:var(--y);transform:translateY(-2px);background:rgba(249,180,43,.04)}
-.hpills{display:flex;gap:20px;flex-wrap:wrap;animation:fadeUp .6s .75s both}
-.pill{display:flex;align-items:center;gap:7px;font-size:.83rem;color:#777}
-.pill i{color:var(--y);font-size:12px}
+    /* ══ NOISE TEXTURE ══ */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: .5
+    }
 
-/* ══ PHONE WRAPPER ══ */
-.pw{display:flex;justify-content:center;align-items:center;position:relative;animation:slideLeft .9s .2s both}
-.pw::before{content:'';position:absolute;width:420px;height:420px;background:radial-gradient(circle,rgba(249,180,43,.12),transparent 65%);border-radius:50%;animation:glowPulse 3.5s ease-in-out infinite;z-index:0;pointer-events:none}
-.pw::after{content:'';position:absolute;width:300px;height:300px;background:radial-gradient(circle,rgba(249,180,43,.06),transparent 70%);border-radius:50%;animation:glowPulse 3.5s 1.5s ease-in-out infinite;z-index:0;pointer-events:none}
+    /* ══ KEYFRAMES ══ */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(36px)
+      }
 
-/* Floating badges */
-.fc{position:absolute;z-index:20;background:rgba(10,10,20,.95);border:1px solid var(--border-y);backdrop-filter:blur(16px);border-radius:18px;padding:11px 15px;font-size:12px;font-weight:600;box-shadow:0 20px 40px rgba(0,0,0,.5),0 0 30px rgba(249,180,43,.06);white-space:nowrap}
-.fc1{top:55px;left:-30px;animation:floatBadge1 4.2s ease-in-out infinite}
-.fc2{bottom:115px;right:-15px;animation:floatBadge2 4.8s ease-in-out infinite}
-.fc3{bottom:38px;left:10px;animation:floatBadge3 3.8s ease-in-out infinite}
-.fc-icon{font-size:15px;margin-bottom:3px}
-.fc-val{color:var(--y);font-weight:700;font-size:13px}
-.fc-sub{color:#555;font-size:10px;margin-top:2px}
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
 
-/* ══ PHONE SHELL ══ */
-.phone{position:relative;z-index:5;width:var(--phone-w);background:linear-gradient(145deg,#2a2a38,#181820);border-radius:56px;padding:3px;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 70px 100px -20px rgba(0,0,0,.95),inset 0 1px 0 rgba(255,255,255,.1)}
-.phone-r{position:absolute;right:-4px;top:110px;width:4px;height:66px;background:linear-gradient(180deg,#2a2a38,#1c1c26);border-radius:0 4px 4px 0}
-.phone-l{position:absolute;left:-4px;top:88px;width:4px;height:36px;background:#2a2a38;border-radius:4px 0 0 4px}
-.phone-l::before,.phone-l::after{content:'';position:absolute;left:0;width:4px;background:#2a2a38;border-radius:4px 0 0 4px}
-.phone-l::before{height:34px;top:48px}
-.phone-l::after{height:34px;top:92px}
-.pi{background:linear-gradient(160deg,#1c1c2a,#0e0e18);border-radius:53px;padding:12px 10px 18px;overflow:hidden}
+    @keyframes fadeIn {
+      from {
+        opacity: 0
+      }
 
-/* Dynamic island */
-.di{width:110px;height:33px;background:#000;border-radius:50px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;gap:7px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.05);transition:all .4s cubic-bezier(.34,1.56,.64,1)}
-.di.ex{width:210px;height:40px}
-.dic{width:8px;height:8px;background:#111;border-radius:50%;border:1px solid #222}
-.dif{width:10px;height:10px;background:#111;border-radius:50%;border:2px solid #222;position:relative}
-.dif::after{content:'';position:absolute;inset:2px;background:#00cfff10;border-radius:50%}
-.dit{font-size:9px;color:#ddd;font-weight:700;display:none}
-.di.ex .dit{display:block}
-.di.ex .dic,.di.ex .dif{display:none}
+      to {
+        opacity: 1
+      }
+    }
 
-/* Screen */
-.scr{padding:0 3px}
-.scr>div{display:none}
-.scr>div.active{display:block}
-.srow{display:flex;justify-content:space-between;align-items:center;font-size:10.5px;color:#ccc;font-weight:600;margin-bottom:14px}
-.sicons{display:flex;gap:5px;align-items:center;font-size:10px}
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(.88)
+      }
 
-/* S0: location */
-.ls{background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:15px;padding:12px 14px;margin-bottom:8px;display:flex;align-items:center;gap:9px;cursor:pointer;transition:all .25s}
-.ls:hover{border-color:var(--border-y);background:rgba(249,180,43,.05)}
-.ls input{background:none;border:none;outline:none;color:#fff;font-size:12px;font-family:'DM Sans',sans-serif;width:100%;font-weight:500;cursor:pointer}
-.ls input::placeholder{color:#40405a}
-.ldiv{display:flex;align-items:center;gap:8px;margin:3px 0 9px;padding-left:5px}
-.ldl{flex:1;height:1px;background:var(--border)}
-.swp{background:rgba(255,255,255,.07);border:1px solid var(--border);color:#666;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .3s;font-size:11px;flex-shrink:0}
-.swp:hover{background:rgba(249,180,43,.12);border-color:var(--border-y);color:var(--y);transform:rotate(180deg)}
-.slbl{font-size:9px;font-weight:700;color:#303050;letter-spacing:2px;text-transform:uppercase;padding:5px 8px 3px;margin-top:5px}
-.si{display:flex;align-items:center;gap:10px;padding:8px 9px;border-radius:13px;cursor:pointer;transition:all .18s}
-.si:hover{background:rgba(255,255,255,.05)}
-.sic{width:31px;height:31px;background:rgba(255,255,255,.06);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
-.sit{font-size:12px;font-weight:600;color:#ddd}
-.sis{font-size:10px;color:#505065;margin-top:1px}
+      to {
+        opacity: 1;
+        transform: scale(1)
+      }
+    }
 
-/* S1: ride picker */
-.mapbox{height:125px;border-radius:18px;overflow:hidden;margin-bottom:11px;position:relative;border:1px solid rgba(255,255,255,.06);background:#080810}
-canvas{display:block;width:100%;height:100%}
-.mo{position:absolute;bottom:7px;left:7px;background:rgba(6,6,14,.8);backdrop-filter:blur(10px);border:1px solid var(--border);border-radius:10px;padding:4px 9px;font-size:9.5px;color:#aaa;display:flex;align-items:center;gap:5px}
-.ld{width:6px;height:6px;background:#4ade80;border-radius:50%;animation:dotPing 1.6s infinite}
-.tr{display:flex;align-items:center;gap:8px;margin-bottom:11px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:14px;padding:9px 11px}
-.tds{display:flex;flex-direction:column;align-items:center;gap:3px;flex-shrink:0}
-.tdp{width:7px;height:7px;background:var(--y);border-radius:50%;box-shadow:0 0 6px rgba(249,180,43,.5)}
-.tdl{width:1px;height:11px;background:rgba(255,255,255,.1)}
-.tdd{width:7px;height:7px;border-radius:50%;border:2px solid #555}
-.tlt{flex:1;min-width:0}
-.tl{font-size:11px;font-weight:600;color:#ddd;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.tl2{font-size:10px;color:#40405a;margin-top:2px}
-.dm{background:rgba(249,180,43,.06);border:1px solid rgba(249,180,43,.13);border-radius:14px;padding:9px 11px;margin-bottom:11px;display:flex;align-items:center;gap:9px}
-.av{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--y),var(--y3));display:flex;align-items:center;justify-content:center;font-size:14px;color:#06060E;flex-shrink:0;box-shadow:0 0 14px rgba(249,180,43,.22)}
-.dn{font-size:12px;font-weight:700;color:#fff}
-.dm2{font-size:10px;color:#505065;margin-top:2px}
-.etc{background:rgba(249,180,43,.1);border:1px solid rgba(249,180,43,.2);color:var(--y);font-size:11px;font-weight:700;padding:4px 9px;border-radius:25px;flex-shrink:0}
-.ob{background:linear-gradient(90deg,rgba(249,180,43,.1),rgba(249,180,43,.04));border:1px solid rgba(249,180,43,.18);border-radius:12px;padding:7px 10px;margin-bottom:11px;display:flex;align-items:center;gap:7px;font-size:11px;color:var(--y);font-weight:700}
-.rtg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:11px}
-.rt{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:14px;padding:9px 5px;text-align:center;cursor:pointer;transition:all .2s}
-.rt:hover{border-color:var(--border-y)}
-.rt.act{background:rgba(249,180,43,.1);border-color:var(--y);box-shadow:0 0 16px rgba(249,180,43,.12)}
-.rti{font-size:16px;margin-bottom:3px}
-.rtn{font-size:11px;font-weight:700;color:#fff}
-.rtp{font-size:11px;color:var(--y);font-weight:700}
-.cb{background:linear-gradient(135deg,var(--y),var(--y3));color:#06060E;width:100%;padding:13px;border-radius:40px;font-weight:800;font-size:13px;border:none;cursor:pointer;transition:all .25s;box-shadow:0 6px 22px rgba(249,180,43,.28);letter-spacing:.3px;font-family:'DM Sans',sans-serif}
-.cb:hover{box-shadow:0 12px 30px rgba(249,180,43,.42);transform:translateY(-1px)}
-.cb:active{transform:scale(.98)}
+    @keyframes slideRight {
+      from {
+        opacity: 0;
+        transform: translateX(-40px)
+      }
 
-/* S2: tracking */
-.th{text-align:center;margin-bottom:11px}
-.tt{font-family:'Syne',sans-serif;font-size:14px;font-weight:800;color:#fff;margin-bottom:2px}
-.ts{font-size:10px;color:#505065}
-.tmap{height:152px;border-radius:18px;overflow:hidden;margin-bottom:11px;position:relative;border:1px solid rgba(255,255,255,.06)}
-.ep{background:rgba(255,255,255,.04);border-radius:13px;padding:11px 13px;margin-bottom:9px}
-.epr{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
-.epl{font-size:10px;color:#666}
-.epv{font-size:13px;font-weight:800;color:var(--y);font-family:'Syne',sans-serif}
-.pb{height:3px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden}
-.pbf{height:100%;background:linear-gradient(90deg,var(--y3),var(--y));border-radius:3px;width:0%;transition:width .4s ease}
-.dd{background:rgba(249,180,43,.05);border:1px solid rgba(249,180,43,.1);border-radius:14px;padding:10px 12px;margin-bottom:9px;display:flex;align-items:center;gap:9px}
-.ddi{flex:1}
-.ddn{font-size:12px;font-weight:700;color:#fff}
-.ddp{font-size:10px;color:#505065;margin-top:2px}
-.dda{display:flex;gap:7px}
-.dab{width:32px;height:32px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:#666;font-size:12px;cursor:pointer;transition:all .2s;background:rgba(255,255,255,.02)}
-.dab:hover{border-color:var(--border-y);color:var(--y)}
-.cnc{background:rgba(255,255,255,.04);border:1px solid var(--border);color:#666;width:100%;padding:10px;border-radius:30px;font-size:11px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
-.cnc:hover{border-color:#ef4444;color:#ef4444}
+      to {
+        opacity: 1;
+        transform: translateX(0)
+      }
+    }
 
-/* S3: arrived */
-.as{text-align:center;padding:12px 6px 6px}
-.cr{width:68px;height:68px;margin:0 auto 13px;border-radius:50%;background:rgba(249,180,43,.08);border:2px solid var(--y);display:flex;align-items:center;justify-content:center;font-size:26px;color:var(--y);animation:scaleIn .5s cubic-bezier(.34,1.56,.64,1);box-shadow:0 0 30px rgba(249,180,43,.2)}
-.at{font-family:'Syne',sans-serif;font-size:17px;font-weight:800;color:#fff;margin-bottom:2px}
-.as2{font-size:10px;color:#555;margin-bottom:14px}
-.fa{font-size:2rem;font-weight:800;color:var(--y);font-family:'Syne',sans-serif;line-height:1}
-.fl{font-size:10px;color:#555;margin-top:3px}
-.dt{display:inline-block;background:rgba(74,222,128,.07);border:1px solid rgba(74,222,128,.15);color:#4ade80;font-size:10px;font-weight:700;padding:3px 9px;border-radius:22px;margin-top:7px}
-.stars{display:flex;justify-content:center;gap:6px;margin-bottom:11px}
-.star{font-size:1.4rem;cursor:pointer;transition:transform .18s}
-.star:hover{transform:scale(1.3)}
-.nb{background:rgba(255,255,255,.05);border:1px solid var(--border);color:#777;width:100%;padding:10px;border-radius:30px;font-size:11px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
-.nb:hover{border-color:var(--border-y);color:var(--y)}
+    @keyframes slideLeft {
+      from {
+        opacity: 0;
+        transform: translateX(40px)
+      }
 
-/* ══ MARQUEE STRIP ══ */
-.marquee-wrap{background:var(--y);padding:14px 0;overflow:hidden;position:relative;z-index:2}
-.marquee-inner{display:flex;width:max-content;animation:marquee 30s linear infinite}
-.marquee-item{display:flex;align-items:center;gap:10px;padding:0 36px;font-family:'Syne',sans-serif;font-weight:700;font-size:.88rem;color:#06060E;white-space:nowrap}
-.marquee-item i{font-size:14px;opacity:.6}
+      to {
+        opacity: 1;
+        transform: translateX(0)
+      }
+    }
 
-/* ══ SECTIONS ══ */
-section{padding:110px 0;position:relative;z-index:1}
-.sec-inner{max-width:1400px;margin:0 auto;padding:0 48px}
-.divider{border:none;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
-.ey{font-size:.7rem;font-weight:700;letter-spacing:3.5px;color:var(--y);text-transform:uppercase;margin-bottom:14px;display:block}
-h2{font-family:'Syne',sans-serif;font-size:3rem;font-weight:800;letter-spacing:-1.8px;line-height:1.12;margin-bottom:16px;color:#fff}
-h2 .ac{color:var(--y)}
-.ss{color:var(--muted);font-size:1.02rem;max-width:540px;line-height:1.8}
-.rev{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
-.rev.vi{opacity:1;transform:translateY(0)}
+    @keyframes orbFloat {
 
-/* ══ FEATURES ══ */
-.feat-header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;margin-bottom:56px}
-.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border);border-radius:28px;overflow:hidden}
-.feat{background:var(--bg);padding:40px 30px;transition:all .35s;position:relative;overflow:hidden;cursor:default}
-.feat::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--y),transparent);transform:scaleX(0);transition:transform .35s}
-.feat::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(249,180,43,.07),transparent 60%);opacity:0;transition:opacity .35s}
-.feat:hover::before{transform:scaleX(1)}
-.feat:hover::after{opacity:1}
-.feat:hover{background:#0c0c18}
-.fn{font-size:.65rem;color:#202030;font-weight:700;letter-spacing:2.5px;margin-bottom:28px}
-.fi{width:52px;height:52px;border-radius:16px;background:rgba(249,180,43,.07);border:1px solid rgba(249,180,43,.1);display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--y);margin-bottom:20px;transition:all .35s}
-.feat:hover .fi{background:rgba(249,180,43,.15);box-shadow:0 0 20px rgba(249,180,43,.15);transform:scale(1.08)}
-.feat h3{font-family:'Syne',sans-serif;font-size:1.08rem;font-weight:700;color:#fff;margin-bottom:10px}
-.feat p{color:var(--muted);font-size:.87rem;line-height:1.7}
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1)
+      }
 
-/* ══ FLEET ══ */
-.fleet-section{background:var(--bg3)}
-.flgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
-.flcard{background:var(--card);border:1px solid var(--border);border-radius:28px;padding:44px 32px;position:relative;overflow:hidden;transition:all .4s cubic-bezier(.4,0,.2,1)}
-.flcard::before{content:'';position:absolute;top:-40%;right:-20%;width:220px;height:220px;background:radial-gradient(circle,rgba(249,180,43,.06),transparent 70%);transition:all .4s}
-.flcard::after{content:'';position:absolute;inset:0;border-radius:28px;border:1px solid transparent;transition:border-color .4s}
-.flcard:hover{transform:translateY(-8px);box-shadow:0 32px 60px rgba(0,0,0,.45)}
-.flcard:hover::before{width:300px;height:300px}
-.flcard:hover::after{border-color:var(--border-y)}
-.flic{font-size:3.4rem;color:var(--y);margin-bottom:28px;display:block;animation:bounce 3s ease-in-out infinite}
-.flcard:nth-child(2) .flic{animation-delay:.5s}
-.flcard:nth-child(3) .flic{animation-delay:1s}
-.flcard h3{font-family:'Syne',sans-serif;font-size:1.35rem;font-weight:800;color:#fff;margin-bottom:9px}
-.flcard p{color:var(--muted);font-size:.88rem;line-height:1.7;margin-bottom:22px}
-.flp{display:inline-flex;align-items:center;gap:7px;background:rgba(249,180,43,.08);border:1px solid rgba(249,180,43,.15);color:var(--y);font-weight:800;font-size:.94rem;padding:8px 17px;border-radius:50px;transition:all .25s}
-.flcard:hover .flp{background:rgba(249,180,43,.15);box-shadow:0 0 20px rgba(249,180,43,.1)}
+      50% {
+        transform: translate(50px, 60px) scale(1.12)
+      }
+    }
 
-/* ══ STEPS ══ */
-.steps-section{overflow:hidden}
-.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:60px;position:relative}
-.sgrid::before{content:'';position:absolute;top:38px;left:calc(16.6% + 20px);right:calc(16.6% + 20px);height:1px;background:linear-gradient(90deg,var(--y),rgba(249,180,43,.3),var(--y));animation:glowPulse 2.5s infinite}
-.sc{text-align:center;padding:0 28px}
-.sn{width:76px;height:76px;border-radius:50%;background:var(--bg);border:1px solid var(--border-y);display:flex;align-items:center;justify-content:center;margin:0 auto 28px;position:relative;z-index:1;transition:all .35s;cursor:default}
-.sc:hover .sn{background:rgba(249,180,43,.08);box-shadow:0 0 24px rgba(249,180,43,.14)}
-.snn{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--y)}
-.sic{font-size:2.2rem;color:var(--y);margin-bottom:18px;display:block}
-.sc h3{font-family:'Syne',sans-serif;font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:10px}
-.sc p{color:var(--muted);font-size:.88rem;line-height:1.7}
+    @keyframes orbFloat2 {
 
-/* ══ STATS ══ */
-.sband{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:80px 0;background:var(--bg2);position:relative;overflow:hidden}
-.sband::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(249,180,43,.04),transparent 65%);pointer-events:none}
-.sggrid{display:grid;grid-template-columns:repeat(4,1fr)}
-.stitem{text-align:center;padding:0 24px;position:relative}
-.stitem+.stitem::before{content:'';position:absolute;left:0;top:10%;bottom:10%;width:1px;background:var(--border)}
-.stn{font-family:'Syne',sans-serif;font-size:3.5rem;font-weight:800;line-height:1;margin-bottom:8px;background:linear-gradient(135deg,var(--y2),var(--y3));-webkit-background-clip:text;background-clip:text;color:transparent}
-.stl{color:var(--muted);font-size:.9rem;font-weight:500}
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1)
+      }
 
-/* ══ TESTIMONIALS ══ */
-.testi-section{background:var(--bg3)}
-.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
-.tcard{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:34px 28px;transition:all .35s;position:relative;overflow:hidden}
-.tcard::before{content:'';position:absolute;top:0;right:0;width:120px;height:120px;background:radial-gradient(circle at top right,rgba(249,180,43,.04),transparent)}
-.tcard:hover{transform:translateY(-5px);border-color:var(--border-y)}
-.tq{font-size:2.5rem;color:rgba(249,180,43,.15);font-family:'Syne',sans-serif;line-height:1;margin-bottom:8px}
-.ttext{color:#bbb;font-size:.88rem;line-height:1.75;margin-bottom:22px}
-.tauth{display:flex;align-items:center;gap:12px}
-.tavt{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--y),var(--y3));display:flex;align-items:center;justify-content:center;font-size:16px;color:#06060E;font-weight:700;flex-shrink:0}
-.tname{font-weight:700;font-size:.88rem;color:#fff}
-.tcity{font-size:.8rem;color:#555;margin-top:1px}
-.tstars{color:var(--y);font-size:.75rem;margin-top:2px}
+      50% {
+        transform: translate(-60px, -40px) scale(1.08)
+      }
+    }
 
-/* ══ OFFER ══ */
-.offer-section{padding:0 0 110px}
-.oi{background:linear-gradient(120deg,rgba(249,180,43,.06),rgba(230,154,26,.02));border:1px solid rgba(249,180,43,.2);border-radius:40px;padding:90px 56px;text-align:center;position:relative;overflow:hidden}
-.oi::before{content:'';position:absolute;top:-60%;left:50%;transform:translateX(-50%);width:700px;height:500px;background:radial-gradient(ellipse,rgba(249,180,43,.08),transparent 65%);pointer-events:none;animation:glowPulse 3s infinite}
-.ocode{display:inline-block;background:var(--y);color:#06060E;font-family:'Syne',sans-serif;font-weight:800;font-size:1.25rem;padding:9px 26px;border-radius:12px;letter-spacing:2.5px;box-shadow:0 0 30px rgba(249,180,43,.35),0 0 60px rgba(249,180,43,.12);margin:28px 0 36px;animation:pulse 2s infinite}
-.countdown{display:flex;gap:16px;justify-content:center;margin-bottom:32px;flex-wrap:wrap}
-.cblock{text-align:center}
-.cnum{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--y);background:rgba(249,180,43,.06);border:1px solid rgba(249,180,43,.15);border-radius:12px;padding:10px 18px;min-width:64px;display:block;margin-bottom:6px}
-.clbl{font-size:.72rem;color:#555;font-weight:600;letter-spacing:1.5px;text-transform:uppercase}
+    @keyframes orbFloat3 {
 
-/* ══ APP DOWNLOAD ══ */
-.agrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:56px}
-.acard{background:var(--card);border:1px solid var(--border);border-radius:28px;padding:46px 38px;display:flex;align-items:center;gap:28px;transition:all .35s;position:relative;overflow:hidden}
-.acard::before{content:'';position:absolute;top:0;right:0;width:250px;height:250px;background:radial-gradient(circle at top right,rgba(249,180,43,.05),transparent)}
-.acard:hover{border-color:var(--border-y);transform:translateY(-5px);box-shadow:0 28px 55px rgba(0,0,0,.38)}
-.aci{width:70px;height:70px;flex-shrink:0;background:rgba(249,180,43,.08);border:1px solid rgba(249,180,43,.12);border-radius:22px;display:flex;align-items:center;justify-content:center;font-size:1.9rem;color:var(--y);transition:all .35s}
-.acard:hover .aci{background:rgba(249,180,43,.15);transform:scale(1.08);box-shadow:0 0 22px rgba(249,180,43,.15)}
-.acb h3{font-family:'Syne',sans-serif;font-size:1.25rem;font-weight:700;color:#fff;margin-bottom:7px}
-.acb p{color:var(--muted);font-size:.88rem;line-height:1.7;margin-bottom:18px}
-.slink{display:inline-flex;align-items:center;gap:9px;background:rgba(249,180,43,.08);border:1px solid rgba(249,180,43,.18);color:var(--y);font-weight:700;font-size:.83rem;padding:10px 18px;border-radius:50px;transition:all .25s}
-.slink:hover{background:var(--y);color:#06060E}
+      0%,
+      100% {
+        transform: translate(0, 0)
+      }
 
-/* ══ FOOTER ══ */
-footer{background:#040408;border-top:1px solid var(--border);padding:80px 0 40px}
-.fgrid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:48px;margin-bottom:60px}
-.fb p{color:var(--muted);font-size:.87rem;line-height:1.8;margin-top:14px;max-width:280px}
-.fcol h4{font-family:'Syne',sans-serif;font-weight:700;color:#fff;margin-bottom:18px;font-size:.9rem}
-.fcol ul{list-style:none}
-.fcol ul li{margin-bottom:11px}
-.fcol ul li a{color:var(--muted);font-size:.87rem;transition:color .2s}
-.fcol ul li a:hover{color:var(--y)}
-.fbot{border-top:1px solid var(--border);padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
-.fbot p{color:#2a2a40;font-size:.8rem}
-.socials{display:flex;gap:11px}
-.socials a{width:36px;height:36px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:#363650;font-size:13px;transition:all .25s}
-.socials a:hover{border-color:var(--border-y);color:var(--y);transform:translateY(-2px)}
+      50% {
+        transform: translate(30px, -50px)
+      }
+    }
 
-/* ══ RESPONSIVE (FIXED MOBILE) ══ */
-@media(max-width:1150px){
-  h1{font-size:3.8rem}
-  h2{font-size:2.5rem}
-  .fgrid{grid-template-columns:repeat(2,1fr)}
-  .flgrid{grid-template-columns:repeat(2,1fr)}
-  .sggrid{grid-template-columns:repeat(2,1fr);gap:40px}
-  .stitem+.stitem::before{display:none}
-}
-@media(max-width:880px){
-  .ni{padding:0 24px}
-  .nl{display:none}
-  .burger{display:flex}
-  .hg{grid-template-columns:1fr;gap:56px;text-align:center}
-  .hsub,.ss{margin:0 auto}
-  .hbts,.hpills{justify-content:center}
-  h1{font-size:3rem;letter-spacing:-1.5px}
-  h2{font-size:2.2rem}
-  .fgrid{grid-template-columns:repeat(2,1fr)}
-  .flgrid{grid-template-columns:1fr}
-  .sgrid{grid-template-columns:1fr;gap:44px}
-  .sgrid::before{display:none}
-  .agrid{grid-template-columns:1fr}
-  .acard{flex-direction:column;text-align:center}
-  .oi{padding:56px 28px}
-  .cont,.sec-inner{padding:0 24px}
-  section{padding:80px 0}
-  .fc,.o1,.o2,.o3{display:none}
-  .pw::before,.pw::after{width:260px;height:260px}
-  .tgrid{grid-template-columns:1fr}
-  .feat-header{flex-direction:column;align-items:flex-start}
-}
-@media(max-width:520px){
-  h1{font-size:2.3rem;letter-spacing:-.8px}
-  h2{font-size:1.85rem}
-  :root{--phone-w:292px}
-  .fgrid{grid-template-columns:1fr}
-  .sggrid{grid-template-columns:1fr}
-  .countdown{gap:10px}
-  .cnum{font-size:1.5rem;padding:8px 14px;min-width:52px}
-}
-</style>
+    @keyframes pulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 20px rgba(249, 180, 43, .4)
+      }
+
+      50% {
+        box-shadow: 0 0 40px rgba(249, 180, 43, .85)
+      }
+    }
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: .25
+      }
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(-8px)
+      }
+    }
+
+    @keyframes shimmer {
+      from {
+        background-position: -400px 0
+      }
+
+      to {
+        background-position: 400px 0
+      }
+    }
+
+    @keyframes roadMove {
+      from {
+        stroke-dashoffset: 400
+      }
+
+      to {
+        stroke-dashoffset: 0
+      }
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0)
+      }
+
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    @keyframes counterPop {
+      0% {
+        transform: scale(.8);
+        opacity: 0
+      }
+
+      70% {
+        transform: scale(1.08)
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1
+      }
+    }
+
+    @keyframes cardIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px) scale(.97)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1)
+      }
+    }
+
+    @keyframes glowPulse {
+
+      0%,
+      100% {
+        opacity: .6
+      }
+
+      50% {
+        opacity: 1
+      }
+    }
+
+    @keyframes floatBadge1 {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(-2deg)
+      }
+
+      50% {
+        transform: translateY(-14px) rotate(2deg)
+      }
+    }
+
+    @keyframes floatBadge2 {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(1deg)
+      }
+
+      50% {
+        transform: translateY(12px) rotate(-2deg)
+      }
+    }
+
+    @keyframes floatBadge3 {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(-9px)
+      }
+    }
+
+    @keyframes ripple {
+      to {
+        transform: scale(3);
+        opacity: 0
+      }
+    }
+
+    @keyframes lineGrow {
+      from {
+        width: 0
+      }
+
+      to {
+        width: 55%
+      }
+    }
+
+    @keyframes dotPing {
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 1
+      }
+
+      50% {
+        transform: scale(1.4);
+        opacity: .5
+      }
+    }
+
+    @keyframes heroGrad {
+      0% {
+        background-position: 0% 50%
+      }
+
+      50% {
+        background-position: 100% 50%
+      }
+
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    @keyframes textReveal {
+      from {
+        clip-path: inset(0 100% 0 0)
+      }
+
+      to {
+        clip-path: inset(0 0% 0 0)
+      }
+    }
+
+    @keyframes checkmark {
+      0% {
+        stroke-dashoffset: 50
+      }
+
+      100% {
+        stroke-dashoffset: 0
+      }
+    }
+
+    @keyframes stepLine {
+      from {
+        scaleX: 0
+      }
+
+      to {
+        scaleX: 1
+      }
+    }
+
+    /* ══ ORBS ══ */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(100px);
+      pointer-events: none;
+      z-index: 0
+    }
+
+    .o1 {
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(249, 180, 43, .09), transparent 70%);
+      top: -200px;
+      right: -150px;
+      animation: orbFloat 18s ease-in-out infinite
+    }
+
+    .o2 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(230, 154, 26, .07), transparent 70%);
+      bottom: 200px;
+      left: -150px;
+      animation: orbFloat2 14s ease-in-out infinite
+    }
+
+    .o3 {
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(255, 180, 50, .05), transparent 70%);
+      top: 50%;
+      left: 50%;
+      margin: -200px;
+      animation: orbFloat3 20s ease-in-out infinite
+    }
+
+    /* ══ NAV ══ */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 300;
+      padding: 22px 0;
+      transition: all .4s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    nav.s {
+      background: rgba(6, 6, 14, .92);
+      backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 0
+    }
+
+    .ni {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.7rem;
+      color: #fff;
+      letter-spacing: -1.5px;
+      
+    }
+
+    .lb {
+      width: 38px;
+      height: 38px;
+      background: var(--y);
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #06060E;
+      font-size: 17px;
+      flex-shrink: 0;
+      animation: pulse 2.5s ease-in-out infinite;
+      transition: transform .2s;
+      background-image: url("./img.jpeg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .logo:hover .lb {
+      transform: rotate(-8deg) scale(1.1)
+    }
+
+    .nl {
+      display: flex;
+      gap: 32px
+    }
+
+    .nl a {
+      color: #999;
+      font-weight: 500;
+      font-size: .93rem;
+      transition: color .2s;
+      position: relative
+    }
+
+    .nl a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 1.5px;
+      background: var(--y);
+      transition: width .25s
+    }
+
+    .nl a:hover {
+      color: var(--y)
+    }
+
+    .nl a:hover::after {
+      width: 100%
+    }
+
+    .ncta {
+      background: var(--y);
+      color: #06060E;
+      padding: 11px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: .88rem;
+      transition: all .3s;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden
+    }
+
+    .ncta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255, 255, 255, .2), transparent);
+      opacity: 0;
+      transition: opacity .3s
+    }
+
+    .ncta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(249, 180, 43, .4)
+    }
+
+    .ncta:hover::before {
+      opacity: 1
+    }
+
+    .burger {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      color: #999;
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      flex-shrink: 0;
+      transition: all .2s
+    }
+
+    .burger:hover {
+      border-color: var(--border-y);
+      color: var(--y)
+    }
+
+    .mob-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(6, 6, 14, .98);
+      z-index: 290;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 36px
+    }
+
+    .mob-menu.open {
+      display: flex
+    }
+
+    .mob-menu a {
+      font-family: 'Syne', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      transition: color .2s
+    }
+
+    .mob-menu a:hover {
+      color: var(--y)
+    }
+
+    .mob-close {
+      position: absolute;
+      top: 26px;
+      right: 32px;
+      background: none;
+      border: none;
+      color: #666;
+      font-size: 26px;
+      cursor: pointer;
+      transition: color .2s
+    }
+
+    .mob-close:hover {
+      color: var(--y)
+    }
+
+    /* ══ HERO ══ */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 130px 0 100px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .hero-bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(249, 180, 43, .04) 1px, transparent 1px), linear-gradient(90deg, rgba(249, 180, 43, .04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+      pointer-events: none;
+      z-index: 0
+    }
+
+    .cont {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 48px;
+      position: relative;
+      z-index: 1
+    }
+
+    .hg {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center
+    }
+
+    /* Hero left */
+    .hleft {
+      animation: slideRight .8s .1s both
+    }
+
+    .htag {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: rgba(249, 180, 43, .08);
+      border: 1px solid var(--border-y);
+      padding: 7px 18px 7px 10px;
+      border-radius: 50px;
+      margin-bottom: 30px
+    }
+
+    .htd {
+      width: 7px;
+      height: 7px;
+      background: var(--y);
+      border-radius: 50%;
+      animation: dotPing 1.6s infinite
+    }
+
+    .htag span {
+      color: var(--y);
+      font-size: .79rem;
+      font-weight: 700;
+      letter-spacing: .5px
+    }
+
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: 4.6rem;
+      line-height: 1.08;
+      font-weight: 800;
+      letter-spacing: -2.5px;
+      margin-bottom: 24px;
+      color: #fff
+    }
+
+    .h1line {
+      display: block;
+      overflow: hidden
+    }
+
+    .h1line span {
+      display: block;
+      animation: fadeUp .6s both
+    }
+
+    .h1line:nth-child(1) span {
+      animation-delay: .2s
+    }
+
+    .h1line:nth-child(2) span {
+      animation-delay: .35s
+    }
+
+    .h1line:nth-child(3) span {
+      animation-delay: .5s
+    }
+
+    h1 em {
+      color: var(--y);
+      font-style: normal;
+      position: relative;
+      display: inline-block
+    }
+
+    h1 em::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--y), transparent);
+      border-radius: 2px;
+      animation: lineGrow .6s .7s both
+    }
+
+    .hsub {
+      font-size: 1.07rem;
+      color: var(--muted);
+      line-height: 1.8;
+      max-width: 480px;
+      margin-bottom: 38px;
+      animation: fadeUp .6s .55s both
+    }
+
+    .hbts {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      animation: fadeUp .6s .65s both
+    }
+
+    .by {
+      background: var(--y);
+      color: #06060E;
+      padding: 15px 32px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: .97rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all .3s;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden
+    }
+
+    .by::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255, 255, 255, .25), transparent);
+      opacity: 0;
+      transition: opacity .3s
+    }
+
+    .by:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(249, 180, 43, .38)
+    }
+
+    .by:hover::after {
+      opacity: 1
+    }
+
+    .bg {
+      background: transparent;
+      color: var(--text);
+      padding: 14px 26px;
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all .3s;
+      cursor: pointer;
+      font-size: .97rem
+    }
+
+    .bg:hover {
+      border-color: var(--border-y);
+      color: var(--y);
+      transform: translateY(-2px);
+      background: rgba(249, 180, 43, .04)
+    }
+
+    .hpills {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      animation: fadeUp .6s .75s both
+    }
+
+    .pill {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: .83rem;
+      color: #777
+    }
+
+    .pill i {
+      color: var(--y);
+      font-size: 12px
+    }
+
+    /* ══ PHONE WRAPPER ══ */
+    .pw {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      animation: slideLeft .9s .2s both
+    }
+
+    .pw::before {
+      content: '';
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(249, 180, 43, .12), transparent 65%);
+      border-radius: 50%;
+      animation: glowPulse 3.5s ease-in-out infinite;
+      z-index: 0;
+      pointer-events: none
+    }
+
+    .pw::after {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(249, 180, 43, .06), transparent 70%);
+      border-radius: 50%;
+      animation: glowPulse 3.5s 1.5s ease-in-out infinite;
+      z-index: 0;
+      pointer-events: none
+    }
+
+    /* Floating badges */
+    .fc {
+      position: absolute;
+      z-index: 20;
+      background: rgba(10, 10, 20, .95);
+      border: 1px solid var(--border-y);
+      backdrop-filter: blur(16px);
+      border-radius: 18px;
+      padding: 11px 15px;
+      font-size: 12px;
+      font-weight: 600;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, .5), 0 0 30px rgba(249, 180, 43, .06);
+      white-space: nowrap
+    }
+
+    .fc1 {
+      top: 55px;
+      left: -30px;
+      animation: floatBadge1 4.2s ease-in-out infinite
+    }
+
+    .fc2 {
+      bottom: 115px;
+      right: -15px;
+      animation: floatBadge2 4.8s ease-in-out infinite
+    }
+
+    .fc3 {
+      bottom: 38px;
+      left: 10px;
+      animation: floatBadge3 3.8s ease-in-out infinite
+    }
+
+    .fc-icon {
+      font-size: 15px;
+      margin-bottom: 3px
+    }
+
+    .fc-val {
+      color: var(--y);
+      font-weight: 700;
+      font-size: 13px
+    }
+
+    .fc-sub {
+      color: #555;
+      font-size: 10px;
+      margin-top: 2px
+    }
+
+    /* ══ PHONE SHELL ══ */
+    .phone {
+      position: relative;
+      z-index: 5;
+      width: var(--phone-w);
+      background: linear-gradient(145deg, #2a2a38, #181820);
+      border-radius: 56px;
+      padding: 3px;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, .08), 0 70px 100px -20px rgba(0, 0, 0, .95), inset 0 1px 0 rgba(255, 255, 255, .1)
+    }
+
+    .phone-r {
+      position: absolute;
+      right: -4px;
+      top: 110px;
+      width: 4px;
+      height: 66px;
+      background: linear-gradient(180deg, #2a2a38, #1c1c26);
+      border-radius: 0 4px 4px 0
+    }
+
+    .phone-l {
+      position: absolute;
+      left: -4px;
+      top: 88px;
+      width: 4px;
+      height: 36px;
+      background: #2a2a38;
+      border-radius: 4px 0 0 4px
+    }
+
+    .phone-l::before,
+    .phone-l::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 4px;
+      background: #2a2a38;
+      border-radius: 4px 0 0 4px
+    }
+
+    .phone-l::before {
+      height: 34px;
+      top: 48px
+    }
+
+    .phone-l::after {
+      height: 34px;
+      top: 92px
+    }
+
+    .pi {
+      background: linear-gradient(160deg, #1c1c2a, #0e0e18);
+      border-radius: 53px;
+      padding: 12px 10px 18px;
+      overflow: hidden
+    }
+
+    /* Dynamic island */
+    .di {
+      width: 110px;
+      height: 33px;
+      background: #000;
+      border-radius: 50px;
+      margin: 0 auto 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05);
+      transition: all .4s cubic-bezier(.34, 1.56, .64, 1)
+    }
+
+    .di.ex {
+      width: 210px;
+      height: 40px
+    }
+
+    .dic {
+      width: 8px;
+      height: 8px;
+      background: #111;
+      border-radius: 50%;
+      border: 1px solid #222
+    }
+
+    .dif {
+      width: 10px;
+      height: 10px;
+      background: #111;
+      border-radius: 50%;
+      border: 2px solid #222;
+      position: relative
+    }
+
+    .dif::after {
+      content: '';
+      position: absolute;
+      inset: 2px;
+      background: #00cfff10;
+      border-radius: 50%
+    }
+
+    .dit {
+      font-size: 9px;
+      color: #ddd;
+      font-weight: 700;
+      display: none
+    }
+
+    .di.ex .dit {
+      display: block
+    }
+
+    .di.ex .dic,
+    .di.ex .dif {
+      display: none
+    }
+
+    /* Screen */
+    .scr {
+      padding: 0 3px
+    }
+
+    .scr>div {
+      display: none
+    }
+
+    .scr>div.active {
+      display: block
+    }
+
+    .srow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10.5px;
+      color: #ccc;
+      font-weight: 600;
+      margin-bottom: 14px
+    }
+
+    .sicons {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      font-size: 10px
+    }
+
+    /* S0: location */
+    .ls {
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 12px 14px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      cursor: pointer;
+      transition: all .25s
+    }
+
+    .ls:hover {
+      border-color: var(--border-y);
+      background: rgba(249, 180, 43, .05)
+    }
+
+    .ls input {
+      background: none;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 12px;
+      font-family: 'DM Sans', sans-serif;
+      width: 100%;
+      font-weight: 500;
+      cursor: pointer
+    }
+
+    .ls input::placeholder {
+      color: #40405a
+    }
+
+    .ldiv {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 3px 0 9px;
+      padding-left: 5px
+    }
+
+    .ldl {
+      flex: 1;
+      height: 1px;
+      background: var(--border)
+    }
+
+    .swp {
+      background: rgba(255, 255, 255, .07);
+      border: 1px solid var(--border);
+      color: #666;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all .3s;
+      font-size: 11px;
+      flex-shrink: 0
+    }
+
+    .swp:hover {
+      background: rgba(249, 180, 43, .12);
+      border-color: var(--border-y);
+      color: var(--y);
+      transform: rotate(180deg)
+    }
+
+    .slbl {
+      font-size: 9px;
+      font-weight: 700;
+      color: #303050;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 8px 3px;
+      margin-top: 5px
+    }
+
+    .si {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 9px;
+      border-radius: 13px;
+      cursor: pointer;
+      transition: all .18s
+    }
+
+    .si:hover {
+      background: rgba(255, 255, 255, .05)
+    }
+
+    .sic {
+      width: 31px;
+      height: 31px;
+      background: rgba(255, 255, 255, .06);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      flex-shrink: 0
+    }
+
+    .sit {
+      font-size: 12px;
+      font-weight: 600;
+      color: #ddd
+    }
+
+    .sis {
+      font-size: 10px;
+      color: #505065;
+      margin-top: 1px
+    }
+
+    /* S1: ride picker */
+    .mapbox {
+      height: 125px;
+      border-radius: 18px;
+      overflow: hidden;
+      margin-bottom: 11px;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, .06);
+      background: #080810
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%
+    }
+
+    .mo {
+      position: absolute;
+      bottom: 7px;
+      left: 7px;
+      background: rgba(6, 6, 14, .8);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 4px 9px;
+      font-size: 9.5px;
+      color: #aaa;
+      display: flex;
+      align-items: center;
+      gap: 5px
+    }
+
+    .ld {
+      width: 6px;
+      height: 6px;
+      background: #4ade80;
+      border-radius: 50%;
+      animation: dotPing 1.6s infinite
+    }
+
+    .tr {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 11px;
+      background: rgba(255, 255, 255, .03);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 9px 11px
+    }
+
+    .tds {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      flex-shrink: 0
+    }
+
+    .tdp {
+      width: 7px;
+      height: 7px;
+      background: var(--y);
+      border-radius: 50%;
+      box-shadow: 0 0 6px rgba(249, 180, 43, .5)
+    }
+
+    .tdl {
+      width: 1px;
+      height: 11px;
+      background: rgba(255, 255, 255, .1)
+    }
+
+    .tdd {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      border: 2px solid #555
+    }
+
+    .tlt {
+      flex: 1;
+      min-width: 0
+    }
+
+    .tl {
+      font-size: 11px;
+      font-weight: 600;
+      color: #ddd;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis
+    }
+
+    .tl2 {
+      font-size: 10px;
+      color: #40405a;
+      margin-top: 2px
+    }
+
+    .dm {
+      background: rgba(249, 180, 43, .06);
+      border: 1px solid rgba(249, 180, 43, .13);
+      border-radius: 14px;
+      padding: 9px 11px;
+      margin-bottom: 11px;
+      display: flex;
+      align-items: center;
+      gap: 9px
+    }
+
+    .av {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--y), var(--y3));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #06060E;
+      flex-shrink: 0;
+      box-shadow: 0 0 14px rgba(249, 180, 43, .22)
+    }
+
+    .dn {
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff
+    }
+
+    .dm2 {
+      font-size: 10px;
+      color: #505065;
+      margin-top: 2px
+    }
+
+    .etc {
+      background: rgba(249, 180, 43, .1);
+      border: 1px solid rgba(249, 180, 43, .2);
+      color: var(--y);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 9px;
+      border-radius: 25px;
+      flex-shrink: 0
+    }
+
+    .ob {
+      background: linear-gradient(90deg, rgba(249, 180, 43, .1), rgba(249, 180, 43, .04));
+      border: 1px solid rgba(249, 180, 43, .18);
+      border-radius: 12px;
+      padding: 7px 10px;
+      margin-bottom: 11px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 11px;
+      color: var(--y);
+      font-weight: 700
+    }
+
+    .rtg {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 11px
+    }
+
+    .rt {
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 9px 5px;
+      text-align: center;
+      cursor: pointer;
+      transition: all .2s
+    }
+
+    .rt:hover {
+      border-color: var(--border-y)
+    }
+
+    .rt.act {
+      background: rgba(249, 180, 43, .1);
+      border-color: var(--y);
+      box-shadow: 0 0 16px rgba(249, 180, 43, .12)
+    }
+
+    .rti {
+      font-size: 16px;
+      margin-bottom: 3px
+    }
+
+    .rtn {
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff
+    }
+
+    .rtp {
+      font-size: 11px;
+      color: var(--y);
+      font-weight: 700
+    }
+
+    .cb {
+      background: linear-gradient(135deg, var(--y), var(--y3));
+      color: #06060E;
+      width: 100%;
+      padding: 13px;
+      border-radius: 40px;
+      font-weight: 800;
+      font-size: 13px;
+      border: none;
+      cursor: pointer;
+      transition: all .25s;
+      box-shadow: 0 6px 22px rgba(249, 180, 43, .28);
+      letter-spacing: .3px;
+      font-family: 'DM Sans', sans-serif
+    }
+
+    .cb:hover {
+      box-shadow: 0 12px 30px rgba(249, 180, 43, .42);
+      transform: translateY(-1px)
+    }
+
+    .cb:active {
+      transform: scale(.98)
+    }
+
+    /* S2: tracking */
+    .th {
+      text-align: center;
+      margin-bottom: 11px
+    }
+
+    .tt {
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 2px
+    }
+
+    .ts {
+      font-size: 10px;
+      color: #505065
+    }
+
+    .tmap {
+      height: 152px;
+      border-radius: 18px;
+      overflow: hidden;
+      margin-bottom: 11px;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, .06)
+    }
+
+    .ep {
+      background: rgba(255, 255, 255, .04);
+      border-radius: 13px;
+      padding: 11px 13px;
+      margin-bottom: 9px
+    }
+
+    .epr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px
+    }
+
+    .epl {
+      font-size: 10px;
+      color: #666
+    }
+
+    .epv {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--y);
+      font-family: 'Syne', sans-serif
+    }
+
+    .pb {
+      height: 3px;
+      background: rgba(255, 255, 255, .07);
+      border-radius: 3px;
+      overflow: hidden
+    }
+
+    .pbf {
+      height: 100%;
+      background: linear-gradient(90deg, var(--y3), var(--y));
+      border-radius: 3px;
+      width: 0%;
+      transition: width .4s ease
+    }
+
+    .dd {
+      background: rgba(249, 180, 43, .05);
+      border: 1px solid rgba(249, 180, 43, .1);
+      border-radius: 14px;
+      padding: 10px 12px;
+      margin-bottom: 9px;
+      display: flex;
+      align-items: center;
+      gap: 9px
+    }
+
+    .ddi {
+      flex: 1
+    }
+
+    .ddn {
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff
+    }
+
+    .ddp {
+      font-size: 10px;
+      color: #505065;
+      margin-top: 2px
+    }
+
+    .dda {
+      display: flex;
+      gap: 7px
+    }
+
+    .dab {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all .2s;
+      background: rgba(255, 255, 255, .02)
+    }
+
+    .dab:hover {
+      border-color: var(--border-y);
+      color: var(--y)
+    }
+
+    .cnc {
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid var(--border);
+      color: #666;
+      width: 100%;
+      padding: 10px;
+      border-radius: 30px;
+      font-size: 11px;
+      cursor: pointer;
+      transition: all .2s;
+      font-family: 'DM Sans', sans-serif
+    }
+
+    .cnc:hover {
+      border-color: #ef4444;
+      color: #ef4444
+    }
+
+    /* S3: arrived */
+    .as {
+      text-align: center;
+      padding: 12px 6px 6px
+    }
+
+    .cr {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 13px;
+      border-radius: 50%;
+      background: rgba(249, 180, 43, .08);
+      border: 2px solid var(--y);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      color: var(--y);
+      animation: scaleIn .5s cubic-bezier(.34, 1.56, .64, 1);
+      box-shadow: 0 0 30px rgba(249, 180, 43, .2)
+    }
+
+    .at {
+      font-family: 'Syne', sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 2px
+    }
+
+    .as2 {
+      font-size: 10px;
+      color: #555;
+      margin-bottom: 14px
+    }
+
+    .fa {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--y);
+      font-family: 'Syne', sans-serif;
+      line-height: 1
+    }
+
+    .fl {
+      font-size: 10px;
+      color: #555;
+      margin-top: 3px
+    }
+
+    .dt {
+      display: inline-block;
+      background: rgba(74, 222, 128, .07);
+      border: 1px solid rgba(74, 222, 128, .15);
+      color: #4ade80;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 22px;
+      margin-top: 7px
+    }
+
+    .stars {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 11px
+    }
+
+    .star {
+      font-size: 1.4rem;
+      cursor: pointer;
+      transition: transform .18s
+    }
+
+    .star:hover {
+      transform: scale(1.3)
+    }
+
+    .nb {
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid var(--border);
+      color: #777;
+      width: 100%;
+      padding: 10px;
+      border-radius: 30px;
+      font-size: 11px;
+      cursor: pointer;
+      transition: all .2s;
+      font-family: 'DM Sans', sans-serif
+    }
+
+    .nb:hover {
+      border-color: var(--border-y);
+      color: var(--y)
+    }
+
+    /* ══ MARQUEE STRIP ══ */
+    .marquee-wrap {
+      background: var(--y);
+      padding: 14px 0;
+      overflow: hidden;
+      position: relative;
+      z-index: 2
+    }
+
+    .marquee-inner {
+      display: flex;
+      width: max-content;
+      animation: marquee 30s linear infinite
+    }
+
+    .marquee-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 36px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: .88rem;
+      color: #06060E;
+      white-space: nowrap
+    }
+
+    .marquee-item i {
+      font-size: 14px;
+      opacity: .6
+    }
+
+    /* ══ SECTIONS ══ */
+    section {
+      padding: 110px 0;
+      position: relative;
+      z-index: 1
+    }
+
+    .sec-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 48px
+    }
+
+    .divider {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent)
+    }
+
+    .ey {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: 3.5px;
+      color: var(--y);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      display: block
+    }
+
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -1.8px;
+      line-height: 1.12;
+      margin-bottom: 16px;
+      color: #fff
+    }
+
+    h2 .ac {
+      color: var(--y)
+    }
+
+    .ss {
+      color: var(--muted);
+      font-size: 1.02rem;
+      max-width: 540px;
+      line-height: 1.8
+    }
+
+    .rev {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .65s ease, transform .65s ease
+    }
+
+    .rev.vi {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    /* ══ FEATURES ══ */
+    .feat-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-bottom: 56px
+    }
+
+    .fgrid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      background: var(--border);
+      border-radius: 28px;
+      overflow: hidden
+    }
+
+    .feat {
+      background: var(--bg);
+      padding: 40px 30px;
+      transition: all .35s;
+      position: relative;
+      overflow: hidden;
+      cursor: default
+    }
+
+    .feat::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--y), transparent);
+      transform: scaleX(0);
+      transition: transform .35s
+    }
+
+    .feat::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 0, rgba(249, 180, 43, .07), transparent 60%);
+      opacity: 0;
+      transition: opacity .35s
+    }
+
+    .feat:hover::before {
+      transform: scaleX(1)
+    }
+
+    .feat:hover::after {
+      opacity: 1
+    }
+
+    .feat:hover {
+      background: #0c0c18
+    }
+
+    .fn {
+      font-size: .65rem;
+      color: #202030;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      margin-bottom: 28px
+    }
+
+    .fi {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: rgba(249, 180, 43, .07);
+      border: 1px solid rgba(249, 180, 43, .1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: var(--y);
+      margin-bottom: 20px;
+      transition: all .35s
+    }
+
+    .feat:hover .fi {
+      background: rgba(249, 180, 43, .15);
+      box-shadow: 0 0 20px rgba(249, 180, 43, .15);
+      transform: scale(1.08)
+    }
+
+    .feat h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px
+    }
+
+    .feat p {
+      color: var(--muted);
+      font-size: .87rem;
+      line-height: 1.7
+    }
+
+    /* ══ FLEET ══ */
+    .fleet-section {
+      background: var(--bg3)
+    }
+
+    .flgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 56px
+    }
+
+    .flcard {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 44px 32px;
+      position: relative;
+      overflow: hidden;
+      transition: all .4s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    .flcard::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -20%;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(249, 180, 43, .06), transparent 70%);
+      transition: all .4s
+    }
+
+    .flcard::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 28px;
+      border: 1px solid transparent;
+      transition: border-color .4s
+    }
+
+    .flcard:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 32px 60px rgba(0, 0, 0, .45)
+    }
+
+    .flcard:hover::before {
+      width: 300px;
+      height: 300px
+    }
+
+    .flcard:hover::after {
+      border-color: var(--border-y)
+    }
+
+    .flic {
+      font-size: 3.4rem;
+      color: var(--y);
+      margin-bottom: 28px;
+      display: block;
+      animation: bounce 3s ease-in-out infinite
+    }
+
+    .flcard:nth-child(2) .flic {
+      animation-delay: .5s
+    }
+
+    .flcard:nth-child(3) .flic {
+      animation-delay: 1s
+    }
+
+    .flcard h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 9px
+    }
+
+    .flcard p {
+      color: var(--muted);
+      font-size: .88rem;
+      line-height: 1.7;
+      margin-bottom: 22px
+    }
+
+    .flp {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(249, 180, 43, .08);
+      border: 1px solid rgba(249, 180, 43, .15);
+      color: var(--y);
+      font-weight: 800;
+      font-size: .94rem;
+      padding: 8px 17px;
+      border-radius: 50px;
+      transition: all .25s
+    }
+
+    .flcard:hover .flp {
+      background: rgba(249, 180, 43, .15);
+      box-shadow: 0 0 20px rgba(249, 180, 43, .1)
+    }
+
+    /* ══ STEPS ══ */
+    .steps-section {
+      overflow: hidden
+    }
+
+    .sgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      margin-top: 60px;
+      position: relative
+    }
+
+    .sgrid::before {
+      content: '';
+      position: absolute;
+      top: 38px;
+      left: calc(16.6% + 20px);
+      right: calc(16.6% + 20px);
+      height: 1px;
+      background: linear-gradient(90deg, var(--y), rgba(249, 180, 43, .3), var(--y));
+      animation: glowPulse 2.5s infinite
+    }
+
+    .sc {
+      text-align: center;
+      padding: 0 28px
+    }
+
+    .sn {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 1px solid var(--border-y);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      position: relative;
+      z-index: 1;
+      transition: all .35s;
+      cursor: default
+    }
+
+    .sc:hover .sn {
+      background: rgba(249, 180, 43, .08);
+      box-shadow: 0 0 24px rgba(249, 180, 43, .14)
+    }
+
+    .snn {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--y)
+    }
+
+    .sic {
+      font-size: 2.2rem;
+      color: var(--y);
+      margin-bottom: 18px;
+      display: block
+    }
+
+    .sc h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px
+    }
+
+    .sc p {
+      color: var(--muted);
+      font-size: .88rem;
+      line-height: 1.7
+    }
+
+    /* ══ STATS ══ */
+    .sband {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 80px 0;
+      background: var(--bg2);
+      position: relative;
+      overflow: hidden
+    }
+
+    .sband::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(249, 180, 43, .04), transparent 65%);
+      pointer-events: none
+    }
+
+    .sggrid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr)
+    }
+
+    .stitem {
+      text-align: center;
+      padding: 0 24px;
+      position: relative
+    }
+
+    .stitem+.stitem::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10%;
+      bottom: 10%;
+      width: 1px;
+      background: var(--border)
+    }
+
+    .stn {
+      font-family: 'Syne', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--y2), var(--y3));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
+
+    .stl {
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 500
+    }
+
+    /* ══ TESTIMONIALS ══ */
+    .testi-section {
+      background: var(--bg3)
+    }
+
+    .tgrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 56px
+    }
+
+    .tcard {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 34px 28px;
+      transition: all .35s;
+      position: relative;
+      overflow: hidden
+    }
+
+    .tcard::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 120px;
+      height: 120px;
+      background: radial-gradient(circle at top right, rgba(249, 180, 43, .04), transparent)
+    }
+
+    .tcard:hover {
+      transform: translateY(-5px);
+      border-color: var(--border-y)
+    }
+
+    .tq {
+      font-size: 2.5rem;
+      color: rgba(249, 180, 43, .15);
+      font-family: 'Syne', sans-serif;
+      line-height: 1;
+      margin-bottom: 8px
+    }
+
+    .ttext {
+      color: #bbb;
+      font-size: .88rem;
+      line-height: 1.75;
+      margin-bottom: 22px
+    }
+
+    .tauth {
+      display: flex;
+      align-items: center;
+      gap: 12px
+    }
+
+    .tavt {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--y), var(--y3));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: #06060E;
+      font-weight: 700;
+      flex-shrink: 0
+    }
+
+    .tname {
+      font-weight: 700;
+      font-size: .88rem;
+      color: #fff
+    }
+
+    .tcity {
+      font-size: .8rem;
+      color: #555;
+      margin-top: 1px
+    }
+
+    .tstars {
+      color: var(--y);
+      font-size: .75rem;
+      margin-top: 2px
+    }
+
+    /* ══ OFFER ══ */
+    .offer-section {
+      padding: 0 0 110px
+    }
+
+    .oi {
+      background: linear-gradient(120deg, rgba(249, 180, 43, .06), rgba(230, 154, 26, .02));
+      border: 1px solid rgba(249, 180, 43, .2);
+      border-radius: 40px;
+      padding: 90px 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden
+    }
+
+    .oi::before {
+      content: '';
+      position: absolute;
+      top: -60%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 500px;
+      background: radial-gradient(ellipse, rgba(249, 180, 43, .08), transparent 65%);
+      pointer-events: none;
+      animation: glowPulse 3s infinite
+    }
+
+    .ocode {
+      display: inline-block;
+      background: var(--y);
+      color: #06060E;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.25rem;
+      padding: 9px 26px;
+      border-radius: 12px;
+      letter-spacing: 2.5px;
+      box-shadow: 0 0 30px rgba(249, 180, 43, .35), 0 0 60px rgba(249, 180, 43, .12);
+      margin: 28px 0 36px;
+      animation: pulse 2s infinite
+    }
+
+    .countdown {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 32px;
+      flex-wrap: wrap
+    }
+
+    .cblock {
+      text-align: center
+    }
+
+    .cnum {
+      font-family: 'Syne', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--y);
+      background: rgba(249, 180, 43, .06);
+      border: 1px solid rgba(249, 180, 43, .15);
+      border-radius: 12px;
+      padding: 10px 18px;
+      min-width: 64px;
+      display: block;
+      margin-bottom: 6px
+    }
+
+    .clbl {
+      font-size: .72rem;
+      color: #555;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase
+    }
+
+    /* ══ APP DOWNLOAD ══ */
+    .agrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      margin-top: 56px
+    }
+
+    .acard {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 46px 38px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      transition: all .35s;
+      position: relative;
+      overflow: hidden
+    }
+
+    .acard::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle at top right, rgba(249, 180, 43, .05), transparent)
+    }
+
+    .acard:hover {
+      border-color: var(--border-y);
+      transform: translateY(-5px);
+      box-shadow: 0 28px 55px rgba(0, 0, 0, .38)
+    }
+
+    .aci {
+      width: 70px;
+      height: 70px;
+      flex-shrink: 0;
+      background: rgba(249, 180, 43, .08);
+      border: 1px solid rgba(249, 180, 43, .12);
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9rem;
+      color: var(--y);
+      transition: all .35s
+    }
+
+    .acard:hover .aci {
+      background: rgba(249, 180, 43, .15);
+      transform: scale(1.08);
+      box-shadow: 0 0 22px rgba(249, 180, 43, .15)
+    }
+
+    .acb h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 7px
+    }
+
+    .acb p {
+      color: var(--muted);
+      font-size: .88rem;
+      line-height: 1.7;
+      margin-bottom: 18px
+    }
+
+    .slink {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: rgba(249, 180, 43, .08);
+      border: 1px solid rgba(249, 180, 43, .18);
+      color: var(--y);
+      font-weight: 700;
+      font-size: .83rem;
+      padding: 10px 18px;
+      border-radius: 50px;
+      transition: all .25s
+    }
+
+    .slink:hover {
+      background: var(--y);
+      color: #06060E
+    }
+
+    /* ══ FOOTER ══ */
+    footer {
+      background: #040408;
+      border-top: 1px solid var(--border);
+      padding: 80px 0 40px
+    }
+
+    .fgrid {
+      display: grid;
+      grid-template-columns: 2.2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 60px
+    }
+
+    .fb p {
+      color: var(--muted);
+      font-size: .87rem;
+      line-height: 1.8;
+      margin-top: 14px;
+      max-width: 280px
+    }
+
+    .fcol h4 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 18px;
+      font-size: .9rem
+    }
+
+    .fcol ul {
+      list-style: none
+    }
+
+    .fcol ul li {
+      margin-bottom: 11px
+    }
+
+    .fcol ul li a {
+      color: var(--muted);
+      font-size: .87rem;
+      transition: color .2s
+    }
+
+    .fcol ul li a:hover {
+      color: var(--y)
+    }
+
+    .fbot {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px
+    }
+
+    .fbot p {
+      color: #2a2a40;
+      font-size: .8rem
+    }
+
+    .socials {
+      display: flex;
+      gap: 11px
+    }
+
+    .socials a {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #363650;
+      font-size: 13px;
+      transition: all .25s
+    }
+
+    .socials a:hover {
+      border-color: var(--border-y);
+      color: var(--y);
+      transform: translateY(-2px)
+    }
+
+    /* ══ RESPONSIVE (FIXED MOBILE) ══ */
+    @media(max-width:1150px) {
+      h1 {
+        font-size: 3.8rem
+      }
+
+      h2 {
+        font-size: 2.5rem
+      }
+
+      .fgrid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .flgrid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .sggrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px
+      }
+
+      .stitem+.stitem::before {
+        display: none
+      }
+    }
+
+    @media(max-width:880px) {
+      .ni {
+        padding: 0 24px
+      }
+
+      .nl {
+        display: none
+      }
+
+      .burger {
+        display: flex
+      }
+
+      .hg {
+        grid-template-columns: 1fr;
+        gap: 56px;
+        text-align: center
+      }
+
+      .hsub,
+      .ss {
+        margin: 0 auto
+      }
+
+      .hbts,
+      .hpills {
+        justify-content: center
+      }
+
+      h1 {
+        font-size: 3rem;
+        letter-spacing: -1.5px
+      }
+
+      h2 {
+        font-size: 2.2rem
+      }
+
+      .fgrid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .flgrid {
+        grid-template-columns: 1fr
+      }
+
+      .sgrid {
+        grid-template-columns: 1fr;
+        gap: 44px
+      }
+
+      .sgrid::before {
+        display: none
+      }
+
+      .agrid {
+        grid-template-columns: 1fr
+      }
+
+      .acard {
+        flex-direction: column;
+        text-align: center
+      }
+
+      .oi {
+        padding: 56px 28px
+      }
+
+      .cont,
+      .sec-inner {
+        padding: 0 24px
+      }
+
+      section {
+        padding: 80px 0
+      }
+
+      .fc,
+      .o1,
+      .o2,
+      .o3 {
+        display: none
+      }
+
+      .pw::before,
+      .pw::after {
+        width: 260px;
+        height: 260px
+      }
+
+      .tgrid {
+        grid-template-columns: 1fr
+      }
+
+      .feat-header {
+        flex-direction: column;
+        align-items: flex-start
+      }
+    }
+
+    @media(max-width:520px) {
+      h1 {
+        font-size: 2.3rem;
+        letter-spacing: -.8px
+      }
+
+      h2 {
+        font-size: 1.85rem
+      }
+
+      :root {
+        --phone-w: 292px
+      }
+
+      .fgrid {
+        grid-template-columns: 1fr
+      }
+
+      .sggrid {
+        grid-template-columns: 1fr
+      }
+
+      .countdown {
+        gap: 10px
+      }
+
+      .cnum {
+        font-size: 1.5rem;
+        padding: 8px 14px;
+        min-width: 52px
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="orb o1"></div>
-<div class="orb o2"></div>
-<div class="orb o3"></div>
+  <div class="orb o1"></div>
+  <div class="orb o2"></div>
+  <div class="orb o3"></div>
 
-<!-- MOBILE MENU -->
-<div class="mob-menu" id="mob" role="dialog" aria-label="Mobile navigation">
-  <button class="mob-close" onclick="closeMob()" aria-label="Close menu"><i class="fas fa-times"></i></button>
-  <a href="#features" onclick="closeMob()">Why RidesLo</a>
-  <a href="#fleet" onclick="closeMob()">Fleet</a>
-  <a href="#how" onclick="closeMob()">How it Works</a>
-  <a href="#download" onclick="closeMob()">Download</a>
-  <a href="contact.html" onclick="closeMob()">Contact</a>
-  <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="by" style="margin-top:8px;font-size:.95rem"><i class="fab fa-google-play"></i> Get the App</a>
-</div>
-
-<!-- NAV -->
-<nav id="nav" role="navigation" aria-label="Main navigation">
-  <div class="ni">
-    <a href="/" class="logo" aria-label="RidesLo home"><div class="lb"><i class="fas fa-bolt" aria-hidden="true"></i></div>RidesLo</a>
-    <div class="nl">
-      <a href="#features">Why RidesLo</a>
-      <a href="#fleet">Fleet</a>
-      <a href="#how">How it Works</a>
-      <a href="#download">Download</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div style="display:flex;align-items:center;gap:11px">
-      <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="ncta">Get the App</a>
-      <button class="burger" onclick="openMob()" aria-label="Open menu"><i class="fas fa-bars"></i></button>
-    </div>
+  <!-- MOBILE MENU -->
+  <div class="mob-menu" id="mob" role="dialog" aria-label="Mobile navigation">
+    <button class="mob-close" onclick="closeMob()" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    <a href="#features" onclick="closeMob()">Why RidesLo</a>
+    <a href="#fleet" onclick="closeMob()">Fleet</a>
+    <a href="#how" onclick="closeMob()">How it Works</a>
+    <a href="#download" onclick="closeMob()">Download</a>
+    <a href="contact.html" onclick="closeMob()">Contact</a>
+    <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="by"
+      style="margin-top:8px;font-size:.95rem"><i class="fab fa-google-play"></i> Get App</a>
   </div>
-</nav>
 
-<!-- HERO -->
-<header class="hero" role="banner">
-  <div class="hero-bg-grid" aria-hidden="true"></div>
-  <div class="cont">
-    <div class="hg">
-      <div class="hleft">
-        <div class="htag" aria-label="Limited time offer"><div class="htd" aria-hidden="true"></div><span>Regular Offer</span></div>
-        <h1>
-          <span class="h1line"><span>Ride Smart,</span></span>
-          <span class="h1line"><span><em>Ride Fast.</em></span></span>
-          <span class="h1line"><span>Ride Free.</span></span>
-        </h1>
-        <p class="hsub">Faster pickups. Lowest fares. Trusted local drivers across 50+ Indian cities — all right at your fingertips, any time of day.</p>
-        <div class="hbts">
-          <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="by"><i class="fab fa-google-play" aria-hidden="true"></i> Download Rider App</a>
-          <a href="https://play.google.com/store/apps/details?id=com.rideslo.driver" target="_blank" class="bg"><i class="fas fa-motorcycle" aria-hidden="true"></i> Become a Driver</a>
-        </div>
-        <div class="hpills">
-          <div class="pill"><i class="fas fa-check-circle" aria-hidden="true"></i> No surge pricing</div>
-          <div class="pill"><i class="fas fa-clock" aria-hidden="true"></i> Under 5 min pickup</div>
-          <div class="pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> Verified drivers</div>
-          <div class="pill"><i class="fas fa-rupee-sign" aria-hidden="true"></i> Fares from ₹19</div>
-        </div>
+  <!-- NAV -->
+  <nav id="nav" role="navigation" aria-label="Main navigation"> 
+    <div class="ni">
+      <a href="/" class="logo" aria-label="RidesLo home">
+        <div class="lb"></div>RidesLo
+      </a>
+      <div class="nl">
+        <a href="#features">Why RidesLo</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#how">How it Works</a>
+        <a href="#download">Download</a>
+        <a href="contact.html">Contact</a>
       </div>
-      <div class="pw" aria-label="App preview" role="img">
-        <div class="fc fc1" aria-hidden="true"><div class="fc-icon"><i class="fas fa-bolt" style="color:var(--y)"></i></div><div class="fc-val">2 min away</div><div class="fc-sub">Rahul S. ★ 4.9</div></div>
-        <div class="fc fc2" aria-hidden="true"><div class="fc-icon"><i class="fas fa-tag" style="color:#4ade80"></i></div><div class="fc-val" style="color:#4ade80">30% OFF</div><div class="fc-sub">Code FIRST30</div></div>
-        <div class="fc fc3" aria-hidden="true" style="font-size:11px;font-weight:700;color:#888"><i class="fas fa-users" style="color:var(--y)"></i> 150+ drivers near you</div>
-        <div class="phone">
-          <div class="phone-r" aria-hidden="true"></div>
-          <div class="phone-l" aria-hidden="true"></div>
-          <div class="pi">
-            <div class="di" id="di" aria-hidden="true"><div class="dic"></div><div class="dif"></div><div class="dit" id="diT"></div></div>
-            <div class="scr" aria-hidden="true">
-              <!-- S0 -->
-              <div id="s0" class="active">
-                <div class="srow"><span style="font-weight:700">9:41</span><div class="sicons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-full" style="color:var(--y)"></i></div></div>
-                <div style="font-family:'Syne',sans-serif;font-size:15px;font-weight:800;color:#fff;margin-bottom:14px;text-align:center">Where to? <span style="color:var(--y)">✦</span></div>
-                <div class="ls"><i class="fas fa-circle" style="color:var(--y);font-size:8px;flex-shrink:0"></i><input id="inp0" type="text" placeholder="Your pickup location…" readonly></div>
-                <div class="ldiv"><div class="ldl"></div><div class="swp" id="swp"><i class="fas fa-arrows-alt-v"></i></div><div class="ldl"></div></div>
-                <div class="ls"><i class="fas fa-map-marker-alt" style="color:#444;font-size:12px;flex-shrink:0"></i><input id="inp1" type="text" placeholder="Enter destination…" readonly></div>
-                <div class="slbl">POPULAR IN JAIPUR</div>
-                <div id="sugList"></div>
+      <div style="display:flex;align-items:center;gap:11px">
+        <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="ncta">Get the
+          App</a>
+        <button class="burger" onclick="openMob()" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="cont">
+      <div class="hg">
+        <div class="hleft">
+          <div class="htag" aria-label="Limited time offer">
+            <div class="htd" aria-hidden="true"></div><span>Regular Offer</span>
+          </div>
+          <h1>
+            <span class="h1line"><span>Ride Smart,</span></span>
+            <span class="h1line"><span><em>Ride Fast.</em></span></span>
+            <span class="h1line"><span>Ride Free.</span></span>
+          </h1>
+          <p class="hsub">Faster pickups. Lowest fares. Trusted local drivers across many Indian cities — all right at
+            your fingertips, any time of day.</p>
+          <div class="hbts">
+            <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="by"><i
+                class="fab fa-google-play" aria-hidden="true"></i> Download Rider App</a>
+            <a href="https://play.google.com/store/apps/details?id=com.rideslo.driver" target="_blank" class="bg"><i
+                class="fas fa-motorcycle" aria-hidden="true"></i> Become a Driver</a>
+          </div>
+          <div class="hpills">
+            <div class="pill"><i class="fas fa-check-circle" aria-hidden="true"></i> No surge pricing</div>
+            <div class="pill"><i class="fas fa-clock" aria-hidden="true"></i> Under 5 min pickup</div>
+            <div class="pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> Verified drivers</div>
+            <div class="pill"><i class="fas fa-rupee-sign" aria-hidden="true"></i> Fares from ₹19</div>
+          </div>
+        </div>
+        <div class="pw" aria-label="App preview" role="img">
+          <div class="fc fc1" aria-hidden="true">
+            <div class="fc-icon"><i class="fas fa-bolt" style="color:var(--y)"></i></div>
+            <div class="fc-val">2 min away</div>
+            <div class="fc-sub">Rahul S. ★ 4.9</div>
+          </div>
+          <div class="fc fc2" aria-hidden="true">
+            <div class="fc-icon"><i class="fas fa-tag" style="color:#4ade80"></i></div>
+            <div class="fc-val" style="color:#4ade80">30% OFF</div>
+            <div class="fc-sub">Code FIRST30</div>
+          </div>
+          <div class="fc fc3" aria-hidden="true" style="font-size:11px;font-weight:700;color:#888"><i
+              class="fas fa-users" style="color:var(--y)"></i> 150+ drivers near you</div>
+          <div class="phone">
+            <div class="phone-r" aria-hidden="true"></div>
+            <div class="phone-l" aria-hidden="true"></div>
+            <div class="pi">
+              <div class="di" id="di" aria-hidden="true">
+                <div class="dic"></div>
+                <div class="dif"></div>
+                <div class="dit" id="diT"></div>
               </div>
-              <!-- S1 -->
-              <div id="s1">
-                <div class="srow"><span style="font-weight:700">9:41</span><div class="sicons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-full" style="color:var(--y)"></i></div></div>
-                <div class="mapbox"><canvas id="mc1"></canvas><div class="mo"><div class="ld"></div><span>150+ drivers nearby</span></div></div>
-                <div class="tr">
-                  <div class="tds"><div class="tdp"></div><div class="tdl"></div><div class="tdd"></div></div>
-                  <div class="tlt" style="margin-left:9px"><div class="tl" id="tFrom">—</div><div class="tl2">to destination</div><div class="tl" id="tTo">—</div></div>
-                  <button style="background:none;border:none;color:#404060;font-size:10px;cursor:pointer;flex-shrink:0" onclick="showS(0)">Edit</button>
-                </div>
-                <div class="dm">
-                  <div class="av"><i class="fas fa-motorcycle"></i></div>
-                  <div style="flex:1"><div class="dn">Rahul S. ⭐ 4.9</div><div class="dm2">KA-03-1234 · Heading to you</div></div>
-                  <div class="etc"><i class="fas fa-bolt"></i> 3 min</div>
-                </div>
-                <div class="ob"><i class="fas fa-tag"></i> FIRST30 applied · 30% OFF your fare</div>
-                <div class="rtg" id="rtg"></div>
-                <button class="cb" id="cb">⚡ CONFIRM AUTO · ₹59*</button>
-              </div>
-              <!-- S2 -->
-              <div id="s2">
-                <div class="srow"><span style="font-weight:700">9:41</span><div class="sicons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-full" style="color:var(--y)"></i></div></div>
-                <div class="th"><div class="tt" id="tTitle">Driver on the way</div><div class="ts" id="tSub">Rahul is heading to your pickup</div></div>
-                <div class="tmap"><canvas id="mc2"></canvas></div>
-                <div class="ep"><div class="epr"><span class="epl">ETA</span><span class="epv" id="etaV">3 min</span></div><div class="pb"><div class="pbf" id="pbf"></div></div></div>
-                <div class="dd">
-                  <div class="av" style="width:32px;height:32px;font-size:13px"><i class="fas fa-motorcycle"></i></div>
-                  <div class="ddi"><div class="ddn">Rahul S.</div><div class="ddp">KA-03-1234 · ⭐ 4.9</div></div>
-                  <div class="dda"><div class="dab"><i class="fas fa-phone"></i></div><div class="dab"><i class="fas fa-comment"></i></div></div>
-                </div>
-                <button class="cnc" onclick="cancelRide()"><i class="fas fa-times-circle"></i> Cancel Ride</button>
-              </div>
-              <!-- S3 -->
-              <div id="s3">
-                <div class="srow"><span style="font-weight:700">9:41</span><div class="sicons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i class="fas fa-battery-full" style="color:var(--y)"></i></div></div>
-                <div class="as">
-                  <div class="cr"><i class="fas fa-check"></i></div>
-                  <div class="at">Ride Complete!</div>
-                  <div class="as2">Hope you enjoyed the ride ✨</div>
-                  <div style="background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:17px;padding:14px;margin-bottom:11px">
-                    <div id="fareAmt" style="font-size:2rem;font-weight:800;color:var(--y);font-family:'Syne',sans-serif;line-height:1">₹59</div>
-                    <div id="fareLabel" style="font-size:10px;color:#505065;margin-top:3px">Auto · Rahul S.</div>
-                    <div class="dt"><i class="fas fa-check-circle"></i> 30% discount applied</div>
+              <div class="scr" aria-hidden="true">
+                <!-- S0 -->
+                <div id="s0" class="active">
+                  <div class="srow"><span style="font-weight:700">9:41</span>
+                    <div class="sicons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i
+                        class="fas fa-battery-full" style="color:var(--y)"></i></div>
                   </div>
-                  <div class="stars" id="stars"></div>
-                  <button class="nb" onclick="resetPhone()">← Book another ride</button>
+                  <div
+                    style="font-family:'Syne',sans-serif;font-size:15px;font-weight:800;color:#fff;margin-bottom:14px;text-align:center">
+                    Where to? <span style="color:var(--y)">✦</span></div>
+                  <div class="ls"><i class="fas fa-circle" style="color:var(--y);font-size:8px;flex-shrink:0"></i><input
+                      id="inp0" type="text" placeholder="Your pickup location…" readonly></div>
+                  <div class="ldiv">
+                    <div class="ldl"></div>
+                    <div class="swp" id="swp"><i class="fas fa-arrows-alt-v"></i></div>
+                    <div class="ldl"></div>
+                  </div>
+                  <div class="ls"><i class="fas fa-map-marker-alt"
+                      style="color:#444;font-size:12px;flex-shrink:0"></i><input id="inp1" type="text"
+                      placeholder="Enter destination…" readonly></div>
+                  <div class="slbl">POPULAR IN JAIPUR</div>
+                  <div id="sugList"></div>
+                </div>
+                <!-- S1 -->
+                <div id="s1">
+                  <div class="srow"><span style="font-weight:700">9:41</span>
+                    <div class="sicons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i
+                        class="fas fa-battery-full" style="color:var(--y)"></i></div>
+                  </div>
+                  <div class="mapbox"><canvas id="mc1"></canvas>
+                    <div class="mo">
+                      <div class="ld"></div><span>150+ drivers nearby</span>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="tds">
+                      <div class="tdp"></div>
+                      <div class="tdl"></div>
+                      <div class="tdd"></div>
+                    </div>
+                    <div class="tlt" style="margin-left:9px">
+                      <div class="tl" id="tFrom">—</div>
+                      <div class="tl2">to destination</div>
+                      <div class="tl" id="tTo">—</div>
+                    </div>
+                    <button
+                      style="background:none;border:none;color:#404060;font-size:10px;cursor:pointer;flex-shrink:0"
+                      onclick="showS(0)">Edit</button>
+                  </div>
+                  <div class="dm">
+                    <div class="av"><i class="fas fa-motorcycle"></i></div>
+                    <div style="flex:1">
+                      <div class="dn">Rahul S. ⭐ 4.9</div>
+                      <div class="dm2">KA-03-1234 · Heading to you</div>
+                    </div>
+                    <div class="etc"><i class="fas fa-bolt"></i> 3 min</div>
+                  </div>
+                  <div class="ob"><i class="fas fa-tag"></i> FIRST30 applied · 30% OFF your fare</div>
+                  <div class="rtg" id="rtg"></div>
+                  <button class="cb" id="cb">⚡ CONFIRM AUTO · ₹59*</button>
+                </div>
+                <!-- S2 -->
+                <div id="s2">
+                  <div class="srow"><span style="font-weight:700">9:41</span>
+                    <div class="sicons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i
+                        class="fas fa-battery-full" style="color:var(--y)"></i></div>
+                  </div>
+                  <div class="th">
+                    <div class="tt" id="tTitle">Driver on the way</div>
+                    <div class="ts" id="tSub">Rahul is heading to your pickup</div>
+                  </div>
+                  <div class="tmap"><canvas id="mc2"></canvas></div>
+                  <div class="ep">
+                    <div class="epr"><span class="epl">ETA</span><span class="epv" id="etaV">3 min</span></div>
+                    <div class="pb">
+                      <div class="pbf" id="pbf"></div>
+                    </div>
+                  </div>
+                  <div class="dd">
+                    <div class="av" style="width:32px;height:32px;font-size:13px"><i class="fas fa-motorcycle"></i>
+                    </div>
+                    <div class="ddi">
+                      <div class="ddn">Rahul S.</div>
+                      <div class="ddp">KA-03-1234 · ⭐ 4.9</div>
+                    </div>
+                    <div class="dda">
+                      <div class="dab"><i class="fas fa-phone"></i></div>
+                      <div class="dab"><i class="fas fa-comment"></i></div>
+                    </div>
+                  </div>
+                  <button class="cnc" onclick="cancelRide()"><i class="fas fa-times-circle"></i> Cancel Ride</button>
+                </div>
+                <!-- S3 -->
+                <div id="s3">
+                  <div class="srow"><span style="font-weight:700">9:41</span>
+                    <div class="sicons"><i class="fas fa-signal"></i><i class="fas fa-wifi"></i><i
+                        class="fas fa-battery-full" style="color:var(--y)"></i></div>
+                  </div>
+                  <div class="as">
+                    <div class="cr"><i class="fas fa-check"></i></div>
+                    <div class="at">Ride Complete!</div>
+                    <div class="as2">Hope you enjoyed the ride ✨</div>
+                    <div
+                      style="background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:17px;padding:14px;margin-bottom:11px">
+                      <div id="fareAmt"
+                        style="font-size:2rem;font-weight:800;color:var(--y);font-family:'Syne',sans-serif;line-height:1">
+                        ₹59</div>
+                      <div id="fareLabel" style="font-size:10px;color:#505065;margin-top:3px">Auto · Rahul S.</div>
+                      <div class="dt"><i class="fas fa-check-circle"></i> 30% discount applied</div>
+                    </div>
+                    <div class="stars" id="stars"></div>
+                    <button class="nb" onclick="resetPhone()">← Book another ride</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -557,175 +2833,234 @@ footer{background:#040408;border-top:1px solid var(--border);padding:80px 0 40px
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- MARQUEE -->
-<div class="marquee-wrap" aria-hidden="true">
-  <div class="marquee-inner" id="marqueeInner">
-    <div class="marquee-item"><i class="fas fa-bolt"></i> Zero Surge Pricing</div>
-    <div class="marquee-item"><i class="fas fa-check-circle"></i> Verified Drivers</div>
-    <div class="marquee-item"><i class="fas fa-clock"></i> Under 5-Min Pickup</div>
-    <div class="marquee-item"><i class="fas fa-city"></i> 50+ Indian Cities</div>
-    <div class="marquee-item"><i class="fas fa-rupee-sign"></i> Fares from ₹19</div>
-    <div class="marquee-item"><i class="fas fa-star"></i> 4.8★ Avg Rating</div>
-    <div class="marquee-item"><i class="fas fa-shield-alt"></i> 24/7 Live Support</div>
-    <div class="marquee-item"><i class="fab fa-google-play"></i> Now on Google Play</div>
-    <div class="marquee-item"><i class="fas fa-bolt"></i> Zero Surge Pricing</div>
-    <div class="marquee-item"><i class="fas fa-check-circle"></i> Verified Drivers</div>
-    <div class="marquee-item"><i class="fas fa-clock"></i> Under 5-Min Pickup</div>
-    <div class="marquee-item"><i class="fas fa-city"></i> 50+ Indian Cities</div>
-    <div class="marquee-item"><i class="fas fa-rupee-sign"></i> Fares from ₹19</div>
-    <div class="marquee-item"><i class="fas fa-star"></i> 4.8★ Avg Rating</div>
-    <div class="marquee-item"><i class="fas fa-shield-alt"></i> 24/7 Live Support</div>
-    <div class="marquee-item"><i class="fab fa-google-play"></i> Now on Google Play</div>
-  </div>
-</div>
-
-<hr class="divider">
-
-<!-- STATS -->
-<div class="sband">
-  <div class="sec-inner">
-    <div class="sggrid">
-      <div class="stitem rev"><div class="stn" data-t="5000">0</div><div class="stl">Daily rides completed</div></div>
-      <div class="stitem rev" style="transition-delay:.12s"><div class="stn">&lt; 5 min</div><div class="stl">Average pickup time</div></div>
-      <div class="stitem rev" style="transition-delay:.24s"><div class="stn" data-t="50">0</div><div class="stl">Cities &amp; growing</div></div>
-      <div class="stitem rev" style="transition-delay:.36s"><div class="stn">4.8 ★</div><div class="stl">Average app rating</div></div>
+  <!-- MARQUEE -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-inner" id="marqueeInner">
+      <div class="marquee-item"><i class="fas fa-bolt"></i> Zero Surge Pricing</div>
+      <div class="marquee-item"><i class="fas fa-check-circle"></i> Verified Drivers</div>
+      <div class="marquee-item"><i class="fas fa-clock"></i> Under 5-Min Pickup</div>
+      <div class="marquee-item"><i class="fas fa-city"></i> extending monthly</div>
+      <div class="marquee-item"><i class="fas fa-rupee-sign"></i> Fares from ₹19</div>
+      <div class="marquee-item"><i class="fas fa-star"></i> 4.8★ Avg Rating</div>
+      <div class="marquee-item"><i class="fas fa-shield-alt"></i> 24/7 Live Support</div>
+      <div class="marquee-item"><i class="fab fa-google-play"></i> Now on Google Play</div>
+      <div class="marquee-item"><i class="fas fa-bolt"></i> Zero Surge Pricing</div>
+      <div class="marquee-item"><i class="fas fa-check-circle"></i> Verified Drivers</div>
+      <div class="marquee-item"><i class="fas fa-clock"></i> Under 5-Min Pickup</div>
+      <div class="marquee-item"><i class="fas fa-city"></i> extending monthly</div>
+      <div class="marquee-item"><i class="fas fa-rupee-sign"></i> Fares from ₹19</div>
+      <div class="marquee-item"><i class="fas fa-star"></i> 4.8★ Avg Rating</div>
+      <div class="marquee-item"><i class="fas fa-shield-alt"></i> 24/7 Live Support</div>
+      <div class="marquee-item"><i class="fab fa-google-play"></i> Now on Google Play</div>
     </div>
   </div>
-</div>
 
-<hr class="divider">
+  <hr class="divider">
 
-<!-- FEATURES -->
-<section id="features">
-  <div class="sec-inner">
-    <div class="feat-header rev">
-      <div>
-        <span class="ey">Why RidesLo</span>
-        <h2>Built for <span class="ac">Indian roads.</span></h2>
-      </div>
-      <p class="ss" style="max-width:400px">Not just another ride app — engineered for India's streets, traffic patterns, and local riders who want more for less.</p>
-    </div>
-    <div class="fgrid rev">
-      <div class="feat"><div class="fn">01</div><div class="fi"><i class="fas fa-bolt"></i></div><h3>Instant Pickup</h3><p>AI-dispatched nearest drivers. Under 4 minutes on average, every single time — peak hours included.</p></div>
-      <div class="feat"><div class="fn">02</div><div class="fi"><i class="fas fa-tag"></i></div><h3>Lowest Fares</h3><p>Up to 40% cheaper than leading apps. Zero surge pricing, ever. What you see is exactly what you pay.</p></div>
-      <div class="feat"><div class="fn">03</div><div class="fi"><i class="fas fa-shield-alt"></i></div><h3>Verified Drivers</h3><p>Background-checked, trained, and rated by thousands of real riders. Your safety is non-negotiable.</p></div>
-      <div class="feat"><div class="fn">04</div><div class="fi"><i class="fas fa-city"></i></div><h3>50+ Cities</h3><p>Hyperlocal presence with a new city launching every single month. India's fastest-growing ride network.</p></div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- FLEET -->
-<section id="fleet" class="fleet-section">
-  <div class="sec-inner">
-    <div class="rev" style="text-align:center">
-      <span class="ey">Our Fleet</span>
-      <h2>Every ride, <span class="ac">every budget.</span></h2>
-      <p class="ss" style="margin:0 auto">Choose what fits your need — zip on a bike, hop in an auto, or ride comfortably in a cab.</p>
-    </div>
-    <div class="flgrid">
-      <div class="flcard rev">
-        <span class="flic" aria-hidden="true"><i class="fas fa-motorcycle"></i></span>
-        <h3>Bike Taxi</h3>
-        <p>Beat traffic, reach faster. Perfect for solo riders who need to be somewhere yesterday. Weave through jams effortlessly.</p>
-        <div class="flp"><i class="fas fa-rupee-sign" aria-hidden="true"></i> from ₹19*</div>
-      </div>
-      <div class="flcard rev" style="transition-delay:.15s">
-        <span class="flic" aria-hidden="true"><i class="fas fa-truck-pickup"></i></span>
-        <h3>Auto Rickshaw</h3>
-        <p>The soul of Indian commuting. Affordable, nimble, and loved by millions daily. The most trusted ride in every city.</p>
-        <div class="flp"><i class="fas fa-rupee-sign" aria-hidden="true"></i> from ₹29*</div>
-      </div>
-      <div class="flcard rev" style="transition-delay:.3s">
-        <span class="flic" aria-hidden="true"><i class="fas fa-car"></i></span>
-        <h3>AC Cab</h3>
-        <p>Spacious, air-conditioned comfort for family trips, airport runs, or longer work commutes. Arrive fresh, every time.</p>
-        <div class="flp"><i class="fas fa-rupee-sign" aria-hidden="true"></i> from ₹69*</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- STEPS -->
-<section id="how" class="steps-section">
-  <div class="sec-inner">
-    <div class="rev" style="text-align:center">
-      <span class="ey">How it works</span>
-      <h2>Ride in <span class="ac">3 taps</span> flat.</h2>
-      <p class="ss" style="margin:0 auto">Open the app, set your destination, and you're in a ride before you even finish reading this sentence.</p>
-    </div>
-    <div class="sgrid">
-      <div class="sc rev">
-        <div class="sn"><div class="snn">01</div></div>
-        <span class="sic" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span>
-        <h3>Set Location</h3>
-        <p>Open the app and set your pickup using GPS auto-detect or type any address, landmark, or pin.</p>
-      </div>
-      <div class="sc rev" style="transition-delay:.15s">
-        <div class="sn"><div class="snn">02</div></div>
-        <span class="sic" aria-hidden="true"><i class="fas fa-sliders-h"></i></span>
-        <h3>Choose Ride</h3>
-        <p>Pick Bike, Auto, or Cab and see live upfront prices instantly — no surprises at the end.</p>
-      </div>
-      <div class="sc rev" style="transition-delay:.3s">
-        <div class="sn"><div class="snn">03</div></div>
-        <span class="sic" aria-hidden="true"><i class="fas fa-bolt"></i></span>
-        <h3>Ride!</h3>
-        <p>Confirm and get matched with the nearest available driver in seconds. Track live on the map.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- TESTIMONIALS -->
-<section class="testi-section">
-  <div class="sec-inner">
-    <div class="rev" style="text-align:center">
-      <span class="ey">Rider Stories</span>
-      <h2>Loved by <span class="ac">real riders.</span></h2>
-      <p class="ss" style="margin:0 auto">Don't just take our word for it — here's what daily commuters across India are saying.</p>
-    </div>
-    <div class="tgrid">
-      <div class="tcard rev">
-        <div class="tq">"</div>
-        <p class="ttext">Switched from Ola to RidesLo 3 months ago and haven't looked back. Pickups are faster and I save at least ₹200 every week easily.</p>
-        <div class="tauth">
-          <div class="tavt">A</div>
-          <div><div class="tname">Arjun Mehta</div><div class="tcity">Jaipur, Rajasthan</div><div class="tstars">★★★★★</div></div>
+  <!-- STATS -->
+  <div class="sband">
+    <div class="sec-inner">
+      <div class="sggrid">
+        <div class="stitem rev">
+          <div class="stn" data-t="5000">0</div>
+          <div class="stl">Daily rides completed</div>
         </div>
-      </div>
-      <div class="tcard rev" style="transition-delay:.12s">
-        <div class="tq">"</div>
-        <p class="ttext">The driver was so polite and the auto was clean. Fare was half what I used to pay. Already recommended it to my whole office.</p>
-        <div class="tauth">
-          <div class="tavt">P</div>
-          <div><div class="tname">Priya Sharma</div><div class="tcity">Bengaluru, Karnataka</div><div class="tstars">★★★★★</div></div>
+        <div class="stitem rev" style="transition-delay:.12s">
+          <div class="stn">&lt; 5 min</div>
+          <div class="stl">Average pickup time</div>
         </div>
-      </div>
-      <div class="tcard rev" style="transition-delay:.24s">
-        <div class="tq">"</div>
-        <p class="ttext">I use the bike taxi every morning. Never been late to work since I started using RidesLo. The real-time tracking is spot on.</p>
-        <div class="tauth">
-          <div class="tavt">R</div>
-          <div><div class="tname">Rohan Verma</div><div class="tcity">Delhi NCR</div><div class="tstars">★★★★★</div></div>
+        <div class="stitem rev" style="transition-delay:.24s">
+          <div class="stn" data-t="50">0</div>
+          <div class="stl">Cities &amp; growing</div>
+        </div>
+        <div class="stitem rev" style="transition-delay:.36s">
+          <div class="stn">4.8 ★</div>
+          <div class="stl">Average app rating</div>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-<hr class="divider">
+  <hr class="divider">
 
-<!-- OFFER -->
-<!-- <section class="offer-section" id="offer">
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="sec-inner">
+      <div class="feat-header rev">
+        <div>
+          <span class="ey">Why RidesLo</span>
+          <h2>Built for <span class="ac">Indian roads.</span></h2>
+        </div>
+        <p class="ss" style="max-width:400px">Not just another ride app — engineered for India's streets, traffic
+          patterns, and local riders who want more for less.</p>
+      </div>
+      <div class="fgrid rev">
+        <div class="feat">
+          <div class="fn">01</div>
+          <div class="fi"><i class="fas fa-bolt"></i></div>
+          <h3>Instant Pickup</h3>
+          <p>AI-dispatched nearest drivers. Under 4 minutes on average, every single time — peak hours included.</p>
+        </div>
+        <div class="feat">
+          <div class="fn">02</div>
+          <div class="fi"><i class="fas fa-tag"></i></div>
+          <h3>Lowest Fares</h3>
+          <p>Up to 40% cheaper than leading apps. Zero surge pricing, ever. What you see is exactly what you pay.</p>
+        </div>
+        <div class="feat">
+          <div class="fn">03</div>
+          <div class="fi"><i class="fas fa-shield-alt"></i></div>
+          <h3>Verified Drivers</h3>
+          <p>Background-checked, trained, and rated by thousands of real riders. Your safety is non-negotiable.</p>
+        </div>
+        <div class="feat">
+          <div class="fn">04</div>
+          <div class="fi"><i class="fas fa-city"></i></div>
+          <h3>extending monthly</h3>
+          <p>Hyperlocal presence with a new city launching every single month. India's fastest-growing ride network.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- FLEET -->
+  <section id="fleet" class="fleet-section">
+    <div class="sec-inner">
+      <div class="rev" style="text-align:center">
+        <span class="ey">Our Fleet</span>
+        <h2>Every ride, <span class="ac">every budget.</span></h2>
+        <p class="ss" style="margin:0 auto">Choose what fits your need — zip on a bike, hop in an auto, or ride
+          comfortably in a cab.</p>
+      </div>
+      <div class="flgrid">
+        <div class="flcard rev">
+          <span class="flic" aria-hidden="true"><i class="fas fa-motorcycle"></i></span>
+          <h3>Bike Taxi</h3>
+          <p>Beat traffic, reach faster. Perfect for solo riders who need to be somewhere yesterday. Weave through jams
+            effortlessly.</p>
+          <div class="flp"><i class="fas fa-rupee-sign" aria-hidden="true"></i> from ₹19*</div>
+        </div>
+        <div class="flcard rev" style="transition-delay:.15s">
+          <span class="flic" aria-hidden="true"><i class="fas fa-truck-pickup"></i></span>
+          <h3>Auto Rickshaw</h3>
+          <p>The soul of Indian commuting. Affordable, nimble, and loved by millions daily. The most trusted ride in
+            every city.</p>
+          <div class="flp"><i class="fas fa-rupee-sign" aria-hidden="true"></i> from ₹50*</div>
+        </div>
+        <div class="flcard rev" style="transition-delay:.3s">
+          <span class="flic" aria-hidden="true"><i class="fas fa-car"></i></span>
+          <h3>AC Cab</h3>
+          <p>Spacious, air-conditioned comfort for family trips, airport runs, or longer work commutes. Arrive fresh,
+            every time.</p>
+          <div class="flp"><i class="fas fa-rupee-sign" aria-hidden="true"></i> from ₹130*</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- STEPS -->
+  <section id="how" class="steps-section">
+    <div class="sec-inner">
+      <div class="rev" style="text-align:center">
+        <span class="ey">How it works</span>
+        <h2>Ride in <span class="ac">3 taps</span> flat.</h2>
+        <p class="ss" style="margin:0 auto">Open the app, set your destination, and you're in a ride before you even
+          finish reading this sentence.</p>
+      </div>
+      <div class="sgrid">
+        <div class="sc rev">
+          <div class="sn">
+            <div class="snn">01</div>
+          </div>
+          <span class="sic" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span>
+          <h3>Set Location</h3>
+          <p>Open the app and set your pickup using GPS auto-detect or type any address, landmark, or pin.</p>
+        </div>
+        <div class="sc rev" style="transition-delay:.15s">
+          <div class="sn">
+            <div class="snn">02</div>
+          </div>
+          <span class="sic" aria-hidden="true"><i class="fas fa-sliders-h"></i></span>
+          <h3>Choose Ride</h3>
+          <p>Pick Bike, Auto, or Cab and see live upfront prices instantly — no surprises at the end.</p>
+        </div>
+        <div class="sc rev" style="transition-delay:.3s">
+          <div class="sn">
+            <div class="snn">03</div>
+          </div>
+          <span class="sic" aria-hidden="true"><i class="fas fa-bolt"></i></span>
+          <h3>Ride!</h3>
+          <p>Confirm and get matched with the nearest available driver in seconds. Track live on the map.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- TESTIMONIALS -->
+  <section class="testi-section">
+    <div class="sec-inner">
+      <div class="rev" style="text-align:center">
+        <span class="ey">Rider Stories</span>
+        <h2>Loved by <span class="ac">real riders.</span></h2>
+        <p class="ss" style="margin:0 auto">Don't just take our word for it — here's what daily commuters across India
+          are saying.</p>
+      </div>
+      <div class="tgrid">
+        <div class="tcard rev">
+          <div class="tq">"</div>
+          <p class="ttext">Switched from Ola to RidesLo 3 months ago and haven't looked back. Pickups are faster and I
+            save at least ₹200 every week easily.</p>
+          <div class="tauth">
+            <div class="tavt">A</div>
+            <div>
+              <div class="tname">Arjun Mehta</div>
+              <div class="tcity">Jaipur, Rajasthan</div>
+              <div class="tstars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard rev" style="transition-delay:.12s">
+          <div class="tq">"</div>
+          <p class="ttext">The driver was so polite and the auto was clean. Fare was half what I used to pay. Already
+            recommended it to my whole office.</p>
+          <div class="tauth">
+            <div class="tavt">P</div>
+            <div>
+              <div class="tname">Priya Sharma</div>
+              <div class="tcity">Bengaluru, Karnataka</div>
+              <div class="tstars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard rev" style="transition-delay:.24s">
+          <div class="tq">"</div>
+          <p class="ttext">I use the bike taxi every morning. Never been late to work since I started using RidesLo. The
+            real-time tracking is spot on.</p>
+          <div class="tauth">
+            <div class="tavt">R</div>
+            <div>
+              <div class="tname">Rohan Verma</div>
+              <div class="tcity">Delhi NCR</div>
+              <div class="tstars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- OFFER -->
+  <!-- <section class="offer-section" id="offer">
   <div class="sec-inner">
     <div class="oi rev">
       <span class="ey">Exclusive Offer</span>
@@ -742,433 +3077,441 @@ footer{background:#040408;border-top:1px solid var(--border);padding:80px 0 40px
   </div>
 </section> -->
 
-<!-- DOWNLOAD -->
-<section id="download" style="padding-top:0">
-  <div class="sec-inner">
-    <div class="rev">
-      <span class="ey">Download</span>
-      <h2>Get the <span class="ac">RidesLo app.</span></h2>
-      <p class="ss">Available on Google Play for both riders and drivers. Join 2 million+ users.</p>
-    </div>
-    <div class="agrid">
-      <div class="acard rev">
-        <div class="aci"><i class="fas fa-mobile-alt" aria-hidden="true"></i></div>
-        <div class="acb">
-          <h3>Rider App</h3>
-          <p>Book rides in seconds, track your driver live on the map, and pay with cash or UPI. Simple as that.</p>
-          <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="slink" rel="noopener"><i class="fab fa-google-play" aria-hidden="true"></i> Download on Google Play</a>
+  <!-- DOWNLOAD -->
+  <section id="download" style="padding-top:0">
+    <div class="sec-inner">
+      <div class="rev">
+        <span class="ey">Download</span>
+        <h2>Get the <span class="ac">RidesLo app.</span></h2>
+        <p class="ss">Available on Google Play for both riders and drivers. Join 2 million+ users.</p>
+      </div>
+      <div class="agrid">
+        <div class="acard rev">
+          <div class="aci"><i class="fas fa-mobile-alt" aria-hidden="true"></i></div>
+          <div class="acb">
+            <h3>Rider App</h3>
+            <p>Book rides in seconds, track your driver live on the map, and pay with cash or UPI. Simple as that.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="slink"
+              rel="noopener"><i class="fab fa-google-play" aria-hidden="true"></i> Download on Google Play</a>
+          </div>
+        </div>
+        <div class="acard rev" style="transition-delay:.15s">
+          <div class="aci"><i class="fas fa-id-card" aria-hidden="true"></i></div>
+          <div class="acb">
+            <h3>Driver App</h3>
+            <p>Earn on your own schedule with daily payouts, weekly bonuses, and priority dispatch to boost earnings.
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.rideslo.driver" target="_blank" class="slink"
+              rel="noopener"><i class="fab fa-google-play" aria-hidden="true"></i> Join as a Driver</a>
+          </div>
         </div>
       </div>
-      <div class="acard rev" style="transition-delay:.15s">
-        <div class="aci"><i class="fas fa-id-card" aria-hidden="true"></i></div>
-        <div class="acb">
-          <h3>Driver App</h3>
-          <p>Earn on your own schedule with daily payouts, weekly bonuses, and priority dispatch to boost earnings.</p>
-          <a href="https://play.google.com/store/apps/details?id=com.rideslo.driver" target="_blank" class="slink" rel="noopener"><i class="fab fa-google-play" aria-hidden="true"></i> Join as a Driver</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="sec-inner">
+      <div class="fgrid">
+        <div class="fb">
+          <a href="/" class="logo" style="font-size:1.4rem" aria-label="RidesLo home">
+            <div class="lb" style="width:30px;height:30px;font-size:13px"><i class="fas fa-bolt" aria-hidden="true"></i>
+            </div>RidesLo
+          </a>
+          <p>Faster, cheaper, trusted local rides across Indian cities. Your daily commute, reimagined from the ground
+            up.</p>
+          <div class="socials" style="margin-top:18px">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="fcol">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">All Cities</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Kit</a></li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Driver Agreement</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="fcol">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="contact.html">Support Center</a></li>
+            <li><a href="#">Report an Issue</a></li>
+            <li><a href="#">Press Enquiries</a></li>
+            <li><a href="#">Partner with Us</a></li>
+            <li><a href="#">Investor Relations</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="sec-inner">
-    <div class="fgrid">
-      <div class="fb">
-        <a href="/" class="logo" style="font-size:1.4rem" aria-label="RidesLo home"><div class="lb" style="width:30px;height:30px;font-size:13px"><i class="fas fa-bolt" aria-hidden="true"></i></div>RidesLo</a>
-        <p>Faster, cheaper, trusted local rides across 50+ Indian cities. Your daily commute, reimagined from the ground up.</p>
-        <div class="socials" style="margin-top:18px">
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-      <div class="fcol">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">All Cities</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Press Kit</a></li>
-        </ul>
-      </div>
-      <div class="fcol">
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Driver Agreement</a></li>
-          <li><a href="#">Cookie Policy</a></li>
-        </ul>
-      </div>
-      <div class="fcol">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="contact.html">Support Center</a></li>
-          <li><a href="#">Report an Issue</a></li>
-          <li><a href="#">Press Enquiries</a></li>
-          <li><a href="#">Partner with Us</a></li>
-          <li><a href="#">Investor Relations</a></li>
-        </ul>
+      <div class="fbot">
+        <p>© 2026 RidesLo Technologies Pvt. Ltd. · CIN: U72900RJ2024PTC001234 · cities and growing.</p>
+        <p style="color:#222">Registered in Jaipur, Rajasthan, India</p>
       </div>
     </div>
-    <div class="fbot">
-      <p>© 2026 RidesLo Technologies Pvt. Ltd. · CIN: U72900RJ2024PTC001234 · 50+ cities and growing.</p>
-      <p style="color:#222">Registered in Jaipur, Rajasthan, India</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script>
-/* ════ NAV ════ */
-window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>40));
-function openMob(){document.getElementById('mob').classList.add('open');document.body.style.overflow='hidden'}
-function closeMob(){document.getElementById('mob').classList.remove('open');document.body.style.overflow=''}
+  <script>
+    /* ════ NAV ════ */
+    window.addEventListener('scroll', () => document.getElementById('nav').classList.toggle('s', scrollY > 40));
+    function openMob() { document.getElementById('mob').classList.add('open'); document.body.style.overflow = 'hidden' }
+    function closeMob() { document.getElementById('mob').classList.remove('open'); document.body.style.overflow = '' }
 
-/* ════ SCROLL REVEAL ════ */
-const ro=new IntersectionObserver(es=>es.forEach(e=>{
-  if(e.isIntersecting){e.target.classList.add('vi');if(!e.target.dataset.keep)ro.unobserve(e.target)}
-}),{threshold:.1});
-document.querySelectorAll('.rev').forEach(el=>ro.observe(el));
+    /* ════ SCROLL REVEAL ════ */
+    const ro = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('vi'); if (!e.target.dataset.keep) ro.unobserve(e.target) }
+    }), { threshold: .1 });
+    document.querySelectorAll('.rev').forEach(el => ro.observe(el));
 
-/* ════ COUNT UP ════ */
-const cu=new IntersectionObserver(es=>es.forEach(e=>{
-  if(!e.isIntersecting)return;
-  const el=e.target,t=+el.dataset.t;let c=0;
-  const id=setInterval(()=>{c=Math.min(c+Math.ceil(t/60),t);el.textContent=c.toLocaleString()+'+';if(c>=t)clearInterval(id)},22);
-  cu.unobserve(el);
-}),{threshold:.5});
-document.querySelectorAll('.stn[data-t]').forEach(el=>cu.observe(el));
+    /* ════ COUNT UP ════ */
+    const cu = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target, t = +el.dataset.t; let c = 0;
+      const id = setInterval(() => { c = Math.min(c + Math.ceil(t / 60), t); el.textContent = c.toLocaleString() + '+'; if (c >= t) clearInterval(id) }, 22);
+      cu.unobserve(el);
+    }), { threshold: .5 });
+    document.querySelectorAll('.stn[data-t]').forEach(el => cu.observe(el));
 
-/* ════ COUNTDOWN TIMER ════ */
-// let csecs=23*3600+59*60+47;
-// function updateClock(){
-//   const h=Math.floor(csecs/3600),m=Math.floor(csecs%3600/60),s=csecs%60;
-//   document.getElementById('ch').textContent=String(h).padStart(2,'0');
-//   document.getElementById('cm').textContent=String(m).padStart(2,'0');
-//   document.getElementById('cs').textContent=String(s).padStart(2,'0');
-//   if(csecs>0)csecs--;
-// }
-// updateClock();
-// setInterval(updateClock,1000);
+    /* ════ COUNTDOWN TIMER ════ */
+    // let csecs=23*3600+59*60+47;
+    // function updateClock(){
+    //   const h=Math.floor(csecs/3600),m=Math.floor(csecs%3600/60),s=csecs%60;
+    //   document.getElementById('ch').textContent=String(h).padStart(2,'0');
+    //   document.getElementById('cm').textContent=String(m).padStart(2,'0');
+    //   document.getElementById('cs').textContent=String(s).padStart(2,'0');
+    //   if(csecs>0)csecs--;
+    // }
+    // updateClock();
+    // setInterval(updateClock,1000);
 
-/* ════ OFFER CODE COPY ════ */
-// document.getElementById('offerCode').addEventListener('click',function(){
-//   navigator.clipboard?.writeText('RIDESLO30').then(()=>{
-//     const orig=this.textContent;
-//     this.textContent='✓ Copied!';
-//     setTimeout(()=>this.textContent=orig,2000);
-//   });
-//   this.style.cursor='pointer';
-// });
-// document.getElementById('offerCode').title='Click to copy';
+    /* ════ OFFER CODE COPY ════ */
+    // document.getElementById('offerCode').addEventListener('click',function(){
+    //   navigator.clipboard?.writeText('RIDESLO30').then(()=>{
+    //     const orig=this.textContent;
+    //     this.textContent='✓ Copied!';
+    //     setTimeout(()=>this.textContent=orig,2000);
+    //   });
+    //   this.style.cursor='pointer';
+    // });
+    // document.getElementById('offerCode').title='Click to copy';
 
-/* ════════════════════════
-   PHONE APP LOGIC (preserved)
-════════════════════════ */
-const PLACES=[
-  {e:'🏠',n:'Home',s:'Sector 12, Jaipur'},
-  {e:'💼',n:'Office',s:'Malviya Nagar, Jaipur'},
-  {e:'🛍️',n:'City Mall',s:'Tonk Road, Jaipur'},
-  {e:'✈️',n:'Airport',s:'Sanganer Airport'},
-  {e:'🏥',n:'Fortis Hospital',s:'JLN Marg, Jaipur'},
-  {e:'🎓',n:'University',s:'Ambabari, Jaipur'},
-];
-const RIDES=[
-  {r:'bike',e:'🏍️',n:'Bike',p:39},
-  {r:'auto',e:'🛺',n:'Auto',p:59},
-  {r:'cab',e:'🚕',n:'Cab',p:99},
-];
-let APP={pickup:'',drop:'',ri:1};
+    /* ════════════════════════
+       PHONE APP LOGIC (preserved)
+    ════════════════════════ */
+    const PLACES = [
+      { e: '🏠', n: 'Home', s: 'Sector 12, Jaipur' },
+      { e: '💼', n: 'Office', s: 'Malviya Nagar, Jaipur' },
+      { e: '🛍️', n: 'City Mall', s: 'Tonk Road, Jaipur' },
+      { e: '✈️', n: 'Airport', s: 'Sanganer Airport' },
+      { e: '🏥', n: 'Fortis Hospital', s: 'JLN Marg, Jaipur' },
+      { e: '🎓', n: 'University', s: 'Ambabari, Jaipur' },
+    ];
+    const RIDES = [
+      { r: 'bike', e: '🏍️', n: 'Bike', p: 39 },
+      { r: 'auto', e: '🛺', n: 'Auto', p: 59 },
+      { r: 'cab', e: '🚕', n: 'Cab', p: 99 },
+    ];
+    let APP = { pickup: '', drop: '', ri: 1 };
 
-function flash(txt){
-  const d=document.getElementById('di'),t=document.getElementById('diT');
-  t.textContent=txt;d.classList.add('ex');
-  setTimeout(()=>d.classList.remove('ex'),2600);
-}
-function showS(n){
-  document.querySelectorAll('.scr>div').forEach((el,i)=>el.classList.toggle('active',i===n));
-}
-
-function buildSugs(){
-  const g=document.getElementById('sugList');g.innerHTML='';
-  PLACES.forEach((p,i)=>{
-    const d=document.createElement('div');d.className='si';
-    d.innerHTML=`<div class="sic">${p.e}</div><div><div class="sit">${p.n}</div><div class="sis">${p.s}</div></div>`;
-    d.onclick=()=>pickLoc(p,i);
-    g.appendChild(d);
-  });
-}
-buildSugs();
-
-let picks=0;
-function pickLoc(p,i){
-  if(!APP.pickup){
-    APP.pickup=p.n;document.getElementById('inp0').value=p.n;flash('📍 '+p.n);
-    document.querySelectorAll('.si')[i].style.opacity='.3';picks++;
-  } else if(!APP.drop&&p.n!==APP.pickup){
-    APP.drop=p.n;document.getElementById('inp1').value=p.n;flash('🗺 Route set!');picks++;
-    setTimeout(goRidePicker,600);
-  }
-}
-document.getElementById('swp').onclick=()=>{
-  [APP.pickup,APP.drop]=[APP.drop,APP.pickup];
-  document.getElementById('inp0').value=APP.pickup;
-  document.getElementById('inp1').value=APP.drop;
-};
-
-function goRidePicker(){
-  document.getElementById('tFrom').textContent=APP.pickup||'Pickup';
-  document.getElementById('tTo').textContent=APP.drop||'Destination';
-  buildRideOpts();showS(1);requestAnimationFrame(()=>drawIdleMap('mc1'));
-}
-function buildRideOpts(){
-  const g=document.getElementById('rtg');g.innerHTML='';
-  RIDES.forEach((r,i)=>{
-    const d=document.createElement('div');d.className='rt'+(i===APP.ri?' act':'');
-    d.innerHTML=`<div class="rti">${r.e}</div><div class="rtn">${r.n}</div><div class="rtp">₹${r.p}</div>`;
-    d.onclick=()=>{APP.ri=i;document.querySelectorAll('.rt').forEach((el,j)=>el.classList.toggle('act',j===i));updateCBtn();flash(r.e+' '+r.n+' · ₹'+r.p)};
-    g.appendChild(d);
-  });
-  updateCBtn();
-}
-function updateCBtn(){
-  const r=RIDES[APP.ri];
-  document.getElementById('cb').textContent='⚡ CONFIRM '+r.n.toUpperCase()+' · ₹'+r.p+'*';
-}
-document.getElementById('cb').onclick=()=>{
-  const r=RIDES[APP.ri];
-  document.getElementById('fareAmt').textContent='₹'+r.p;
-  document.getElementById('fareLabel').textContent=r.n+' · Rahul S.';
-  flash('🎉 Ride confirmed!');showS(2);startTracking(r);
-};
-(function(){
-  const sc=document.getElementById('stars');
-  for(let i=1;i<=5;i++){
-    const s=document.createElement('span');s.className='star';s.textContent='⭐';
-    s.onclick=()=>flash('★ '+i+' stars — Thanks!');
-    sc.appendChild(s);
-  }
-})();
-
-/* ════ CANVAS (phone internal) ════ */
-function setupCanvas(id){
-  const c=document.getElementById(id);if(!c)return null;
-  const dpr=window.devicePixelRatio||1;
-  const r=c.getBoundingClientRect();
-  const W=r.width,H=r.height;
-  if(c.width!==Math.round(W*dpr)){c.width=Math.round(W*dpr);c.height=Math.round(H*dpr)}
-  const ctx=c.getContext('2d');ctx.setTransform(dpr,0,0,dpr,0,0);
-  return{ctx,W,H};
-}
-function drawScene(ctx,W,H){
-  ctx.fillStyle='#070710';ctx.fillRect(0,0,W,H);
-  ctx.strokeStyle='rgba(249,180,43,.04)';ctx.lineWidth=.5;
-  const g=24;
-  for(let x=0;x<W;x+=g){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke()}
-  for(let y=0;y<H;y+=g){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke()}
-  const roads=[[[.1,-.05],[.9,.35]],[[.04,.65],[.96,.7]],[[.26,0],[.2,1]],[[.66,0],[.72,1]],[[.48,.05],[.5,.95]]];
-  ctx.lineWidth=7;ctx.lineCap='round';
-  roads.forEach(([[x1,y1],[x2,y2]])=>{
-    ctx.strokeStyle='rgba(255,255,255,.07)';ctx.beginPath();ctx.moveTo(x1*W,y1*H);ctx.lineTo(x2*W,y2*H);ctx.stroke();
-    ctx.strokeStyle='rgba(255,255,255,.025)';ctx.lineWidth=.6;ctx.beginPath();ctx.moveTo(x1*W,y1*H);ctx.lineTo(x2*W,y2*H);ctx.stroke();
-    ctx.lineWidth=7;
-  });
-  const bl=[[.15,.12,24,16],[.44,.36,20,14],[.62,.12,22,17],[.78,.44,17,12],[.19,.72,20,13],[.54,.58,21,15],[.35,.2,15,10],[.8,.2,17,12]];
-  bl.forEach(([x,y,bw,bh])=>{
-    ctx.fillStyle='rgba(255,255,255,.032)';ctx.beginPath();
-    if(ctx.roundRect)ctx.roundRect(x*W-bw/2,y*H-bh/2,bw,bh,2);else ctx.rect(x*W-bw/2,y*H-bh/2,bw,bh);
-    ctx.fill();ctx.strokeStyle='rgba(255,255,255,.048)';ctx.lineWidth=.4;ctx.stroke();
-  });
-}
-function drawPin(ctx,x,y,col='#F9B42B',size=7){
-  ctx.save();ctx.shadowColor=col;ctx.shadowBlur=14;
-  ctx.fillStyle=col;ctx.beginPath();ctx.arc(x,y-1,size,Math.PI,0);ctx.lineTo(x,y+size+4);ctx.closePath();ctx.fill();
-  ctx.fillStyle='#07071a';ctx.beginPath();ctx.arc(x,y-1,size*.38,0,Math.PI*2);ctx.fill();ctx.restore();
-}
-function drawIdleMap(id){
-  const cv=setupCanvas(id);if(!cv)return;
-  const{ctx,W,H}=cv;drawScene(ctx,W,H);
-  const px=.3,py=.55,dx=.72,dy=.32;
-  ctx.save();ctx.setLineDash([4,5]);ctx.strokeStyle='rgba(249,180,43,.3)';ctx.lineWidth=1.5;
-  ctx.beginPath();ctx.moveTo(px*W,py*H);ctx.bezierCurveTo(px*W+38,py*H-40,dx*W-30,dy*H+40,dx*W,dy*H);ctx.stroke();ctx.restore();
-  [[.1,.42],[.5,.2],[.82,.6]].forEach(([cx,cy])=>{
-    ctx.save();ctx.font='10px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.globalAlpha=.4;ctx.fillText('🏍',cx*W,cy*H);ctx.restore();
-  });
-  drawPin(ctx,px*W,py*H,'#F9B42B');drawPin(ctx,dx*W,dy*H,'#555');
-}
-
-let RAF=null;
-function startTracking(ride){
-  if(RAF)cancelAnimationFrame(RAF);
-  document.getElementById('pbf').style.width='0%';
-  document.getElementById('etaV').textContent='3 min';
-  document.getElementById('tTitle').textContent='Driver on the way';
-  document.getElementById('tSub').textContent='Rahul is heading to your pickup';
-  const TOTAL=14000;const t0=performance.now();
-  const PICKUP={x:.3,y:.58};const DROP={x:.72,y:.3};const START={x:.04,y:.88};
-  const CP1={x:.08,y:PICKUP.y+.05};const CP2={x:.5,y:.15};
-  function eio(t){return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2}
-  function lerp(a,b,t){return a+(b-a)*t}
-  function qbez(p0,p1,p2,t){return{x:lerp(lerp(p0.x,p1.x,t),lerp(p1.x,p2.x,t),t),y:lerp(lerp(p0.y,p1.y,t),lerp(p1.y,p2.y,t),t)}}
-  function getRiderPos(prog){
-    return prog<.5?qbez(START,CP1,PICKUP,eio(prog/.5)):qbez(PICKUP,CP2,DROP,eio((prog-.5)/.5));
-  }
-  function drawFrame(prog){
-    const cv=setupCanvas('mc2');if(!cv)return;
-    const{ctx,W,H}=cv;drawScene(ctx,W,H);
-    ctx.save();ctx.setLineDash([4,6]);ctx.lineWidth=1.5;
-    const fade1=Math.max(0,1-prog/.5);
-    if(fade1>.02){ctx.strokeStyle=`rgba(249,180,43,${.22*fade1})`;ctx.beginPath();ctx.moveTo(START.x*W,START.y*H);ctx.quadraticCurveTo(CP1.x*W,CP1.y*H,PICKUP.x*W,PICKUP.y*H);ctx.stroke()}
-    const fade2=Math.max(0,(prog-.45)/.55);
-    if(fade2>.02){ctx.strokeStyle=`rgba(249,180,43,${.2*fade2})`;ctx.beginPath();ctx.moveTo(PICKUP.x*W,PICKUP.y*H);ctx.quadraticCurveTo(CP2.x*W,CP2.y*H,DROP.x*W,DROP.y*H);ctx.stroke()}
-    ctx.restore();
-    const pos=getRiderPos(prog);const rx=pos.x*W,ry=pos.y*H;
-    const gr=ctx.createRadialGradient(rx,ry,0,rx,ry,22);
-    gr.addColorStop(0,'rgba(249,180,43,.24)');gr.addColorStop(1,'rgba(249,180,43,0)');
-    ctx.fillStyle=gr;ctx.beginPath();ctx.arc(rx,ry,22,0,Math.PI*2);ctx.fill();
-    ctx.fillStyle='#F9B42B';ctx.beginPath();ctx.arc(rx,ry,8,0,Math.PI*2);ctx.fill();
-    ctx.font='10px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';
-    ctx.fillText(ride.r==='bike'?'🏍':ride.r==='cab'?'🚕':'🛺',rx,ry);
-    drawPin(ctx,PICKUP.x*W,PICKUP.y*H,'#F9B42B',6);
-    drawPin(ctx,DROP.x*W,DROP.y*H,'#555',6);
-    if(prog<.55){
-      ctx.fillStyle='rgba(6,6,14,.82)';if(ctx.roundRect){ctx.beginPath();ctx.roundRect(PICKUP.x*W-22,PICKUP.y*H-27,44,13,4);ctx.fill()}
-      ctx.fillStyle='#F9B42B';ctx.font='bold 7.5px DM Sans';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('Pickup',PICKUP.x*W,PICKUP.y*H-20);
+    function flash(txt) {
+      const d = document.getElementById('di'), t = document.getElementById('diT');
+      t.textContent = txt; d.classList.add('ex');
+      setTimeout(() => d.classList.remove('ex'), 2600);
     }
-    if(prog>.5){
-      ctx.fillStyle='rgba(6,6,14,.82)';if(ctx.roundRect){ctx.beginPath();ctx.roundRect(DROP.x*W-22,DROP.y*H-27,44,13,4);ctx.fill()}
-      ctx.fillStyle='#888';ctx.font='bold 7.5px DM Sans';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('Drop',DROP.x*W,DROP.y*H-20);
+    function showS(n) {
+      document.querySelectorAll('.scr>div').forEach((el, i) => el.classList.toggle('active', i === n));
     }
-    [[.88,.55],[.15,.25],[.6,.75]].forEach(([cx,cy])=>{
-      ctx.save();ctx.font='9px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.globalAlpha=.28;ctx.fillText('🏍',cx*W,cy*H);ctx.restore();
-    });
-  }
-  function tick(now){
-    const prog=Math.min((now-t0)/TOTAL,1);
-    const pct=Math.round(prog*100);
-    document.getElementById('pbf').style.width=pct+'%';
-    if(prog<.5){const sec=Math.max(0,Math.round((1-prog/.5)*3));document.getElementById('etaV').textContent=sec===0?'Almost there…':sec+' min'}
-    else if(prog<.95){document.getElementById('tTitle').textContent='On the way to destination';document.getElementById('tSub').textContent='Sit back & enjoy the ride 🎵';document.getElementById('etaV').textContent='On ride'}
-    else{document.getElementById('etaV').textContent='Arrived!'}
-    drawFrame(prog);
-    if(prog<1)RAF=requestAnimationFrame(tick);
-    else setTimeout(()=>{showS(3);flash('🏁 Arrived!')},700);
-  }
-  RAF=requestAnimationFrame(tick);
-}
-function cancelRide(){if(RAF)cancelAnimationFrame(RAF);resetPhone()}
-function resetPhone(){
-  if(RAF)cancelAnimationFrame(RAF);
-  APP={pickup:'',drop:'',ri:1};
-  document.getElementById('inp0').value='';document.getElementById('inp1').value='';picks=0;
-  document.querySelectorAll('.si').forEach(el=>el.style.opacity='1');
-  document.getElementById('tTitle').textContent='Driver on the way';
-  document.getElementById('tSub').textContent='Rahul is heading to your pickup';
-  buildSugs();showS(0);
-}
-let resizeTimer;
-window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(document.getElementById('s1').classList.contains('active'))drawIdleMap('mc1')},160)});
 
-// ===== ANIMATED BACKGROUND MAP (crisp on all devices) =====
-const bgCanvas = document.createElement('canvas');
-bgCanvas.id = 'bgCanvas';
-bgCanvas.style.position = 'fixed';
-bgCanvas.style.top = '0';
-bgCanvas.style.left = '0';
-bgCanvas.style.width = '100%';
-bgCanvas.style.height = '100%';
-bgCanvas.style.pointerEvents = 'none';
-bgCanvas.style.zIndex = '0';
-bgCanvas.style.opacity = '0.45';
-document.body.insertBefore(bgCanvas, document.body.firstChild);
+    function buildSugs() {
+      const g = document.getElementById('sugList'); g.innerHTML = '';
+      PLACES.forEach((p, i) => {
+        const d = document.createElement('div'); d.className = 'si';
+        d.innerHTML = `<div class="sic">${p.e}</div><div><div class="sit">${p.n}</div><div class="sis">${p.s}</div></div>`;
+        d.onclick = () => pickLoc(p, i);
+        g.appendChild(d);
+      });
+    }
+    buildSugs();
 
-let bgCtx, width, height;
-let bgOffset = 0;
-const particles = [];
-const PARTICLE_COUNT = 100;
+    let picks = 0;
+    function pickLoc(p, i) {
+      if (!APP.pickup) {
+        APP.pickup = p.n; document.getElementById('inp0').value = p.n; flash('📍 ' + p.n);
+        document.querySelectorAll('.si')[i].style.opacity = '.3'; picks++;
+      } else if (!APP.drop && p.n !== APP.pickup) {
+        APP.drop = p.n; document.getElementById('inp1').value = p.n; flash('🗺 Route set!'); picks++;
+        setTimeout(goRidePicker, 600);
+      }
+    }
+    document.getElementById('swp').onclick = () => {
+      [APP.pickup, APP.drop] = [APP.drop, APP.pickup];
+      document.getElementById('inp0').value = APP.pickup;
+      document.getElementById('inp1').value = APP.drop;
+    };
 
-function initBackground() {
-  resizeBackground();
-  window.addEventListener('resize', resizeBackground);
-  for(let i=0; i<PARTICLE_COUNT; i++) {
-    particles.push({ x: Math.random(), y: Math.random(), speedX: (Math.random() - 0.5)*0.0006, speedY: (Math.random() - 0.5)*0.0006 + 0.0003, size: 1 + Math.random() * 1.8, alpha: 0.2 + Math.random()*0.3 });
-  }
-  animateBackground();
-}
+    function goRidePicker() {
+      document.getElementById('tFrom').textContent = APP.pickup || 'Pickup';
+      document.getElementById('tTo').textContent = APP.drop || 'Destination';
+      buildRideOpts(); showS(1); requestAnimationFrame(() => drawIdleMap('mc1'));
+    }
+    function buildRideOpts() {
+      const g = document.getElementById('rtg'); g.innerHTML = '';
+      RIDES.forEach((r, i) => {
+        const d = document.createElement('div'); d.className = 'rt' + (i === APP.ri ? ' act' : '');
+        d.innerHTML = `<div class="rti">${r.e}</div><div class="rtn">${r.n}</div><div class="rtp">₹${r.p}</div>`;
+        d.onclick = () => { APP.ri = i; document.querySelectorAll('.rt').forEach((el, j) => el.classList.toggle('act', j === i)); updateCBtn(); flash(r.e + ' ' + r.n + ' · ₹' + r.p) };
+        g.appendChild(d);
+      });
+      updateCBtn();
+    }
+    function updateCBtn() {
+      const r = RIDES[APP.ri];
+      document.getElementById('cb').textContent = '⚡ CONFIRM ' + r.n.toUpperCase() + ' · ₹' + r.p + '*';
+    }
+    document.getElementById('cb').onclick = () => {
+      const r = RIDES[APP.ri];
+      document.getElementById('fareAmt').textContent = '₹' + r.p;
+      document.getElementById('fareLabel').textContent = r.n + ' · Rahul S.';
+      flash('🎉 Ride confirmed!'); showS(2); startTracking(r);
+    };
+    (function () {
+      const sc = document.getElementById('stars');
+      for (let i = 1; i <= 5; i++) {
+        const s = document.createElement('span'); s.className = 'star'; s.textContent = '⭐';
+        s.onclick = () => flash('★ ' + i + ' stars — Thanks!');
+        sc.appendChild(s);
+      }
+    })();
 
-function resizeBackground() {
-  width = window.innerWidth;
-  height = window.innerHeight;
-  bgCanvas.width = width;
-  bgCanvas.height = height;
-}
+    /* ════ CANVAS (phone internal) ════ */
+    function setupCanvas(id) {
+      const c = document.getElementById(id); if (!c) return null;
+      const dpr = window.devicePixelRatio || 1;
+      const r = c.getBoundingClientRect();
+      const W = r.width, H = r.height;
+      if (c.width !== Math.round(W * dpr)) { c.width = Math.round(W * dpr); c.height = Math.round(H * dpr) }
+      const ctx = c.getContext('2d'); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      return { ctx, W, H };
+    }
+    function drawScene(ctx, W, H) {
+      ctx.fillStyle = '#070710'; ctx.fillRect(0, 0, W, H);
+      ctx.strokeStyle = 'rgba(249,180,43,.04)'; ctx.lineWidth = .5;
+      const g = 24;
+      for (let x = 0; x < W; x += g) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke() }
+      for (let y = 0; y < H; y += g) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke() }
+      const roads = [[[.1, -.05], [.9, .35]], [[.04, .65], [.96, .7]], [[.26, 0], [.2, 1]], [[.66, 0], [.72, 1]], [[.48, .05], [.5, .95]]];
+      ctx.lineWidth = 7; ctx.lineCap = 'round';
+      roads.forEach(([[x1, y1], [x2, y2]]) => {
+        ctx.strokeStyle = 'rgba(255,255,255,.07)'; ctx.beginPath(); ctx.moveTo(x1 * W, y1 * H); ctx.lineTo(x2 * W, y2 * H); ctx.stroke();
+        ctx.strokeStyle = 'rgba(255,255,255,.025)'; ctx.lineWidth = .6; ctx.beginPath(); ctx.moveTo(x1 * W, y1 * H); ctx.lineTo(x2 * W, y2 * H); ctx.stroke();
+        ctx.lineWidth = 7;
+      });
+      const bl = [[.15, .12, 24, 16], [.44, .36, 20, 14], [.62, .12, 22, 17], [.78, .44, 17, 12], [.19, .72, 20, 13], [.54, .58, 21, 15], [.35, .2, 15, 10], [.8, .2, 17, 12]];
+      bl.forEach(([x, y, bw, bh]) => {
+        ctx.fillStyle = 'rgba(255,255,255,.032)'; ctx.beginPath();
+        if (ctx.roundRect) ctx.roundRect(x * W - bw / 2, y * H - bh / 2, bw, bh, 2); else ctx.rect(x * W - bw / 2, y * H - bh / 2, bw, bh);
+        ctx.fill(); ctx.strokeStyle = 'rgba(255,255,255,.048)'; ctx.lineWidth = .4; ctx.stroke();
+      });
+    }
+    function drawPin(ctx, x, y, col = '#F9B42B', size = 7) {
+      ctx.save(); ctx.shadowColor = col; ctx.shadowBlur = 14;
+      ctx.fillStyle = col; ctx.beginPath(); ctx.arc(x, y - 1, size, Math.PI, 0); ctx.lineTo(x, y + size + 4); ctx.closePath(); ctx.fill();
+      ctx.fillStyle = '#07071a'; ctx.beginPath(); ctx.arc(x, y - 1, size * .38, 0, Math.PI * 2); ctx.fill(); ctx.restore();
+    }
+    function drawIdleMap(id) {
+      const cv = setupCanvas(id); if (!cv) return;
+      const { ctx, W, H } = cv; drawScene(ctx, W, H);
+      const px = .3, py = .55, dx = .72, dy = .32;
+      ctx.save(); ctx.setLineDash([4, 5]); ctx.strokeStyle = 'rgba(249,180,43,.3)'; ctx.lineWidth = 1.5;
+      ctx.beginPath(); ctx.moveTo(px * W, py * H); ctx.bezierCurveTo(px * W + 38, py * H - 40, dx * W - 30, dy * H + 40, dx * W, dy * H); ctx.stroke(); ctx.restore();
+      [[.1, .42], [.5, .2], [.82, .6]].forEach(([cx, cy]) => {
+        ctx.save(); ctx.font = '10px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.globalAlpha = .4; ctx.fillText('🏍', cx * W, cy * H); ctx.restore();
+      });
+      drawPin(ctx, px * W, py * H, '#F9B42B'); drawPin(ctx, dx * W, dy * H, '#555');
+    }
 
-function animateBackground() {
-  if(!bgCanvas) return;
-  bgCtx = bgCanvas.getContext('2d');
-  bgCtx.clearRect(0, 0, width, height);
-  bgCtx.fillStyle = '#03030A';
-  bgCtx.fillRect(0, 0, width, height);
-  
-  // Gray grid lines
-  bgCtx.strokeStyle = 'rgba(100, 100, 130, 0.4)';
-  bgCtx.lineWidth = 0.6;
-  const step = 58;
-  for(let x = (bgOffset % step) - step; x < width + step; x += step) {
-    bgCtx.beginPath();
-    bgCtx.moveTo(x, 0);
-    bgCtx.lineTo(x, height);
-    bgCtx.stroke();
-  }
-  for(let y = (bgOffset % step) - step; y < height + step; y += step) {
-    bgCtx.beginPath();
-    bgCtx.moveTo(0, y);
-    bgCtx.lineTo(width, y);
-    bgCtx.stroke();
-  }
-  
-  // Diagonal lines (road-like)
-  bgCtx.strokeStyle = 'rgba(120, 120, 150, 0.28)';
-  bgCtx.lineWidth = 0.5;
-  for(let i = -height; i < width+height; i += 90) {
-    bgCtx.beginPath();
-    bgCtx.moveTo(i, 0);
-    bgCtx.lineTo(i + height, height);
-    bgCtx.stroke();
-    bgCtx.beginPath();
-    bgCtx.moveTo(i, height);
-    bgCtx.lineTo(i + height, 0);
-    bgCtx.stroke();
-  }
-  
-  // Floating particles (tiny moving dots)
-  for(let p of particles) {
-    p.x += p.speedX;
-    p.y += p.speedY;
-    if(p.x < 0) p.x = 1;
-    if(p.x > 1) p.x = 0;
-    if(p.y < 0) p.y = 1;
-    if(p.y > 1) p.y = 0;
-    const xPos = p.x * width;
-    const yPos = p.y * height;
-    bgCtx.fillStyle = `rgba(249, 180, 43, ${p.alpha * 0.5})`;
-    bgCtx.beginPath();
-    bgCtx.arc(xPos, yPos, p.size, 0, Math.PI*2);
-    bgCtx.fill();
-    bgCtx.fillStyle = `rgba(255, 200, 80, 0.18)`;
-    bgCtx.beginPath();
-    bgCtx.arc(xPos, yPos, p.size*1.4, 0, Math.PI*2);
-    bgCtx.fill();
-  }
-  
-  bgOffset = (bgOffset + 0.3) % step;
-  requestAnimationFrame(animateBackground);
-}
-initBackground();
-</script>
+    let RAF = null;
+    function startTracking(ride) {
+      if (RAF) cancelAnimationFrame(RAF);
+      document.getElementById('pbf').style.width = '0%';
+      document.getElementById('etaV').textContent = '3 min';
+      document.getElementById('tTitle').textContent = 'Driver on the way';
+      document.getElementById('tSub').textContent = 'Rahul is heading to your pickup';
+      const TOTAL = 14000; const t0 = performance.now();
+      const PICKUP = { x: .3, y: .58 }; const DROP = { x: .72, y: .3 }; const START = { x: .04, y: .88 };
+      const CP1 = { x: .08, y: PICKUP.y + .05 }; const CP2 = { x: .5, y: .15 };
+      function eio(t) { return t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2 }
+      function lerp(a, b, t) { return a + (b - a) * t }
+      function qbez(p0, p1, p2, t) { return { x: lerp(lerp(p0.x, p1.x, t), lerp(p1.x, p2.x, t), t), y: lerp(lerp(p0.y, p1.y, t), lerp(p1.y, p2.y, t), t) } }
+      function getRiderPos(prog) {
+        return prog < .5 ? qbez(START, CP1, PICKUP, eio(prog / .5)) : qbez(PICKUP, CP2, DROP, eio((prog - .5) / .5));
+      }
+      function drawFrame(prog) {
+        const cv = setupCanvas('mc2'); if (!cv) return;
+        const { ctx, W, H } = cv; drawScene(ctx, W, H);
+        ctx.save(); ctx.setLineDash([4, 6]); ctx.lineWidth = 1.5;
+        const fade1 = Math.max(0, 1 - prog / .5);
+        if (fade1 > .02) { ctx.strokeStyle = `rgba(249,180,43,${.22 * fade1})`; ctx.beginPath(); ctx.moveTo(START.x * W, START.y * H); ctx.quadraticCurveTo(CP1.x * W, CP1.y * H, PICKUP.x * W, PICKUP.y * H); ctx.stroke() }
+        const fade2 = Math.max(0, (prog - .45) / .55);
+        if (fade2 > .02) { ctx.strokeStyle = `rgba(249,180,43,${.2 * fade2})`; ctx.beginPath(); ctx.moveTo(PICKUP.x * W, PICKUP.y * H); ctx.quadraticCurveTo(CP2.x * W, CP2.y * H, DROP.x * W, DROP.y * H); ctx.stroke() }
+        ctx.restore();
+        const pos = getRiderPos(prog); const rx = pos.x * W, ry = pos.y * H;
+        const gr = ctx.createRadialGradient(rx, ry, 0, rx, ry, 22);
+        gr.addColorStop(0, 'rgba(249,180,43,.24)'); gr.addColorStop(1, 'rgba(249,180,43,0)');
+        ctx.fillStyle = gr; ctx.beginPath(); ctx.arc(rx, ry, 22, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = '#F9B42B'; ctx.beginPath(); ctx.arc(rx, ry, 8, 0, Math.PI * 2); ctx.fill();
+        ctx.font = '10px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillText(ride.r === 'bike' ? '🏍' : ride.r === 'cab' ? '🚕' : '🛺', rx, ry);
+        drawPin(ctx, PICKUP.x * W, PICKUP.y * H, '#F9B42B', 6);
+        drawPin(ctx, DROP.x * W, DROP.y * H, '#555', 6);
+        if (prog < .55) {
+          ctx.fillStyle = 'rgba(6,6,14,.82)'; if (ctx.roundRect) { ctx.beginPath(); ctx.roundRect(PICKUP.x * W - 22, PICKUP.y * H - 27, 44, 13, 4); ctx.fill() }
+          ctx.fillStyle = '#F9B42B'; ctx.font = 'bold 7.5px DM Sans'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('Pickup', PICKUP.x * W, PICKUP.y * H - 20);
+        }
+        if (prog > .5) {
+          ctx.fillStyle = 'rgba(6,6,14,.82)'; if (ctx.roundRect) { ctx.beginPath(); ctx.roundRect(DROP.x * W - 22, DROP.y * H - 27, 44, 13, 4); ctx.fill() }
+          ctx.fillStyle = '#888'; ctx.font = 'bold 7.5px DM Sans'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('Drop', DROP.x * W, DROP.y * H - 20);
+        }
+        [[.88, .55], [.15, .25], [.6, .75]].forEach(([cx, cy]) => {
+          ctx.save(); ctx.font = '9px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.globalAlpha = .28; ctx.fillText('🏍', cx * W, cy * H); ctx.restore();
+        });
+      }
+      function tick(now) {
+        const prog = Math.min((now - t0) / TOTAL, 1);
+        const pct = Math.round(prog * 100);
+        document.getElementById('pbf').style.width = pct + '%';
+        if (prog < .5) { const sec = Math.max(0, Math.round((1 - prog / .5) * 3)); document.getElementById('etaV').textContent = sec === 0 ? 'Almost there…' : sec + ' min' }
+        else if (prog < .95) { document.getElementById('tTitle').textContent = 'On the way to destination'; document.getElementById('tSub').textContent = 'Sit back & enjoy the ride 🎵'; document.getElementById('etaV').textContent = 'On ride' }
+        else { document.getElementById('etaV').textContent = 'Arrived!' }
+        drawFrame(prog);
+        if (prog < 1) RAF = requestAnimationFrame(tick);
+        else setTimeout(() => { showS(3); flash('🏁 Arrived!') }, 700);
+      }
+      RAF = requestAnimationFrame(tick);
+    }
+    function cancelRide() { if (RAF) cancelAnimationFrame(RAF); resetPhone() }
+    function resetPhone() {
+      if (RAF) cancelAnimationFrame(RAF);
+      APP = { pickup: '', drop: '', ri: 1 };
+      document.getElementById('inp0').value = ''; document.getElementById('inp1').value = ''; picks = 0;
+      document.querySelectorAll('.si').forEach(el => el.style.opacity = '1');
+      document.getElementById('tTitle').textContent = 'Driver on the way';
+      document.getElementById('tSub').textContent = 'Rahul is heading to your pickup';
+      buildSugs(); showS(0);
+    }
+    let resizeTimer;
+    window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => { if (document.getElementById('s1').classList.contains('active')) drawIdleMap('mc1') }, 160) });
+
+    // ===== ANIMATED BACKGROUND MAP (crisp on all devices) =====
+    const bgCanvas = document.createElement('canvas');
+    bgCanvas.id = 'bgCanvas';
+    bgCanvas.style.position = 'fixed';
+    bgCanvas.style.top = '0';
+    bgCanvas.style.left = '0';
+    bgCanvas.style.width = '100%';
+    bgCanvas.style.height = '100%';
+    bgCanvas.style.pointerEvents = 'none';
+    bgCanvas.style.zIndex = '0';
+    bgCanvas.style.opacity = '0.45';
+    document.body.insertBefore(bgCanvas, document.body.firstChild);
+
+    let bgCtx, width, height;
+    let bgOffset = 0;
+    const particles = [];
+    const PARTICLE_COUNT = 100;
+
+    function initBackground() {
+      resizeBackground();
+      window.addEventListener('resize', resizeBackground);
+      for (let i = 0; i < PARTICLE_COUNT; i++) {
+        particles.push({ x: Math.random(), y: Math.random(), speedX: (Math.random() - 0.5) * 0.0006, speedY: (Math.random() - 0.5) * 0.0006 + 0.0003, size: 1 + Math.random() * 1.8, alpha: 0.2 + Math.random() * 0.3 });
+      }
+      animateBackground();
+    }
+
+    function resizeBackground() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      bgCanvas.width = width;
+      bgCanvas.height = height;
+    }
+
+    function animateBackground() {
+      if (!bgCanvas) return;
+      bgCtx = bgCanvas.getContext('2d');
+      bgCtx.clearRect(0, 0, width, height);
+      bgCtx.fillStyle = '#03030A';
+      bgCtx.fillRect(0, 0, width, height);
+
+      // Gray grid lines
+      bgCtx.strokeStyle = 'rgba(100, 100, 130, 0.4)';
+      bgCtx.lineWidth = 0.6;
+      const step = 58;
+      for (let x = (bgOffset % step) - step; x < width + step; x += step) {
+        bgCtx.beginPath();
+        bgCtx.moveTo(x, 0);
+        bgCtx.lineTo(x, height);
+        bgCtx.stroke();
+      }
+      for (let y = (bgOffset % step) - step; y < height + step; y += step) {
+        bgCtx.beginPath();
+        bgCtx.moveTo(0, y);
+        bgCtx.lineTo(width, y);
+        bgCtx.stroke();
+      }
+
+      // Diagonal lines (road-like)
+      bgCtx.strokeStyle = 'rgba(120, 120, 150, 0.28)';
+      bgCtx.lineWidth = 0.5;
+      for (let i = -height; i < width + height; i += 90) {
+        bgCtx.beginPath();
+        bgCtx.moveTo(i, 0);
+        bgCtx.lineTo(i + height, height);
+        bgCtx.stroke();
+        bgCtx.beginPath();
+        bgCtx.moveTo(i, height);
+        bgCtx.lineTo(i + height, 0);
+        bgCtx.stroke();
+      }
+
+      // Floating particles (tiny moving dots)
+      for (let p of particles) {
+        p.x += p.speedX;
+        p.y += p.speedY;
+        if (p.x < 0) p.x = 1;
+        if (p.x > 1) p.x = 0;
+        if (p.y < 0) p.y = 1;
+        if (p.y > 1) p.y = 0;
+        const xPos = p.x * width;
+        const yPos = p.y * height;
+        bgCtx.fillStyle = `rgba(249, 180, 43, ${p.alpha * 0.5})`;
+        bgCtx.beginPath();
+        bgCtx.arc(xPos, yPos, p.size, 0, Math.PI * 2);
+        bgCtx.fill();
+        bgCtx.fillStyle = `rgba(255, 200, 80, 0.18)`;
+        bgCtx.beginPath();
+        bgCtx.arc(xPos, yPos, p.size * 1.4, 0, Math.PI * 2);
+        bgCtx.fill();
+      }
+
+      bgOffset = (bgOffset + 0.3) % step;
+      requestAnimationFrame(animateBackground);
+    }
+    initBackground();
+  </script>
 </body>
+
 </html>
