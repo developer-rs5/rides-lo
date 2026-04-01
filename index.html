@@ -615,11 +615,21 @@
     }
 
     .mob-menu a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
       font-family: 'Syne', sans-serif;
       font-size: 2rem;
       font-weight: 800;
       color: #fff;
       transition: color .2s
+    }
+
+    .mob-menu a i {
+      width: 30px;
+      text-align: center;
+      color: var(--y);
+      font-size: 1.15rem
     }
 
     .mob-menu a:hover {
@@ -2632,13 +2642,13 @@
   <!-- MOBILE MENU -->
   <div class="mob-menu" id="mob" role="dialog" aria-label="Mobile navigation">
     <button class="mob-close" onclick="closeMob()" aria-label="Close menu"><i class="fas fa-times"></i></button>
-    <a href="index.html" onclick="closeMob()">Home</a>
-    <a href="become-rider.html" onclick="closeMob()">Become a Rider</a>
-    <a href="#features" onclick="closeMob()">Why RidesLo</a>
-    <a href="#fleet" onclick="closeMob()">Fleet</a>
-    <a href="#how" onclick="closeMob()">How it Works</a>
-    <a href="#download" onclick="closeMob()">Download</a>
-    <a href="contact.html" onclick="closeMob()">Contact</a>
+    <a href="index.html" onclick="closeMob()"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+    <a href="become-rider.html" onclick="closeMob()"><i class="fas fa-motorcycle" aria-hidden="true"></i> Become a Rider</a>
+    <a href="#features" onclick="closeMob()"><i class="fas fa-star" aria-hidden="true"></i> Why RidesLo</a>
+    <a href="#fleet" onclick="closeMob()"><i class="fas fa-car-side" aria-hidden="true"></i> Fleet</a>
+    <a href="#how" onclick="closeMob()"><i class="fas fa-route" aria-hidden="true"></i> How it Works</a>
+    <a href="#download" onclick="closeMob()"><i class="fas fa-download" aria-hidden="true"></i> Download</a>
+    <a href="contact.html" onclick="closeMob()"><i class="fas fa-headset" aria-hidden="true"></i> Contact</a>
     <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="by"
       style="margin-top:8px;font-size:.95rem"><i class="fab fa-google-play"></i> Get App</a>
   </div>
@@ -3027,7 +3037,7 @@
             <div>
               <div class="tname">Arjun Mehta</div>
               <div class="tcity">Jaipur, Rajasthan</div>
-              <div class="tstars">?????</div>
+              <div class="tstars">★★★★★</div>
             </div>
           </div>
         </div>
@@ -3040,7 +3050,7 @@
             <div>
               <div class="tname">Priya Sharma</div>
               <div class="tcity">Bengaluru, Karnataka</div>
-              <div class="tstars">?????</div>
+              <div class="tstars">★★★★★</div>
             </div>
           </div>
         </div>
@@ -3053,7 +3063,7 @@
             <div>
               <div class="tname">Rohan Verma</div>
               <div class="tcity">Delhi NCR</div>
-              <div class="tstars">?????</div>
+              <div class="tstars">★★★★★</div>
             </div>
           </div>
         </div>
@@ -3218,17 +3228,17 @@
        PHONE APP LOGIC (preserved)
     ------------------------ */
     const PLACES = [
-      { e: '??', n: 'Home', s: 'Sector 12, Jaipur' },
-      { e: '??', n: 'Office', s: 'Malviya Nagar, Jaipur' },
-      { e: '???', n: 'City Mall', s: 'Tonk Road, Jaipur' },
-      { e: '??', n: 'Airport', s: 'Sanganer Airport' },
-      { e: '??', n: 'Fortis Hospital', s: 'JLN Marg, Jaipur' },
-      { e: '??', n: 'University', s: 'Ambabari, Jaipur' },
+      { e: '\uD83C\uDFE0', n: 'Home', s: 'Sector 12, Jaipur' },
+      { e: '\uD83D\uDCBC', n: 'Office', s: 'Malviya Nagar, Jaipur' },
+      { e: '\uD83D\uDED2', n: 'City Mall', s: 'Tonk Road, Jaipur' },
+      { e: '\u2708\uFE0F', n: 'Airport', s: 'Sanganer Airport' },
+      { e: '\uD83C\uDFE5', n: 'Fortis Hospital', s: 'JLN Marg, Jaipur' },
+      { e: '\uD83C\uDF93', n: 'University', s: 'Ambabari, Jaipur' },
     ];
     const RIDES = [
-      { r: 'bike', e: '???', n: 'Bike', p: 39 },
-      { r: 'auto', e: '??', n: 'Auto', p: 59 },
-      { r: 'cab', e: '??', n: 'Cab', p: 99 },
+      { r: 'bike', e: '\uD83C\uDFCD\uFE0F', n: 'Bike', p: 39 },
+      { r: 'auto', e: '\uD83D\uDEFA', n: 'Auto', p: 59 },
+      { r: 'cab', e: '\uD83D\uDE95', n: 'Cab', p: 99 },
     ];
     let APP = { pickup: '', drop: '', ri: 1 };
 
@@ -3255,10 +3265,10 @@
     let picks = 0;
     function pickLoc(p, i) {
       if (!APP.pickup) {
-        APP.pickup = p.n; document.getElementById('inp0').value = p.n; flash('?? ' + p.n);
+        APP.pickup = p.n; document.getElementById('inp0').value = p.n; flash('\uD83D\uDCCD ' + p.n);
         document.querySelectorAll('.si')[i].style.opacity = '.3'; picks++;
       } else if (!APP.drop && p.n !== APP.pickup) {
-        APP.drop = p.n; document.getElementById('inp1').value = p.n; flash('?? Route set!'); picks++;
+        APP.drop = p.n; document.getElementById('inp1').value = p.n; flash('\uD83D\uDDFA\uFE0F Route set!'); picks++;
         setTimeout(goRidePicker, 600);
       }
     }
@@ -3291,7 +3301,7 @@
       const r = RIDES[APP.ri];
       document.getElementById('fareAmt').textContent = '?' + r.p;
       document.getElementById('fareLabel').textContent = r.n + ' · Rahul S.';
-      flash('?? Ride confirmed!'); showS(2); startTracking(r);
+      flash('\uD83C\uDF89 Ride confirmed!'); showS(2); startTracking(r);
     };
     (function () {
       const sc = document.getElementById('stars');
@@ -3344,7 +3354,7 @@
       ctx.save(); ctx.setLineDash([4, 5]); ctx.strokeStyle = 'rgba(249,180,43,.3)'; ctx.lineWidth = 1.5;
       ctx.beginPath(); ctx.moveTo(px * W, py * H); ctx.bezierCurveTo(px * W + 38, py * H - 40, dx * W - 30, dy * H + 40, dx * W, dy * H); ctx.stroke(); ctx.restore();
       [[.1, .42], [.5, .2], [.82, .6]].forEach(([cx, cy]) => {
-        ctx.save(); ctx.font = '10px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.globalAlpha = .4; ctx.fillText('??', cx * W, cy * H); ctx.restore();
+        ctx.save(); ctx.font = '10px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.globalAlpha = .4; ctx.fillText('\uD83D\uDCCD', cx * W, cy * H); ctx.restore();
       });
       drawPin(ctx, px * W, py * H, '#F9B42B'); drawPin(ctx, dx * W, dy * H, '#555');
     }
@@ -3380,7 +3390,7 @@
         ctx.fillStyle = gr; ctx.beginPath(); ctx.arc(rx, ry, 22, 0, Math.PI * 2); ctx.fill();
         ctx.fillStyle = '#F9B42B'; ctx.beginPath(); ctx.arc(rx, ry, 8, 0, Math.PI * 2); ctx.fill();
         ctx.font = '10px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-        ctx.fillText(ride.r === 'bike' ? '??' : ride.r === 'cab' ? '??' : '??', rx, ry);
+        ctx.fillText(ride.r === 'bike' ? '\uD83C\uDFCD\uFE0F' : ride.r === 'cab' ? '\uD83D\uDE95' : '\uD83D\uDEFA', rx, ry);
         drawPin(ctx, PICKUP.x * W, PICKUP.y * H, '#F9B42B', 6);
         drawPin(ctx, DROP.x * W, DROP.y * H, '#555', 6);
         if (prog < .55) {
@@ -3392,7 +3402,7 @@
           ctx.fillStyle = '#888'; ctx.font = 'bold 7.5px DM Sans'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('Drop', DROP.x * W, DROP.y * H - 20);
         }
         [[.88, .55], [.15, .25], [.6, .75]].forEach(([cx, cy]) => {
-          ctx.save(); ctx.font = '9px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.globalAlpha = .28; ctx.fillText('??', cx * W, cy * H); ctx.restore();
+          ctx.save(); ctx.font = '9px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.globalAlpha = .28; ctx.fillText('\uD83D\uDCCD', cx * W, cy * H); ctx.restore();
         });
       }
       function tick(now) {
@@ -3400,11 +3410,11 @@
         const pct = Math.round(prog * 100);
         document.getElementById('pbf').style.width = pct + '%';
         if (prog < .5) { const sec = Math.max(0, Math.round((1 - prog / .5) * 3)); document.getElementById('etaV').textContent = sec === 0 ? 'Almost there…' : sec + ' min' }
-        else if (prog < .95) { document.getElementById('tTitle').textContent = 'On the way to destination'; document.getElementById('tSub').textContent = 'Sit back & enjoy the ride ??'; document.getElementById('etaV').textContent = 'On ride' }
+        else if (prog < .95) { document.getElementById('tTitle').textContent = 'On the way to destination'; document.getElementById('tSub').textContent = 'Sit back & enjoy the ride \uD83C\uDFB5'; document.getElementById('etaV').textContent = 'On ride' }
         else { document.getElementById('etaV').textContent = 'Arrived!' }
         drawFrame(prog);
         if (prog < 1) RAF = requestAnimationFrame(tick);
-        else setTimeout(() => { showS(3); flash('?? Arrived!') }, 700);
+        else setTimeout(() => { showS(3); flash('\uD83C\uDFC1 Arrived!') }, 700);
       }
       RAF = requestAnimationFrame(tick);
     }
@@ -3521,6 +3531,9 @@
 </body>
 
 </html>
+
+
+
 
 
 

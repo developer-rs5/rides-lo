@@ -210,6 +210,10 @@ main {
   transition: color .2s;
 }
 
+.site-nav a i {
+  display: none;
+}
+
 .site-nav a::after {
   content: '';
   position: absolute;
@@ -668,6 +672,17 @@ main {
     padding: 22px;
   }
   .site-nav.is-open { display: flex; }
+  .site-nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .site-nav a i {
+    display: inline-flex;
+    width: 18px;
+    color: var(--y);
+    justify-content: center;
+  }
   .menu-toggle { display: inline-flex; }
   .hero { padding: 118px 0 50px; }
   .hero-copy h1 { font-size: 2.8rem; }
@@ -685,5 +700,7 @@ main {
   .faq-item { padding: 24px 20px; }
   .document-list { grid-template-columns: 1fr; }
 }
+
+
 
 

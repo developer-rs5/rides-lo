@@ -362,11 +362,21 @@
     }
 
     .mob-menu a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
       font-family: 'Syne', sans-serif;
       font-size: 2rem;
       font-weight: 800;
       color: #fff;
       transition: color .2s
+    }
+
+    .mob-menu a i {
+      width: 30px;
+      text-align: center;
+      color: var(--y);
+      font-size: 1.15rem
     }
 
     .mob-menu a:hover {
@@ -932,13 +942,13 @@
   <!-- MOBILE MENU -->
   <div class="mob-menu" id="mob">
     <button class="mob-close" onclick="closeMob()"><i class="fas fa-times"></i></button>
-    <a href="index.html" onclick="closeMob()">Home</a>
-    <a href="become-rider.html" onclick="closeMob()">Become a Rider</a>
-    <a href="index.html#features" onclick="closeMob()">Why RidesLo</a>
-    <a href="index.html#fleet" onclick="closeMob()">Fleet</a>
-    <a href="index.html#how" onclick="closeMob()">How it Works</a>
-    <a href="index.html#download" onclick="closeMob()">Download</a>
-    <a href="contact.html" onclick="closeMob()" style="color:var(--y)">Contact</a>
+    <a href="index.html" onclick="closeMob()"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+    <a href="become-rider.html" onclick="closeMob()"><i class="fas fa-motorcycle" aria-hidden="true"></i> Become a Rider</a>
+    <a href="index.html#features" onclick="closeMob()"><i class="fas fa-star" aria-hidden="true"></i> Why RidesLo</a>
+    <a href="index.html#fleet" onclick="closeMob()"><i class="fas fa-car-side" aria-hidden="true"></i> Fleet</a>
+    <a href="index.html#how" onclick="closeMob()"><i class="fas fa-route" aria-hidden="true"></i> How it Works</a>
+    <a href="index.html#download" onclick="closeMob()"><i class="fas fa-download" aria-hidden="true"></i> Download</a>
+    <a href="contact.html" onclick="closeMob()" style="color:var(--y)"><i class="fas fa-headset" aria-hidden="true"></i> Contact</a>
     <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="by"
       style="margin-top:8px;background:var(--y);color:#06060E;padding:12px 24px;border-radius:50px"><i
         class="fab fa-google-play"></i> Get App</a>
@@ -1049,9 +1059,9 @@
           <div class="office-hours">
             <h4><i class="far fa-clock"></i> Support Hours</h4>
             <ul>
-              <li><span>?? Call & WhatsApp:</span><span>Mon–Sat, 9:00 AM – 9:00 PM</span></li>
-              <li><span>?? Ride Support:</span><span>24/7 (emergency & live rides)</span></li>
-              <li><span>?? Office Visit:</span><span>Mon–Fri, 10:00 AM – 6:00 PM (prior appointment)</span></li>
+              <li><span><i class="fas fa-phone-alt" style="color:var(--y);margin-right:8px"></i>Call & WhatsApp:</span><span>Mon–Sat, 9:00 AM – 9:00 PM</span></li>
+              <li><span><i class="fas fa-taxi" style="color:var(--y);margin-right:8px"></i>Ride Support:</span><span>24/7 (emergency & live rides)</span></li>
+              <li><span><i class="fas fa-building" style="color:var(--y);margin-right:8px"></i>Office Visit:</span><span>Mon–Fri, 10:00 AM – 6:00 PM (prior appointment)</span></li>
             </ul>
           </div>
         </div>
@@ -1294,4 +1304,6 @@
 
 
 </html>
+
+
 
