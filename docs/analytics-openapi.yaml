@@ -1,0 +1,108 @@
+﻿openapi: 3.1.0
+info:
+  title: Rides Lo Analytics API
+  version: 1.0.0
+  description: Lightweight analytics ingestion and reporting API used by the Rides Lo website.
+servers:
+  - url: http://127.0.0.1:3000
+    description: Local development
+paths:
+  /api/health:
+    get:
+      summary: Health check
+      responses:
+        "200":
+          description: Service health
+  /api/analytics/events:
+    post:
+      summary: Ingest analytics events
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              oneOf:
+                - $ref: "#/components/schemas/EventEnvelope"
+                - type: object
+                  required: [events]
+                  properties:
+                    events:
+                      type: array
+                      items:
+                        $ref: "#/components/schemas/EventEnvelope"
+      responses:
+        "202":
+          description: Events accepted
+        "400":
+          description: Invalid payload
+        "413":
+          description: Payload too large
+    get:
+      summary: Read recent analytics events
+      parameters:
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            default: 100
+            minimum: 1
+            maximum: 500
+      responses:
+        "200":
+          description: Recent events
+  /api/analytics/page-view:
+    post:
+      summary: Alias analytics ingestion endpoint
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/EventEnvelope"
+      responses:
+        "202":
+          description: Event accepted
+  /api/analytics/summary:
+    get:
+      summary: Read aggregate analytics summary
+      parameters:
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            default: 100
+            minimum: 1
+            maximum: 500
+      responses:
+        "200":
+          description: Summary response
+components:
+  schemas:
+    EventEnvelope:
+      type: object
+      required:
+        - eventName
+        - page
+      properties:
+        eventName:
+          type: string
+        page:
+          type: string
+        path:
+          type: string
+        title:
+          type: string
+        referrer:
+          type: string
+        sessionId:
+          type: string
+        language:
+          type: string
+        viewport:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+        payload:
+          type: object
+          additionalProperties: true

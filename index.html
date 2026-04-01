@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -86,7 +86,7 @@
       color: #fff
     }
 
-    /* ══ NOISE TEXTURE ══ */
+    /* -- NOISE TEXTURE -- */
     body::after {
       content: '';
       position: fixed;
@@ -97,7 +97,7 @@
       opacity: .5
     }
 
-    /* ══ KEYFRAMES ══ */
+    /* -- KEYFRAMES -- */
     @keyframes fadeUp {
       from {
         opacity: 0;
@@ -415,7 +415,7 @@
       }
     }
 
-    /* ══ ORBS ══ */
+    /* -- ORBS -- */
     .orb {
       position: fixed;
       border-radius: 50%;
@@ -452,7 +452,7 @@
       animation: orbFloat3 20s ease-in-out infinite
     }
 
-    /* ══ NAV ══ */
+    /* -- NAV -- */
     nav {
       position: fixed;
       top: 0;
@@ -642,7 +642,7 @@
       color: var(--y)
     }
 
-    /* ══ HERO ══ */
+    /* -- HERO -- */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -852,7 +852,7 @@
       font-size: 12px
     }
 
-    /* ══ PHONE WRAPPER ══ */
+    /* -- PHONE WRAPPER -- */
     .pw {
       display: flex;
       justify-content: center;
@@ -935,7 +935,7 @@
       margin-top: 2px
     }
 
-    /* ══ PHONE SHELL ══ */
+    /* -- PHONE SHELL -- */
     .phone {
       position: relative;
       z-index: 5;
@@ -1672,7 +1672,7 @@
       color: var(--y)
     }
 
-    /* ══ MARQUEE STRIP ══ */
+    /* -- MARQUEE STRIP -- */
     .marquee-wrap {
       background: var(--y);
       padding: 14px 0;
@@ -1704,7 +1704,7 @@
       opacity: .6
     }
 
-    /* ══ SECTIONS ══ */
+    /* -- SECTIONS -- */
     section {
       padding: 110px 0;
       position: relative;
@@ -1765,7 +1765,7 @@
       transform: translateY(0)
     }
 
-    /* ══ FEATURES ══ */
+    /* -- FEATURES -- */
     .feat-header {
       display: flex;
       justify-content: space-between;
@@ -1869,7 +1869,7 @@
       line-height: 1.7
     }
 
-    /* ══ FLEET ══ */
+    /* -- FLEET -- */
     .fleet-section {
       background: var(--bg3)
     }
@@ -1975,7 +1975,7 @@
       box-shadow: 0 0 20px rgba(249, 180, 43, .1)
     }
 
-    /* ══ STEPS ══ */
+    /* -- STEPS -- */
     .steps-section {
       overflow: hidden
     }
@@ -2053,7 +2053,7 @@
       line-height: 1.7
     }
 
-    /* ══ STATS ══ */
+    /* -- STATS -- */
     .sband {
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
@@ -2114,7 +2114,7 @@
       font-weight: 500
     }
 
-    /* ══ TESTIMONIALS ══ */
+    /* -- TESTIMONIALS -- */
     .testi-section {
       background: var(--bg3)
     }
@@ -2204,7 +2204,7 @@
       margin-top: 2px
     }
 
-    /* ══ OFFER ══ */
+    /* -- OFFER -- */
     .offer-section {
       padding: 0 0 110px
     }
@@ -2281,7 +2281,7 @@
       text-transform: uppercase
     }
 
-    /* ══ APP DOWNLOAD ══ */
+    /* -- APP DOWNLOAD -- */
     .agrid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -2373,7 +2373,7 @@
       color: #06060E
     }
 
-    /* ══ FOOTER ══ */
+    /* -- FOOTER -- */
     footer {
       background: #040408;
       border-top: 1px solid var(--border);
@@ -2460,7 +2460,7 @@
       transform: translateY(-2px)
     }
 
-    /* ══ RESPONSIVE (FIXED MOBILE) ══ */
+    /* -- RESPONSIVE (FIXED MOBILE) -- */
     @media(max-width:1150px) {
       h1 {
         font-size: 3.8rem
@@ -2632,6 +2632,8 @@
   <!-- MOBILE MENU -->
   <div class="mob-menu" id="mob" role="dialog" aria-label="Mobile navigation">
     <button class="mob-close" onclick="closeMob()" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    <a href="index.html" onclick="closeMob()">Home</a>
+    <a href="become-rider.html" onclick="closeMob()">Become a Rider</a>
     <a href="#features" onclick="closeMob()">Why RidesLo</a>
     <a href="#fleet" onclick="closeMob()">Fleet</a>
     <a href="#how" onclick="closeMob()">How it Works</a>
@@ -2644,10 +2646,12 @@
   <!-- NAV -->
   <nav id="nav" role="navigation" aria-label="Main navigation"> 
     <div class="ni">
-      <a href="/" class="logo" aria-label="RidesLo home">
+      <a href="index.html" class="logo" aria-label="RidesLo home">
         <div class="lb"></div>RidesLo
       </a>
       <div class="nl">
+        <a href="index.html">Home</a>
+        <a href="become-rider.html">Become a Rider</a>
         <a href="#features">Why RidesLo</a>
         <a href="#fleet">Fleet</a>
         <a href="#how">How it Works</a>
@@ -2681,21 +2685,21 @@
           <div class="hbts">
             <a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" class="by"><i
                 class="fab fa-google-play" aria-hidden="true"></i> Download Rider App</a>
-            <a href="https://play.google.com/store/apps/details?id=com.rideslo.driver" target="_blank" class="bg"><i
-                class="fas fa-motorcycle" aria-hidden="true"></i> Become a Driver</a>
+            <a href="become-rider.html" class="bg"><i
+                class="fas fa-motorcycle" aria-hidden="true"></i> Become a Rider</a>
           </div>
           <div class="hpills">
             <div class="pill"><i class="fas fa-check-circle" aria-hidden="true"></i> No surge pricing</div>
             <div class="pill"><i class="fas fa-clock" aria-hidden="true"></i> Under 5 min pickup</div>
             <div class="pill"><i class="fas fa-shield-alt" aria-hidden="true"></i> Verified drivers</div>
-            <div class="pill"><i class="fas fa-rupee-sign" aria-hidden="true"></i> Fares from ₹19</div>
+            <div class="pill"><i class="fas fa-rupee-sign" aria-hidden="true"></i> Fares from ?19</div>
           </div>
         </div>
         <div class="pw" aria-label="App preview" role="img">
           <div class="fc fc1" aria-hidden="true">
             <div class="fc-icon"><i class="fas fa-bolt" style="color:var(--y)"></i></div>
             <div class="fc-val">2 min away</div>
-            <div class="fc-sub">Rahul S. ★ 4.9</div>
+            <div class="fc-sub">Rahul S. ? 4.9</div>
           </div>
           <div class="fc fc2" aria-hidden="true">
             <div class="fc-icon"><i class="fas fa-tag" style="color:#4ade80"></i></div>
@@ -2722,7 +2726,7 @@
                   </div>
                   <div
                     style="font-family:'Syne',sans-serif;font-size:15px;font-weight:800;color:#fff;margin-bottom:14px;text-align:center">
-                    Where to? <span style="color:var(--y)">✦</span></div>
+                    Where to? <span style="color:var(--y)">?</span></div>
                   <div class="ls"><i class="fas fa-circle" style="color:var(--y);font-size:8px;flex-shrink:0"></i><input
                       id="inp0" type="text" placeholder="Your pickup location…" readonly></div>
                   <div class="ldiv">
@@ -2765,14 +2769,14 @@
                   <div class="dm">
                     <div class="av"><i class="fas fa-motorcycle"></i></div>
                     <div style="flex:1">
-                      <div class="dn">Rahul S. ⭐ 4.9</div>
+                      <div class="dn">Rahul S. ? 4.9</div>
                       <div class="dm2">KA-03-1234 · Heading to you</div>
                     </div>
                     <div class="etc"><i class="fas fa-bolt"></i> 3 min</div>
                   </div>
                   <div class="ob"><i class="fas fa-tag"></i> FIRST30 applied · 30% OFF your fare</div>
                   <div class="rtg" id="rtg"></div>
-                  <button class="cb" id="cb">⚡ CONFIRM AUTO · ₹59*</button>
+                  <button class="cb" id="cb">? CONFIRM AUTO · ?59*</button>
                 </div>
                 <!-- S2 -->
                 <div id="s2">
@@ -2796,7 +2800,7 @@
                     </div>
                     <div class="ddi">
                       <div class="ddn">Rahul S.</div>
-                      <div class="ddp">KA-03-1234 · ⭐ 4.9</div>
+                      <div class="ddp">KA-03-1234 · ? 4.9</div>
                     </div>
                     <div class="dda">
                       <div class="dab"><i class="fas fa-phone"></i></div>
@@ -2814,17 +2818,17 @@
                   <div class="as">
                     <div class="cr"><i class="fas fa-check"></i></div>
                     <div class="at">Ride Complete!</div>
-                    <div class="as2">Hope you enjoyed the ride ✨</div>
+                    <div class="as2">Hope you enjoyed the ride ?</div>
                     <div
                       style="background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:17px;padding:14px;margin-bottom:11px">
                       <div id="fareAmt"
                         style="font-size:2rem;font-weight:800;color:var(--y);font-family:'Syne',sans-serif;line-height:1">
-                        ₹59</div>
+                        ?59</div>
                       <div id="fareLabel" style="font-size:10px;color:#505065;margin-top:3px">Auto · Rahul S.</div>
                       <div class="dt"><i class="fas fa-check-circle"></i> 30% discount applied</div>
                     </div>
                     <div class="stars" id="stars"></div>
-                    <button class="nb" onclick="resetPhone()">← Book another ride</button>
+                    <button class="nb" onclick="resetPhone()">? Book another ride</button>
                   </div>
                 </div>
               </div>
@@ -2842,16 +2846,16 @@
       <div class="marquee-item"><i class="fas fa-check-circle"></i> Verified Drivers</div>
       <div class="marquee-item"><i class="fas fa-clock"></i> Under 5-Min Pickup</div>
       <div class="marquee-item"><i class="fas fa-city"></i> extending monthly</div>
-      <div class="marquee-item"><i class="fas fa-rupee-sign"></i> Fares from ₹19</div>
-      <div class="marquee-item"><i class="fas fa-star"></i> 4.8★ Avg Rating</div>
+      <div class="marquee-item"><i class="fas fa-rupee-sign"></i> Fares from ?19</div>
+      <div class="marquee-item"><i class="fas fa-star"></i> 4.8? Avg Rating</div>
       <div class="marquee-item"><i class="fas fa-shield-alt"></i> 24/7 Live Support</div>
       <div class="marquee-item"><i class="fab fa-google-play"></i> Now on Google Play</div>
       <div class="marquee-item"><i class="fas fa-bolt"></i> Zero Surge Pricing</div>
       <div class="marquee-item"><i class="fas fa-check-circle"></i> Verified Drivers</div>
       <div class="marquee-item"><i class="fas fa-clock"></i> Under 5-Min Pickup</div>
       <div class="marquee-item"><i class="fas fa-city"></i> extending monthly</div>
-      <div class="marquee-item"><i class="fas fa-rupee-sign"></i> Fares from ₹19</div>
-      <div class="marquee-item"><i class="fas fa-star"></i> 4.8★ Avg Rating</div>
+      <div class="marquee-item"><i class="fas fa-rupee-sign"></i> Fares from ?19</div>
+      <div class="marquee-item"><i class="fas fa-star"></i> 4.8? Avg Rating</div>
       <div class="marquee-item"><i class="fas fa-shield-alt"></i> 24/7 Live Support</div>
       <div class="marquee-item"><i class="fab fa-google-play"></i> Now on Google Play</div>
     </div>
@@ -2876,7 +2880,7 @@
           <div class="stl">Cities &amp; growing</div>
         </div>
         <div class="stitem rev" style="transition-delay:.36s">
-          <div class="stn">4.8 ★</div>
+          <div class="stn">4.8 ?</div>
           <div class="stl">Average app rating</div>
         </div>
       </div>
@@ -2942,21 +2946,21 @@
           <h3>Bike Taxi</h3>
           <p>Beat traffic, reach faster. Perfect for solo riders who need to be somewhere yesterday. Weave through jams
             effortlessly.</p>
-          <div class="flp"><i class="fas fa-rupee-sign" aria-hidden="true"></i> from ₹19*</div>
+          <div class="flp"><i class="fas fa-rupee-sign" aria-hidden="true"></i> from ?19*</div>
         </div>
         <div class="flcard rev" style="transition-delay:.15s">
           <span class="flic" aria-hidden="true"><i class="fas fa-truck-pickup"></i></span>
           <h3>Auto Rickshaw</h3>
           <p>The soul of Indian commuting. Affordable, nimble, and loved by millions daily. The most trusted ride in
             every city.</p>
-          <div class="flp"><i class="fas fa-rupee-sign" aria-hidden="true"></i> from ₹50*</div>
+          <div class="flp"><i class="fas fa-rupee-sign" aria-hidden="true"></i> from ?50*</div>
         </div>
         <div class="flcard rev" style="transition-delay:.3s">
           <span class="flic" aria-hidden="true"><i class="fas fa-car"></i></span>
           <h3>AC Cab</h3>
           <p>Spacious, air-conditioned comfort for family trips, airport runs, or longer work commutes. Arrive fresh,
             every time.</p>
-          <div class="flp"><i class="fas fa-rupee-sign" aria-hidden="true"></i> from ₹130*</div>
+          <div class="flp"><i class="fas fa-rupee-sign" aria-hidden="true"></i> from ?130*</div>
         </div>
       </div>
     </div>
@@ -3017,13 +3021,13 @@
         <div class="tcard rev">
           <div class="tq">"</div>
           <p class="ttext">Switched from Ola to RidesLo 3 months ago and haven't looked back. Pickups are faster and I
-            save at least ₹200 every week easily.</p>
+            save at least ?200 every week easily.</p>
           <div class="tauth">
             <div class="tavt">A</div>
             <div>
               <div class="tname">Arjun Mehta</div>
               <div class="tcity">Jaipur, Rajasthan</div>
-              <div class="tstars">★★★★★</div>
+              <div class="tstars">?????</div>
             </div>
           </div>
         </div>
@@ -3036,7 +3040,7 @@
             <div>
               <div class="tname">Priya Sharma</div>
               <div class="tcity">Bengaluru, Karnataka</div>
-              <div class="tstars">★★★★★</div>
+              <div class="tstars">?????</div>
             </div>
           </div>
         </div>
@@ -3049,7 +3053,7 @@
             <div>
               <div class="tname">Rohan Verma</div>
               <div class="tcity">Delhi NCR</div>
-              <div class="tstars">★★★★★</div>
+              <div class="tstars">?????</div>
             </div>
           </div>
         </div>
@@ -3114,7 +3118,7 @@
     <div class="sec-inner">
       <div class="fgrid">
         <div class="fb">
-          <a href="/" class="logo" style="font-size:1.4rem" aria-label="RidesLo home">
+          <a href="index.html" class="logo" style="font-size:1.4rem" aria-label="RidesLo home">
             <div class="lb" style="width:30px;height:30px;font-size:13px"><i class="fas fa-bolt" aria-hidden="true"></i>
             </div>RidesLo
           </a>
@@ -3130,6 +3134,7 @@
         <div class="fcol">
           <h4>Explore</h4>
           <ul>
+            <li><a href="become-rider.html">Become a Rider</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">All Cities</a></li>
             <li><a href="#">Blog</a></li>
@@ -3149,6 +3154,7 @@
         <div class="fcol">
           <h4>Contact</h4>
           <ul>
+            <li><a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" rel="noopener">Download Rider App</a></li>
             <li><a href="contact.html">Support Center</a></li>
             <li><a href="#">Report an Issue</a></li>
             <li><a href="#">Press Enquiries</a></li>
@@ -3165,18 +3171,18 @@
   </footer>
 
   <script>
-    /* ════ NAV ════ */
+    /* ---- NAV ---- */
     window.addEventListener('scroll', () => document.getElementById('nav').classList.toggle('s', scrollY > 40));
     function openMob() { document.getElementById('mob').classList.add('open'); document.body.style.overflow = 'hidden' }
     function closeMob() { document.getElementById('mob').classList.remove('open'); document.body.style.overflow = '' }
 
-    /* ════ SCROLL REVEAL ════ */
+    /* ---- SCROLL REVEAL ---- */
     const ro = new IntersectionObserver(es => es.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('vi'); if (!e.target.dataset.keep) ro.unobserve(e.target) }
     }), { threshold: .1 });
     document.querySelectorAll('.rev').forEach(el => ro.observe(el));
 
-    /* ════ COUNT UP ════ */
+    /* ---- COUNT UP ---- */
     const cu = new IntersectionObserver(es => es.forEach(e => {
       if (!e.isIntersecting) return;
       const el = e.target, t = +el.dataset.t; let c = 0;
@@ -3185,7 +3191,7 @@
     }), { threshold: .5 });
     document.querySelectorAll('.stn[data-t]').forEach(el => cu.observe(el));
 
-    /* ════ COUNTDOWN TIMER ════ */
+    /* ---- COUNTDOWN TIMER ---- */
     // let csecs=23*3600+59*60+47;
     // function updateClock(){
     //   const h=Math.floor(csecs/3600),m=Math.floor(csecs%3600/60),s=csecs%60;
@@ -3197,32 +3203,32 @@
     // updateClock();
     // setInterval(updateClock,1000);
 
-    /* ════ OFFER CODE COPY ════ */
+    /* ---- OFFER CODE COPY ---- */
     // document.getElementById('offerCode').addEventListener('click',function(){
     //   navigator.clipboard?.writeText('RIDESLO30').then(()=>{
     //     const orig=this.textContent;
-    //     this.textContent='✓ Copied!';
+    //     this.textContent='? Copied!';
     //     setTimeout(()=>this.textContent=orig,2000);
     //   });
     //   this.style.cursor='pointer';
     // });
     // document.getElementById('offerCode').title='Click to copy';
 
-    /* ════════════════════════
+    /* ------------------------
        PHONE APP LOGIC (preserved)
-    ════════════════════════ */
+    ------------------------ */
     const PLACES = [
-      { e: '🏠', n: 'Home', s: 'Sector 12, Jaipur' },
-      { e: '💼', n: 'Office', s: 'Malviya Nagar, Jaipur' },
-      { e: '🛍️', n: 'City Mall', s: 'Tonk Road, Jaipur' },
-      { e: '✈️', n: 'Airport', s: 'Sanganer Airport' },
-      { e: '🏥', n: 'Fortis Hospital', s: 'JLN Marg, Jaipur' },
-      { e: '🎓', n: 'University', s: 'Ambabari, Jaipur' },
+      { e: '??', n: 'Home', s: 'Sector 12, Jaipur' },
+      { e: '??', n: 'Office', s: 'Malviya Nagar, Jaipur' },
+      { e: '???', n: 'City Mall', s: 'Tonk Road, Jaipur' },
+      { e: '??', n: 'Airport', s: 'Sanganer Airport' },
+      { e: '??', n: 'Fortis Hospital', s: 'JLN Marg, Jaipur' },
+      { e: '??', n: 'University', s: 'Ambabari, Jaipur' },
     ];
     const RIDES = [
-      { r: 'bike', e: '🏍️', n: 'Bike', p: 39 },
-      { r: 'auto', e: '🛺', n: 'Auto', p: 59 },
-      { r: 'cab', e: '🚕', n: 'Cab', p: 99 },
+      { r: 'bike', e: '???', n: 'Bike', p: 39 },
+      { r: 'auto', e: '??', n: 'Auto', p: 59 },
+      { r: 'cab', e: '??', n: 'Cab', p: 99 },
     ];
     let APP = { pickup: '', drop: '', ri: 1 };
 
@@ -3249,10 +3255,10 @@
     let picks = 0;
     function pickLoc(p, i) {
       if (!APP.pickup) {
-        APP.pickup = p.n; document.getElementById('inp0').value = p.n; flash('📍 ' + p.n);
+        APP.pickup = p.n; document.getElementById('inp0').value = p.n; flash('?? ' + p.n);
         document.querySelectorAll('.si')[i].style.opacity = '.3'; picks++;
       } else if (!APP.drop && p.n !== APP.pickup) {
-        APP.drop = p.n; document.getElementById('inp1').value = p.n; flash('🗺 Route set!'); picks++;
+        APP.drop = p.n; document.getElementById('inp1').value = p.n; flash('?? Route set!'); picks++;
         setTimeout(goRidePicker, 600);
       }
     }
@@ -3271,32 +3277,32 @@
       const g = document.getElementById('rtg'); g.innerHTML = '';
       RIDES.forEach((r, i) => {
         const d = document.createElement('div'); d.className = 'rt' + (i === APP.ri ? ' act' : '');
-        d.innerHTML = `<div class="rti">${r.e}</div><div class="rtn">${r.n}</div><div class="rtp">₹${r.p}</div>`;
-        d.onclick = () => { APP.ri = i; document.querySelectorAll('.rt').forEach((el, j) => el.classList.toggle('act', j === i)); updateCBtn(); flash(r.e + ' ' + r.n + ' · ₹' + r.p) };
+        d.innerHTML = `<div class="rti">${r.e}</div><div class="rtn">${r.n}</div><div class="rtp">?${r.p}</div>`;
+        d.onclick = () => { APP.ri = i; document.querySelectorAll('.rt').forEach((el, j) => el.classList.toggle('act', j === i)); updateCBtn(); flash(r.e + ' ' + r.n + ' · ?' + r.p) };
         g.appendChild(d);
       });
       updateCBtn();
     }
     function updateCBtn() {
       const r = RIDES[APP.ri];
-      document.getElementById('cb').textContent = '⚡ CONFIRM ' + r.n.toUpperCase() + ' · ₹' + r.p + '*';
+      document.getElementById('cb').textContent = '? CONFIRM ' + r.n.toUpperCase() + ' · ?' + r.p + '*';
     }
     document.getElementById('cb').onclick = () => {
       const r = RIDES[APP.ri];
-      document.getElementById('fareAmt').textContent = '₹' + r.p;
+      document.getElementById('fareAmt').textContent = '?' + r.p;
       document.getElementById('fareLabel').textContent = r.n + ' · Rahul S.';
-      flash('🎉 Ride confirmed!'); showS(2); startTracking(r);
+      flash('?? Ride confirmed!'); showS(2); startTracking(r);
     };
     (function () {
       const sc = document.getElementById('stars');
       for (let i = 1; i <= 5; i++) {
-        const s = document.createElement('span'); s.className = 'star'; s.textContent = '⭐';
-        s.onclick = () => flash('★ ' + i + ' stars — Thanks!');
+        const s = document.createElement('span'); s.className = 'star'; s.textContent = '?';
+        s.onclick = () => flash('? ' + i + ' stars — Thanks!');
         sc.appendChild(s);
       }
     })();
 
-    /* ════ CANVAS (phone internal) ════ */
+    /* ---- CANVAS (phone internal) ---- */
     function setupCanvas(id) {
       const c = document.getElementById(id); if (!c) return null;
       const dpr = window.devicePixelRatio || 1;
@@ -3338,7 +3344,7 @@
       ctx.save(); ctx.setLineDash([4, 5]); ctx.strokeStyle = 'rgba(249,180,43,.3)'; ctx.lineWidth = 1.5;
       ctx.beginPath(); ctx.moveTo(px * W, py * H); ctx.bezierCurveTo(px * W + 38, py * H - 40, dx * W - 30, dy * H + 40, dx * W, dy * H); ctx.stroke(); ctx.restore();
       [[.1, .42], [.5, .2], [.82, .6]].forEach(([cx, cy]) => {
-        ctx.save(); ctx.font = '10px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.globalAlpha = .4; ctx.fillText('🏍', cx * W, cy * H); ctx.restore();
+        ctx.save(); ctx.font = '10px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.globalAlpha = .4; ctx.fillText('??', cx * W, cy * H); ctx.restore();
       });
       drawPin(ctx, px * W, py * H, '#F9B42B'); drawPin(ctx, dx * W, dy * H, '#555');
     }
@@ -3374,7 +3380,7 @@
         ctx.fillStyle = gr; ctx.beginPath(); ctx.arc(rx, ry, 22, 0, Math.PI * 2); ctx.fill();
         ctx.fillStyle = '#F9B42B'; ctx.beginPath(); ctx.arc(rx, ry, 8, 0, Math.PI * 2); ctx.fill();
         ctx.font = '10px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-        ctx.fillText(ride.r === 'bike' ? '🏍' : ride.r === 'cab' ? '🚕' : '🛺', rx, ry);
+        ctx.fillText(ride.r === 'bike' ? '??' : ride.r === 'cab' ? '??' : '??', rx, ry);
         drawPin(ctx, PICKUP.x * W, PICKUP.y * H, '#F9B42B', 6);
         drawPin(ctx, DROP.x * W, DROP.y * H, '#555', 6);
         if (prog < .55) {
@@ -3386,7 +3392,7 @@
           ctx.fillStyle = '#888'; ctx.font = 'bold 7.5px DM Sans'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('Drop', DROP.x * W, DROP.y * H - 20);
         }
         [[.88, .55], [.15, .25], [.6, .75]].forEach(([cx, cy]) => {
-          ctx.save(); ctx.font = '9px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.globalAlpha = .28; ctx.fillText('🏍', cx * W, cy * H); ctx.restore();
+          ctx.save(); ctx.font = '9px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.globalAlpha = .28; ctx.fillText('??', cx * W, cy * H); ctx.restore();
         });
       }
       function tick(now) {
@@ -3394,11 +3400,11 @@
         const pct = Math.round(prog * 100);
         document.getElementById('pbf').style.width = pct + '%';
         if (prog < .5) { const sec = Math.max(0, Math.round((1 - prog / .5) * 3)); document.getElementById('etaV').textContent = sec === 0 ? 'Almost there…' : sec + ' min' }
-        else if (prog < .95) { document.getElementById('tTitle').textContent = 'On the way to destination'; document.getElementById('tSub').textContent = 'Sit back & enjoy the ride 🎵'; document.getElementById('etaV').textContent = 'On ride' }
+        else if (prog < .95) { document.getElementById('tTitle').textContent = 'On the way to destination'; document.getElementById('tSub').textContent = 'Sit back & enjoy the ride ??'; document.getElementById('etaV').textContent = 'On ride' }
         else { document.getElementById('etaV').textContent = 'Arrived!' }
         drawFrame(prog);
         if (prog < 1) RAF = requestAnimationFrame(tick);
-        else setTimeout(() => { showS(3); flash('🏁 Arrived!') }, 700);
+        else setTimeout(() => { showS(3); flash('?? Arrived!') }, 700);
       }
       RAF = requestAnimationFrame(tick);
     }
@@ -3515,3 +3521,6 @@
 </body>
 
 </html>
+
+
+

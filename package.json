@@ -1,0 +1,9 @@
+{
+  "name": "rides-lo-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Structured static site and analytics API for Rides Lo.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

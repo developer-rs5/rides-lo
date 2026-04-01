@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -933,6 +933,7 @@
   <div class="mob-menu" id="mob">
     <button class="mob-close" onclick="closeMob()"><i class="fas fa-times"></i></button>
     <a href="index.html" onclick="closeMob()">Home</a>
+    <a href="become-rider.html" onclick="closeMob()">Become a Rider</a>
     <a href="index.html#features" onclick="closeMob()">Why RidesLo</a>
     <a href="index.html#fleet" onclick="closeMob()">Fleet</a>
     <a href="index.html#how" onclick="closeMob()">How it Works</a>
@@ -951,6 +952,7 @@
       </a>
       <div class="nl">
         <a href="index.html">Home</a>
+        <a href="become-rider.html">Become a Rider</a>
         <a href="index.html#features">Why RidesLo</a>
         <a href="index.html#fleet">Fleet</a>
         <a href="index.html#how">How it Works</a>
@@ -1047,16 +1049,16 @@
           <div class="office-hours">
             <h4><i class="far fa-clock"></i> Support Hours</h4>
             <ul>
-              <li><span>📞 Call & WhatsApp:</span><span>Mon–Sat, 9:00 AM – 9:00 PM</span></li>
-              <li><span>🚖 Ride Support:</span><span>24/7 (emergency & live rides)</span></li>
-              <li><span>🏢 Office Visit:</span><span>Mon–Fri, 10:00 AM – 6:00 PM (prior appointment)</span></li>
+              <li><span>?? Call & WhatsApp:</span><span>Mon–Sat, 9:00 AM – 9:00 PM</span></li>
+              <li><span>?? Ride Support:</span><span>24/7 (emergency & live rides)</span></li>
+              <li><span>?? Office Visit:</span><span>Mon–Fri, 10:00 AM – 6:00 PM (prior appointment)</span></li>
             </ul>
           </div>
         </div>
 
         <!-- RIGHT COLUMN: CONTACT FORM (Discord webhook) -->
         <div class="form-card rev" style="transition-delay:.1s">
-          <h3>Send a message ✨</h3>
+          <h3>Send a message ?</h3>
           <p>Our team will get back to you within 24 hours. For urgent ride issues, please call or WhatsApp directly.
           </p>
           <form id="contactForm" action="#" method="post">
@@ -1105,6 +1107,7 @@
         <div class="fcol">
           <h4>Explore</h4>
           <ul>
+            <li><a href="become-rider.html">Become a Rider</a></li>
             <li><a href="index.html#features">Why RidesLo</a></li>
             <li><a href="index.html#fleet">Our Fleet</a></li>
             <li><a href="index.html#how">How it Works</a></li>
@@ -1124,6 +1127,7 @@
         <div class="fcol">
           <h4>Contact</h4>
           <ul>
+            <li><a href="https://play.google.com/store/apps/details?id=com.rideslo.rider" target="_blank" rel="noopener">Download Rider App</a></li>
             <li><a href="tel:+917300042588"><i class="fas fa-phone-alt"></i> +91 73000 42588</a></li>
             <li><a href="https://wa.me/917300042588" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp
                 Support</a></li>
@@ -1182,13 +1186,13 @@
 
       // Build Discord embed
       const embed = {
-        title: "📬 New Contact Form Submission",
+        title: "?? New Contact Form Submission",
         color: 0xF9B42B,
         fields: [
-          { name: "👤 Name", value: name, inline: true },
-          { name: "📞 Phone", value: phone, inline: true },
-          { name: "✉️ Email", value: email || "(not provided)", inline: false },
-          { name: "💬 Message", value: message.substring(0, 1024), inline: false }
+          { name: "?? Name", value: name, inline: true },
+          { name: "?? Phone", value: phone, inline: true },
+          { name: "?? Email", value: email || "(not provided)", inline: false },
+          { name: "?? Message", value: message.substring(0, 1024), inline: false }
         ],
         timestamp: new Date().toISOString(),
         footer: { text: "RidesLo Contact Form" }
@@ -1204,7 +1208,7 @@
         });
 
         if (response.ok) {
-          alert(`✅ Thanks ${name}! Your message has been sent to RidesLo support. We'll reach out within 24h. For urgent ride issues, call +91 73000 42588.`);
+          alert(`? Thanks ${name}! Your message has been sent to RidesLo support. We'll reach out within 24h. For urgent ride issues, call +91 73000 42588.`);
           form.reset();
         } else {
           console.error('Webhook error:', response.status, await response.text());
@@ -1290,3 +1294,4 @@
 
 
 </html>
+

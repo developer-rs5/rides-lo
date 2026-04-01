@@ -1,0 +1,198 @@
+﻿{
+  "project": "Rides Lo",
+  "version": "1.0.0",
+  "storage": {
+    "format": "ndjson",
+    "path": "data/analytics-events.ndjson"
+  },
+  "eventEnvelope": {
+    "requiredFields": ["eventName", "page"],
+    "optionalFields": ["path", "title", "referrer", "sessionId", "language", "viewport", "timestamp", "payload"],
+    "serverAddedFields": ["id", "ip", "userAgent"]
+  },
+  "events": [
+    {
+      "eventName": "page_view",
+      "origin": "assets/js/analytics.js",
+      "purpose": "Tracks initial page loads for SEO and landing page analysis.",
+      "payloadFields": [
+        { "name": "keywords", "type": "array<string>", "required": false }
+      ],
+      "examplePayload": { "keywords": ["Rides Lo", "taxi in Sikar"] }
+    },
+    {
+      "eventName": "page_exit",
+      "origin": "assets/js/analytics.js",
+      "purpose": "Tracks time on page and max scroll depth before exit.",
+      "payloadFields": [
+        { "name": "timeOnPageMs", "type": "number", "required": true },
+        { "name": "maxScrollDepth", "type": "number", "required": true }
+      ],
+      "examplePayload": { "timeOnPageMs": 18243, "maxScrollDepth": 76 }
+    },
+    {
+      "eventName": "scroll_depth",
+      "origin": "assets/js/analytics.js",
+      "purpose": "Tracks reader engagement milestones.",
+      "payloadFields": [
+        { "name": "milestone", "type": "number", "required": true }
+      ],
+      "examplePayload": { "milestone": 50 }
+    },
+    {
+      "eventName": "section_view",
+      "origin": "assets/js/analytics.js",
+      "purpose": "Tracks content blocks that enter the viewport.",
+      "payloadFields": [
+        { "name": "sectionId", "type": "string", "required": true }
+      ],
+      "examplePayload": { "sectionId": "home_hero_panel" }
+    },
+    {
+      "eventName": "nav_click",
+      "origin": "data-analytics-event attributes",
+      "purpose": "Tracks navigation choices across the site.",
+      "payloadFields": [
+        { "name": "label", "type": "string", "required": false },
+        { "name": "id", "type": "string|null", "required": false },
+        { "name": "href", "type": "string|null", "required": false }
+      ],
+      "examplePayload": { "label": "become-rider", "id": null, "href": "become-rider.html" }
+    },
+    {
+      "eventName": "download_click",
+      "origin": "data-analytics-event attributes",
+      "purpose": "Tracks rider app download intent.",
+      "payloadFields": [
+        { "name": "label", "type": "string", "required": false },
+        { "name": "id", "type": "string|null", "required": false },
+        { "name": "href", "type": "string|null", "required": false }
+      ],
+      "examplePayload": { "label": "header-download", "id": null, "href": "https://play.google.com/store/apps/details?id=com.rideslo.rider" }
+    },
+    {
+      "eventName": "cta_click",
+      "origin": "data-analytics-event attributes",
+      "purpose": "Tracks non-download CTA actions.",
+      "payloadFields": [
+        { "name": "label", "type": "string", "required": false },
+        { "name": "id", "type": "string|null", "required": false },
+        { "name": "href", "type": "string|null", "required": false }
+      ],
+      "examplePayload": { "label": "rider-hero-view-steps", "id": null, "href": "#rider-steps" }
+    },
+    {
+      "eventName": "contact_click",
+      "origin": "data-analytics-event attributes",
+      "purpose": "Tracks direct contact intent from the contact page.",
+      "payloadFields": [
+        { "name": "label", "type": "string", "required": false },
+        { "name": "id", "type": "string|null", "required": false },
+        { "name": "href", "type": "string|null", "required": false }
+      ],
+      "examplePayload": { "label": "phone-call", "id": null, "href": "tel:+917300042588" }
+    },
+    {
+      "eventName": "contact_submit_click",
+      "origin": "data-analytics-event attributes",
+      "purpose": "Tracks contact form submit button clicks.",
+      "payloadFields": [
+        { "name": "label", "type": "string", "required": false },
+        { "name": "id", "type": "string|null", "required": false },
+        { "name": "href", "type": "string|null", "required": false }
+      ],
+      "examplePayload": { "label": "contact-form-submit", "id": null, "href": null }
+    },
+    {
+      "eventName": "contact_form_submit",
+      "origin": "assets/js/contact.js",
+      "purpose": "Tracks completed frontend contact form submissions.",
+      "payloadFields": [
+        { "name": "nameLength", "type": "number", "required": true },
+        { "name": "phoneDigits", "type": "number", "required": true },
+        { "name": "hasEmail", "type": "boolean", "required": true }
+      ],
+      "examplePayload": { "nameLength": 14, "phoneDigits": 10, "hasEmail": true }
+    },
+    {
+      "eventName": "rider_process_loaded",
+      "origin": "assets/js/become-rider.js",
+      "purpose": "Tracks rider page entry with onboarding context.",
+      "payloadFields": [
+        { "name": "steps", "type": "number", "required": true }
+      ],
+      "examplePayload": { "steps": 4 }
+    },
+    {
+      "eventName": "rider_step_nav",
+      "origin": "assets/js/become-rider.js",
+      "purpose": "Tracks step pill navigation usage.",
+      "payloadFields": [
+        { "name": "stepId", "type": "string", "required": true }
+      ],
+      "examplePayload": { "stepId": "step-2" }
+    },
+    {
+      "eventName": "rider_step_view",
+      "origin": "assets/js/become-rider.js",
+      "purpose": "Tracks rider step visibility.",
+      "payloadFields": [
+        { "name": "stepNumber", "type": "string", "required": true },
+        { "name": "stepTitle", "type": "string", "required": true }
+      ],
+      "examplePayload": { "stepNumber": "2", "stepTitle": "Personal details" }
+    },
+    {
+      "eventName": "rider_step_complete",
+      "origin": "data-analytics-event attributes",
+      "purpose": "Tracks review-button click intent on each rider step.",
+      "payloadFields": [
+        { "name": "label", "type": "string", "required": false },
+        { "name": "id", "type": "string|null", "required": false },
+        { "name": "href", "type": "string|null", "required": false }
+      ],
+      "examplePayload": { "label": "step-2-reviewed", "id": null, "href": null }
+    },
+    {
+      "eventName": "rider_step_reviewed",
+      "origin": "assets/js/become-rider.js",
+      "purpose": "Tracks manual review completion per onboarding step.",
+      "payloadFields": [
+        { "name": "stepNumber", "type": "string", "required": true }
+      ],
+      "examplePayload": { "stepNumber": "2" }
+    },
+    {
+      "eventName": "document_checklist_toggle",
+      "origin": "assets/js/become-rider.js",
+      "purpose": "Tracks document readiness actions on the rider page.",
+      "payloadFields": [
+        { "name": "documentType", "type": "string", "required": true },
+        { "name": "checked", "type": "boolean", "required": true }
+      ],
+      "examplePayload": { "documentType": "aadhaar-front", "checked": true }
+    },
+    {
+      "eventName": "rider_signup_ready",
+      "origin": "data-analytics-event attributes",
+      "purpose": "Tracks final signup intent before app handoff.",
+      "payloadFields": [
+        { "name": "label", "type": "string", "required": false },
+        { "name": "id", "type": "string|null", "required": false },
+        { "name": "href", "type": "string|null", "required": false }
+      ],
+      "examplePayload": { "label": "final-download-signup", "id": null, "href": "https://play.google.com/store/apps/details?id=com.rideslo.rider" }
+    },
+    {
+      "eventName": "faq_toggle",
+      "origin": "data-analytics-event attributes",
+      "purpose": "Tracks FAQ interaction and content interest.",
+      "payloadFields": [
+        { "name": "label", "type": "string", "required": false },
+        { "name": "id", "type": "string|null", "required": false },
+        { "name": "href", "type": "string|null", "required": false }
+      ],
+      "examplePayload": { "label": "rider-faq-documents", "id": null, "href": null }
+    }
+  ]
+}
